@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['nocopy_5fcast',['nocopy_cast',['../group__nocopy__cast__hpp.html#ga795290e7c91a053dce4c62a21d056a95',1,'tue::nocopy_cast(const U &amp;x) noexcept'],['../group__nocopy__cast__hpp.html#ga0541bac5274f6d2ba370a09ee1417cb5',1,'tue::nocopy_cast(const V &amp;x) noexcept']]],
+  ['normalize',['normalize',['../group__quat__hpp.html#ga10327bcc4030cfe7f4e551b0c95a6693',1,'tue::math::normalize(const quat&lt; T &gt; &amp;q) noexcept'],['../group__vec__hpp.html#ga10b2c6b049472b4589505eede1402307',1,'tue::math::normalize(const vec&lt; T, N &gt; &amp;v) noexcept']]],
+  ['not_5fequal',['not_equal',['../group__mat__hpp.html#ga48e9d3aa2820f63eecf4f817d0ca9eed',1,'tue::math::not_equal(const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept'],['../group__math__hpp.html#ga479e361ad983eaa3575c092d815bbc4d',1,'tue::math::not_equal(T lhs, U rhs) noexcept'],['../group__simd__hpp.html#ga5514ee5f814e24ab181b2c87d82ab8e3',1,'tue::math::not_equal(const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept'],['../group__sized__bool__hpp.html#gae5070bbffdc7ff8999395ea5fee6c494',1,'tue::math::not_equal(T lhs, T rhs) noexcept'],['../group__vec__hpp.html#gaa0c419a2317d972d6db58f29c7b7ef0c',1,'tue::math::not_equal(const vec&lt; T, N &gt; &amp;lhs, const vec&lt; U, N &gt; &amp;rhs) noexcept']]]
+];
