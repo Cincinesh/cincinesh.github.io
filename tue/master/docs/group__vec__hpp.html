@@ -169,10 +169,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga46548cff8385f8190b3fe053e6ba4a8b"><td class="memTemplItemLeft" align="right" valign="top">constexpr vec&lt; decltype(~std::declval&lt; T &gt;)), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga46548cff8385f8190b3fe053e6ba4a8b">tue::operator~</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:ga46548cff8385f8190b3fe053e6ba4a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise NOT of each component of <code>v</code>.  <a href="group__vec__hpp.html#ga46548cff8385f8190b3fe053e6ba4a8b">More...</a><br /></td></tr>
 <tr class="separator:ga46548cff8385f8190b3fe053e6ba4a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga200aa246ecc876ac3702f5477b77253a"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga200aa246ecc876ac3702f5477b77253a"><td class="memTemplItemLeft" align="right" valign="top">constexpr vec&lt; decltype(!std::declval&lt; T &gt;)), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga200aa246ecc876ac3702f5477b77253a">tue::operator!</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga200aa246ecc876ac3702f5477b77253a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the logical NOT of each component of <code>v</code>.  <a href="group__vec__hpp.html#ga200aa246ecc876ac3702f5477b77253a">More...</a><br /></td></tr>
-<tr class="separator:ga200aa246ecc876ac3702f5477b77253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad9431af8acbaf8474a7d1f9ca367303f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
 <tr class="memitem:gad9431af8acbaf8474a7d1f9ca367303f"><td class="memTemplItemLeft" align="right" valign="top">constexpr vec&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gad9431af8acbaf8474a7d1f9ca367303f">tue::operator+</a> (const T &amp;lhs, const vec&lt; U, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gad9431af8acbaf8474a7d1f9ca367303f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of <code>lhs</code> and each component of <code>rhs</code>.  <a href="group__vec__hpp.html#gad9431af8acbaf8474a7d1f9ca367303f">More...</a><br /></td></tr>
@@ -4223,48 +4219,6 @@ template&lt;typename T , int N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The bitwise NOT of each component of <code>v</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga200aa246ecc876ac3702f5477b77253a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr vec&lt;decltype(!std::declval&lt;T&gt;)), N&gt; tue::operator! </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the logical NOT of each component of <code>v</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>v</code>. </td></tr>
-    <tr><td class="paramname">N</td><td>The component count of <code>v</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>A <code>vec</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The logical NOT of each component of <code>v</code>. </dd></dl>
 
 </div>
 </div>

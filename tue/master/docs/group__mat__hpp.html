@@ -217,10 +217,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa07d7dace8c23fdb460f29e46f705077"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(~std::declval&lt; T &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa07d7dace8c23fdb460f29e46f705077">tue::operator~</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:gaa07d7dace8c23fdb460f29e46f705077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise NOT of each column of <code>m</code>.  <a href="group__mat__hpp.html#gaa07d7dace8c23fdb460f29e46f705077">More...</a><br /></td></tr>
 <tr class="separator:gaa07d7dace8c23fdb460f29e46f705077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d7b8d39d0a268363cd03b46fda20798"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga7d7b8d39d0a268363cd03b46fda20798"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(!std::declval&lt; T &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga7d7b8d39d0a268363cd03b46fda20798">tue::operator!</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga7d7b8d39d0a268363cd03b46fda20798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the logical NOT of each column of <code>m</code>.  <a href="group__mat__hpp.html#ga7d7b8d39d0a268363cd03b46fda20798">More...</a><br /></td></tr>
-<tr class="separator:ga7d7b8d39d0a268363cd03b46fda20798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8cab1002e95ce96d8891f0de4627829d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:ga8cab1002e95ce96d8891f0de4627829d"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga8cab1002e95ce96d8891f0de4627829d">tue::operator+</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga8cab1002e95ce96d8891f0de4627829d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga8cab1002e95ce96d8891f0de4627829d">More...</a><br /></td></tr>
@@ -2872,49 +2868,6 @@ template&lt;typename T , int C, int R&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The bitwise NOT of each column of <code>m</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga7d7b8d39d0a268363cd03b46fda20798"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int C, int R&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr mat&lt;decltype(!std::declval&lt;T&gt;)), C, R&gt; tue::operator! </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>m</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the logical NOT of each column of <code>m</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>m</code>. </td></tr>
-    <tr><td class="paramname">C</td><td>The column count of <code>m</code>. </td></tr>
-    <tr><td class="paramname">R</td><td>The row count of <code>m</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">m</td><td>A <code>mat</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The logical NOT of each column of <code>m</code>. </dd></dl>
 
 </div>
 </div>
