@@ -1249,9 +1249,8 @@ template&lt;typename T , int C = 4, int R = 4&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 3D rotation matrix.</dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> aa = <a class="code" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a>(x, y, z);</div>
-<div class="line"><span class="keyword">using</span> U = <span class="keyword">typename</span> decltype(aa)::component_type;</div>
-<div class="line"><span class="keywordflow">return</span> tue::transform::rotation_mat&lt;U, C, R&gt;(aa);</div>
+<div class="fragment"><div class="line"><span class="keywordflow">return</span> tue::transform::rotation_mat&lt;T, C, R&gt;(</div>
+<div class="line">    <a class="code" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a>(x, y, z));</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1296,9 +1295,8 @@ template&lt;typename T , int C = 4, int R = 4&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 3D rotation matrix.</dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> aa = <a class="code" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a>(v);</div>
-<div class="line"><span class="keyword">using</span> U = <span class="keyword">typename</span> decltype(aa)::component_type;</div>
-<div class="line"><span class="keywordflow">return</span> tue::transform::rotation_mat&lt;U, C, R&gt;(aa);</div>
+<div class="fragment"><div class="line"><span class="keywordflow">return</span> tue::transform::rotation_mat&lt;T, C, R&gt;(</div>
+<div class="line">    <a class="code" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a>(v));</div>
 </div><!-- fragment --> 
 </div>
 </div>
