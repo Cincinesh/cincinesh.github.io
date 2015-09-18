@@ -164,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keyword">const</span> T&amp; angle) noexcept</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            T s, c;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">tue::math::sincos</a>(angle / 2, s, c);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">tue::math::sincos</a>(angle / T(2), s, c);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span> { axis_x * s, axis_y * s, axis_z * s, c };</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
@@ -259,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        {</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            T s, c;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <a class="code" href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">tue::math::sincos</a>(angle, s, c);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> omc = 1 - c;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> omc = T(1) - c;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> xx = axis_x * axis_x;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> xy = axis_x * axis_y;</div>
@@ -325,17 +325,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00683"></a><span class="lineno"><a class="line" href="group__transform__hpp.html#gabd95bfd074f898b393ecd366f9b6e7e1">  683</a></span>&#160;        <a class="code" href="group__transform__hpp.html#gabd95bfd074f898b393ecd366f9b6e7e1">rotation_mat</a>(<span class="keyword">const</span> <a class="code" href="group__quat__hpp.html#classtue_1_1quat">quat&lt;T&gt;</a>&amp; q) noexcept</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        {</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="keywordflow">return</span> tue::detail_::mat_utils&lt;T, C, R&gt;::create(</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                1 - 2*q[1]*q[1] - 2*q[2]*q[2],</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                    2*q[0]*q[1] - 2*q[2]*q[3],</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                    2*q[0]*q[2] + 2*q[1]*q[3],</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                T(1) - T(2)*q[1]*q[1] - T(2)*q[2]*q[2],</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                       T(2)*q[0]*q[1] - T(2)*q[2]*q[3],</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                       T(2)*q[0]*q[2] + T(2)*q[1]*q[3],</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                0,</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                    2*q[0]*q[1] + 2*q[2]*q[3],</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                1 - 2*q[0]*q[0] - 2*q[2]*q[2],</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                    2*q[1]*q[2] - 2*q[0]*q[3],</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                       T(2)*q[0]*q[1] + T(2)*q[2]*q[3],</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                T(1) - T(2)*q[0]*q[0] - T(2)*q[2]*q[2],</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                       T(2)*q[1]*q[2] - T(2)*q[0]*q[3],</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                0,</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                    2*q[0]*q[2] - 2*q[1]*q[3],</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                    2*q[1]*q[2] + 2*q[0]*q[3],</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                1 - 2*q[0]*q[0] - 2*q[1]*q[1],</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                       T(2)*q[0]*q[2] - T(2)*q[1]*q[3],</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                       T(2)*q[1]*q[2] + T(2)*q[0]*q[3],</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                T(1) - T(2)*q[0]*q[0] - T(2)*q[1]*q[1],</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                0,</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                0, 0, 0, 1);</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        }</div>
@@ -386,7 +386,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            <span class="keyword">const</span> T&amp; f <span class="comment">/* &quot;far&quot; conflicts with a WIN32 macro */</span>) noexcept</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        {</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            T s, c;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <a class="code" href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">tue::math::sincos</a>(fovy / 2, s, c);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <a class="code" href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">tue::math::sincos</a>(fovy / T(2), s, c);</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> cot = c / s;</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> npf = n + f;</div>
@@ -394,10 +394,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> ntf = n * f;</div>
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;            <span class="keywordflow">return</span> tue::detail_::mat_utils&lt;T, C, R&gt;::create(</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                cot/aspect,      0, 0, 0,</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                0, cot,             0, 0,</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                0, 0, npf/nmf, 2*ntf/nmf,</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                0, 0, -1,              0);</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                cot/aspect,         0, 0, 0,</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                0, cot,                0, 0,</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                0, 0, npf/nmf, T(2)*ntf/nmf,</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                0, 0, -1,                 0);</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        }</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> C = 4, <span class="keywordtype">int</span> R = 4&gt;</div>
@@ -410,10 +410,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;            <span class="keyword">const</span> T&amp; f <span class="comment">/* &quot;far&quot; conflicts with a WIN32 macro */</span>) noexcept</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        {</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;            <span class="keywordflow">return</span> tue::detail_::mat_utils&lt;T, C, R&gt;::create(</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                2/width,           0, 0, 0,</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                0, 2/height,          0, 0,</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                0, 0, 2/(n-f), (n+f)/(n-f),</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                0, 0, 0,                 1);</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                T(2)/width,           0, 0, 0,</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                0, T(2)/height,          0, 0,</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                0, 0, T(2)/(n-f), (n+f)/(n-f),</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                0, 0, 0,                    1);</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        }</div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
 <div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    }</div>

@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">{</div>
 <div class="line">    translation += linearVelocity * deltaTime;</div>
 <div class="line">    rotation *= <a class="code" href="group__transform__hpp.html#ga970795f77a70055a622b13b56c51dfc3">transform::rotation_quat</a>(angularVelocity * deltaTime);</div>
-<div class="line">    matrix = transform::rotation_mat&lt;float, 3, 3&gt;(rotation)</div>
+<div class="line">    matrix = transform::rotation_mat&lt;float, 4, 4&gt;(rotation)</div>
 <div class="line">        * transform::translation_mat&lt;float, 3, 4&gt;(translation);</div>
 <div class="line">}</div>
 <div class="line"></div>
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <a class="code" href="group__simd__hpp.html#classtue_1_1simd">float32x4</a> deltaTimes(deltaTime);</div>
 <div class="line">    translations += linearVelocities * deltaTimes;</div>
 <div class="line">    rotations *= <a class="code" href="group__transform__hpp.html#ga970795f77a70055a622b13b56c51dfc3">transform::rotation_quat</a>(angularVelocities * deltaTimes);</div>
-<div class="line">    matrices = transform::rotation_mat&lt;float32x4, 3, 3&gt;(rotations)</div>
+<div class="line">    matrices = transform::rotation_mat&lt;float32x4, 4, 4&gt;(rotations)</div>
 <div class="line">        * transform::translation_mat&lt;float32x4, 3, 4&gt;(translations);</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>License </h2>
