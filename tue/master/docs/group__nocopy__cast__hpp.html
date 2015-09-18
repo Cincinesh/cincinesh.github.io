@@ -86,19 +86,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga795290e7c91a053dce4c62a21d056a95"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:ga795290e7c91a053dce4c62a21d056a95"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_same&lt; T, U &gt;::value, const T &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__nocopy__cast__hpp.html#ga795290e7c91a053dce4c62a21d056a95">tue::nocopy_cast</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:ga795290e7c91a053dce4c62a21d056a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts <code>x</code> to type <code>T</code>, avoiding a copy if possible.  <a href="group__nocopy__cast__hpp.html#ga795290e7c91a053dce4c62a21d056a95">More...</a><br /></td></tr>
-<tr class="separator:ga795290e7c91a053dce4c62a21d056a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0541bac5274f6d2ba370a09ee1417cb5"><td class="memTemplParams" colspan="2">template&lt;typename T , typename V &gt; </td></tr>
-<tr class="memitem:ga0541bac5274f6d2ba370a09ee1417cb5"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt;!std::is_same&lt; T, V &gt;::value, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__nocopy__cast__hpp.html#ga0541bac5274f6d2ba370a09ee1417cb5">tue::nocopy_cast</a> (const V &amp;x) noexcept</td></tr>
-<tr class="memdesc:ga0541bac5274f6d2ba370a09ee1417cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts <code>x</code> to type <code>T</code>, avoiding a copy if possible.  <a href="group__nocopy__cast__hpp.html#ga0541bac5274f6d2ba370a09ee1417cb5">More...</a><br /></td></tr>
-<tr class="separator:ga0541bac5274f6d2ba370a09ee1417cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga527a1151661097e55f119a04d68071c6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:ga527a1151661097e55f119a04d68071c6"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::conditional_t&lt; std::is_same&lt; T, U &gt;::value, const T &amp;, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">tue::nocopy_cast</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:ga527a1151661097e55f119a04d68071c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts <code>x</code> to type <code>T</code>, avoiding a copy if possible.  <a href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">More...</a><br /></td></tr>
+<tr class="separator:ga527a1151661097e55f119a04d68071c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The <code>nocopy_cast&lt;T&gt;()</code> function template. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga795290e7c91a053dce4c62a21d056a95"></a>
+<a class="anchor" id="ga527a1151661097e55f119a04d68071c6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -108,7 +104,7 @@ template&lt;typename T , typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt;std::is_same&lt;T, U&gt;::value, const T&amp;&gt; tue::nocopy_cast </td>
+          <td class="memname">constexpr std::conditional_t&lt;std::is_same&lt;T, U&gt;::value, const T&amp;, T&gt; tue::nocopy_cast </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -117,7 +113,7 @@ template&lt;typename T , typename U &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -136,49 +132,7 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to <code>x</code> if <code>x</code> is already of type <code>T</code>. The new value otherwise. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga0541bac5274f6d2ba370a09ee1417cb5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename V &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::enable_if_t&lt;!std::is_same&lt;T, V&gt;::value, T&gt; tue::nocopy_cast </td>
-          <td>(</td>
-          <td class="paramtype">const V &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Casts <code>x</code> to type <code>T</code>, avoiding a copy if possible. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The return type. </td></tr>
-    <tr><td class="paramname">V</td><td>The type of parameter <code>x</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to cast.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to <code>x</code> if <code>x</code> is already of type <code>T</code>. The new value otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A const reference to <code>x</code> if <code>x</code> is already of type <code>T</code>. <code>static_cast&lt;T&gt;(x)</code> otherwise. </dd></dl>
 
 </div>
 </div>
