@@ -462,7 +462,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gro
 <tr class="memitem:a88907450fce9c04d5c5ed7b096b61b00"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a88907450fce9c04d5c5ed7b096b61b00">vec</a> (const <a class="el" href="group__vec__hpp.html#ga006798d7302cecb8217a0f94d7e2c5e5">vec3</a>&lt; T &gt; &amp;<a class="el" href="group__vec__hpp.html#a40ad9ce6f0f8a3ec836e836b7305faa9">xyz</a>, const T &amp;<a class="el" href="group__vec__hpp.html#a9e45c04c8a1df9a527e426bae116f340">w</a>) noexcept</td></tr>
 <tr class="memdesc:a88907450fce9c04d5c5ed7b096b61b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#a88907450fce9c04d5c5ed7b096b61b00">More...</a><br /></td></tr>
 <tr class="separator:a88907450fce9c04d5c5ed7b096b61b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd7e9e7abd145e258cbcce5ebda35f3"><td class="memTemplParams" colspan="2">template&lt;int VN, typename  = std::enable_if_t&lt;(VN &gt; N&gt; </td></tr>
+<tr class="memitem:a9cd7e9e7abd145e258cbcce5ebda35f3"><td class="memTemplParams" colspan="2">template&lt;int VN, typename  = std::enable_if_t&lt;(VN greater_than N)&gt;&gt; </td></tr>
 <tr class="memitem:a9cd7e9e7abd145e258cbcce5ebda35f3"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a9cd7e9e7abd145e258cbcce5ebda35f3">vec</a> (const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, VN &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:a9cd7e9e7abd145e258cbcce5ebda35f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Truncates a larger <code>vec</code> with the same component type.  <a href="#a9cd7e9e7abd145e258cbcce5ebda35f3">More...</a><br /></td></tr>
 <tr class="separator:a9cd7e9e7abd145e258cbcce5ebda35f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1075,7 +1075,7 @@ template&lt;typename T, int N&gt; </div>
 <div class="memtemplate">
 template&lt;typename T, int N&gt; </div>
 <div class="memtemplate">
-template&lt;int VN, typename  = std::enable_if_t&lt;(VN &gt; N&gt; </div>
+template&lt;int VN, typename  = std::enable_if_t&lt;(VN greater_than N)&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
