@@ -17,8 +17,5 @@ var searchData=
   ['bool8x32',['bool8x32',['../group__simd__hpp.html#ga670a2fcad1de7493365c5a8b2731815d',1,'tue']]],
   ['bool8x4',['bool8x4',['../group__simd__hpp.html#gacbb415013c9071b2db1eb2c68accbeb4',1,'tue']]],
   ['bool8x64',['bool8x64',['../group__simd__hpp.html#ga40e504c7fab11e76b3f334a3b275b80b',1,'tue']]],
-  ['bool8x8',['bool8x8',['../group__simd__hpp.html#ga7960e67014ee942b90396667f38240e1',1,'tue']]],
-  ['bvec2',['bvec2',['../group__vec__hpp.html#ga2f55b367daaa3410e32c95b28a40a50c',1,'tue']]],
-  ['bvec3',['bvec3',['../group__vec__hpp.html#ga43997599a325412111d4fbf0c751eed3',1,'tue']]],
-  ['bvec4',['bvec4',['../group__vec__hpp.html#ga704adf5975542069341522f5a23a8f6d',1,'tue']]]
+  ['bool8x8',['bool8x8',['../group__simd__hpp.html#ga7960e67014ee942b90396667f38240e1',1,'tue']]]
 ];

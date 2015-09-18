@@ -413,34 +413,38 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2af2897af4ed159329dbe559c6af3b23"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga2af2897af4ed159329dbe559c6af3b23">tue::math::max</a> (const mat&lt; T, C, R &gt; &amp;m1, const mat&lt; T, C, R &gt; &amp;m2) noexcept</td></tr>
 <tr class="memdesc:ga2af2897af4ed159329dbe559c6af3b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of columns of <code>m1</code> and <code>m2</code>.  <a href="group__mat__hpp.html#ga2af2897af4ed159329dbe559c6af3b23">More...</a><br /></td></tr>
 <tr class="separator:ga2af2897af4ed159329dbe559c6af3b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3894331c6f09ea824628f7e0839348f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gad3894331c6f09ea824628f7e0839348f"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; U, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gad3894331c6f09ea824628f7e0839348f">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values, const mat&lt; U, C, R &gt; &amp;otherwise=mat&lt; U, C, R &gt;(0)) noexcept</td></tr>
-<tr class="memdesc:gad3894331c6f09ea824628f7e0839348f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of columns from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__mat__hpp.html#gad3894331c6f09ea824628f7e0839348f">More...</a><br /></td></tr>
-<tr class="separator:gad3894331c6f09ea824628f7e0839348f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92dea19610f3d1df2d2dea0ca313ec7e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga92dea19610f3d1df2d2dea0ca313ec7e"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::less(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga92dea19610f3d1df2d2dea0ca313ec7e">tue::math::less</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga92dea19610f3d1df2d2dea0ca313ec7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga92dea19610f3d1df2d2dea0ca313ec7e">More...</a><br /></td></tr>
-<tr class="separator:ga92dea19610f3d1df2d2dea0ca313ec7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3914ebc0fbe28e34e5a9b453dab692e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gaf3914ebc0fbe28e34e5a9b453dab692e"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::less_equal(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaf3914ebc0fbe28e34e5a9b453dab692e">tue::math::less_equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gaf3914ebc0fbe28e34e5a9b453dab692e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gaf3914ebc0fbe28e34e5a9b453dab692e">More...</a><br /></td></tr>
-<tr class="separator:gaf3914ebc0fbe28e34e5a9b453dab692e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab72285dc12f294d45c52d663df572cb5"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gab72285dc12f294d45c52d663df572cb5"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::greater(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab72285dc12f294d45c52d663df572cb5">tue::math::greater</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gab72285dc12f294d45c52d663df572cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gab72285dc12f294d45c52d663df572cb5">More...</a><br /></td></tr>
-<tr class="separator:gab72285dc12f294d45c52d663df572cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91a94077702069e285df604ea44705a6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga91a94077702069e285df604ea44705a6"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::greater_equal(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga91a94077702069e285df604ea44705a6">tue::math::greater_equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga91a94077702069e285df604ea44705a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga91a94077702069e285df604ea44705a6">More...</a><br /></td></tr>
-<tr class="separator:ga91a94077702069e285df604ea44705a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1fe3056868bf626f428d08d83b8d7dfb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga1fe3056868bf626f428d08d83b8d7dfb"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::equal(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga1fe3056868bf626f428d08d83b8d7dfb">tue::math::equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga1fe3056868bf626f428d08d83b8d7dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga1fe3056868bf626f428d08d83b8d7dfb">More...</a><br /></td></tr>
-<tr class="separator:ga1fe3056868bf626f428d08d83b8d7dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48e9d3aa2820f63eecf4f817d0ca9eed"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga48e9d3aa2820f63eecf4f817d0ca9eed"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::not_equal(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga48e9d3aa2820f63eecf4f817d0ca9eed">tue::math::not_equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga48e9d3aa2820f63eecf4f817d0ca9eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::not_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga48e9d3aa2820f63eecf4f817d0ca9eed">More...</a><br /></td></tr>
-<tr class="separator:ga48e9d3aa2820f63eecf4f817d0ca9eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf21868345761170a09459f687f96d783"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gaf21868345761170a09459f687f96d783"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; U, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaf21868345761170a09459f687f96d783">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values) noexcept</td></tr>
+<tr class="memdesc:gaf21868345761170a09459f687f96d783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>.  <a href="group__mat__hpp.html#gaf21868345761170a09459f687f96d783">More...</a><br /></td></tr>
+<tr class="separator:gaf21868345761170a09459f687f96d783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a4dca6290c3689f56dc244878964b1c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5a4dca6290c3689f56dc244878964b1c"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; U, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5a4dca6290c3689f56dc244878964b1c">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values, const mat&lt; U, C, R &gt; &amp;otherwise) noexcept</td></tr>
+<tr class="memdesc:ga5a4dca6290c3689f56dc244878964b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of columns from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__mat__hpp.html#ga5a4dca6290c3689f56dc244878964b1c">More...</a><br /></td></tr>
+<tr class="separator:ga5a4dca6290c3689f56dc244878964b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1e7d439ad8861948b889b65ea71703e"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:gab1e7d439ad8861948b889b65ea71703e"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::less(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab1e7d439ad8861948b889b65ea71703e">tue::math::less</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gab1e7d439ad8861948b889b65ea71703e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gab1e7d439ad8861948b889b65ea71703e">More...</a><br /></td></tr>
+<tr class="separator:gab1e7d439ad8861948b889b65ea71703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27cac19ab6fb88aeb7c0089ce26b9c1b"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga27cac19ab6fb88aeb7c0089ce26b9c1b"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::less_equal(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga27cac19ab6fb88aeb7c0089ce26b9c1b">tue::math::less_equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga27cac19ab6fb88aeb7c0089ce26b9c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga27cac19ab6fb88aeb7c0089ce26b9c1b">More...</a><br /></td></tr>
+<tr class="separator:ga27cac19ab6fb88aeb7c0089ce26b9c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1cfbfd08074e439b7cc2cee1fe3f712"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:gab1cfbfd08074e439b7cc2cee1fe3f712"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::greater(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab1cfbfd08074e439b7cc2cee1fe3f712">tue::math::greater</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gab1cfbfd08074e439b7cc2cee1fe3f712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gab1cfbfd08074e439b7cc2cee1fe3f712">More...</a><br /></td></tr>
+<tr class="separator:gab1cfbfd08074e439b7cc2cee1fe3f712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41e94d2d84186aace917d9c26c4c223e"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga41e94d2d84186aace917d9c26c4c223e"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::greater_equal(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga41e94d2d84186aace917d9c26c4c223e">tue::math::greater_equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga41e94d2d84186aace917d9c26c4c223e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga41e94d2d84186aace917d9c26c4c223e">More...</a><br /></td></tr>
+<tr class="separator:ga41e94d2d84186aace917d9c26c4c223e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4054de9347cd19cd3274f9cb421bc5f9"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga4054de9347cd19cd3274f9cb421bc5f9"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::equal(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga4054de9347cd19cd3274f9cb421bc5f9">tue::math::equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga4054de9347cd19cd3274f9cb421bc5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga4054de9347cd19cd3274f9cb421bc5f9">More...</a><br /></td></tr>
+<tr class="separator:ga4054de9347cd19cd3274f9cb421bc5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bbf0f391e052b6a762dc571030eef90"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5bbf0f391e052b6a762dc571030eef90"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(tue::math::not_equal(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5bbf0f391e052b6a762dc571030eef90">tue::math::not_equal</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga5bbf0f391e052b6a762dc571030eef90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::not_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga5bbf0f391e052b6a762dc571030eef90">More...</a><br /></td></tr>
+<tr class="separator:ga5bbf0f391e052b6a762dc571030eef90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa37f59e665e253f02c579b554cf4ffa2"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gaa37f59e665e253f02c579b554cf4ffa2"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa37f59e665e253f02c579b554cf4ffa2">tue::math::comp_mult</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gaa37f59e665e253f02c579b554cf4ffa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the products of each column of <code>lhs</code> and each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#gaa37f59e665e253f02c579b554cf4ffa2">More...</a><br /></td></tr>
@@ -5464,7 +5468,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gad3894331c6f09ea824628f7e0839348f"></a>
+<a class="anchor" id="gaf21868345761170a09459f687f96d783"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5474,7 +5478,62 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;U, C, R&gt; tue::math::select </td>
+          <td class="memname">mat&lt;U, C, R&gt; tue::math::select </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>conditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes <code>tue::math::select()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type of <code>conditions</code>. </td></tr>
+    <tr><td class="paramname">U</td><td>The component type of <code>values</code>. </td></tr>
+    <tr><td class="paramname">C</td><td>The column count of both <code>conditions</code> and <code>values</code>. </td></tr>
+    <tr><td class="paramname">R</td><td>The row count of both <code>conditions</code> and <code>values</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conditions</td><td>A <code>mat</code>. </td></tr>
+    <tr><td class="paramname">values</td><td>Another <code>mat</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::select()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5a4dca6290c3689f56dc244878964b1c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , int C, int R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mat&lt;U, C, R&gt; tue::math::select </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -5489,7 +5548,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>otherwise</em> = <code><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;U,&#160;C,&#160;R&gt;(0)</code>&#160;</td>
+          <td class="paramname"><em>otherwise</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5526,17 +5585,17 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga92dea19610f3d1df2d2dea0ca313ec7e"></a>
+<a class="anchor" id="gab1e7d439ad8861948b889b65ea71703e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , int C, int R&gt; </div>
+template&lt;typename T , int C, int R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( tue::math::less(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::less </td>
+          <td class="memname">constexpr mat&lt;decltype( tue::math::less(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::less </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -5544,7 +5603,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -5563,8 +5622,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 <p>Computes <code>tue::math::less()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The component type of <code>rhs</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">R</td><td>The row count of both <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
@@ -5581,17 +5639,17 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaf3914ebc0fbe28e34e5a9b453dab692e"></a>
+<a class="anchor" id="ga27cac19ab6fb88aeb7c0089ce26b9c1b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , int C, int R&gt; </div>
+template&lt;typename T , int C, int R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( tue::math::less_equal(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::less_equal </td>
+          <td class="memname">constexpr mat&lt;decltype( tue::math::less_equal(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::less_equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -5599,7 +5657,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -5618,8 +5676,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 <p>Computes <code>tue::math::less_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The component type of <code>rhs</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">R</td><td>The row count of both <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
@@ -5636,17 +5693,17 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gab72285dc12f294d45c52d663df572cb5"></a>
+<a class="anchor" id="gab1cfbfd08074e439b7cc2cee1fe3f712"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , int C, int R&gt; </div>
+template&lt;typename T , int C, int R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( tue::math::greater(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::greater </td>
+          <td class="memname">constexpr mat&lt;decltype( tue::math::greater(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::greater </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -5654,7 +5711,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -5673,8 +5730,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 <p>Computes <code>tue::math::greater()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The component type of <code>rhs</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">R</td><td>The row count of both <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
@@ -5691,17 +5747,17 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga91a94077702069e285df604ea44705a6"></a>
+<a class="anchor" id="ga41e94d2d84186aace917d9c26c4c223e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , int C, int R&gt; </div>
+template&lt;typename T , int C, int R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( tue::math::greater_equal(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::greater_equal </td>
+          <td class="memname">constexpr mat&lt;decltype( tue::math::greater_equal(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::greater_equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -5709,7 +5765,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -5728,8 +5784,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 <p>Computes <code>tue::math::greater_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The component type of <code>rhs</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">R</td><td>The row count of both <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
@@ -5746,17 +5801,17 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga1fe3056868bf626f428d08d83b8d7dfb"></a>
+<a class="anchor" id="ga4054de9347cd19cd3274f9cb421bc5f9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , int C, int R&gt; </div>
+template&lt;typename T , int C, int R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( tue::math::equal(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::equal </td>
+          <td class="memname">constexpr mat&lt;decltype( tue::math::equal(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -5764,7 +5819,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -5783,8 +5838,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 <p>Computes <code>tue::math::equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The component type of <code>rhs</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">R</td><td>The row count of both <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
@@ -5801,17 +5855,17 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga48e9d3aa2820f63eecf4f817d0ca9eed"></a>
+<a class="anchor" id="ga5bbf0f391e052b6a762dc571030eef90"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , int C, int R&gt; </div>
+template&lt;typename T , int C, int R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( tue::math::not_equal(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::not_equal </td>
+          <td class="memname">constexpr mat&lt;decltype( tue::math::not_equal(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::not_equal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -5819,7 +5873,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -5838,8 +5892,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 <p>Computes <code>tue::math::not_equal()</code> for each corresponding pair of columns of <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The component type of <code>rhs</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count of both <code>lhs</code> and <code>rhs</code>. </td></tr>
     <tr><td class="paramname">R</td><td>The row count of both <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>

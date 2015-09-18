@@ -170,34 +170,38 @@ Functions</h2></td></tr>
 <tr class="memitem:ga91b65ec5e6ef74cfe1aaaad06fc48e77"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga91b65ec5e6ef74cfe1aaaad06fc48e77">tue::math::max</a> (T x, T y) noexcept</td></tr>
 <tr class="memdesc:ga91b65ec5e6ef74cfe1aaaad06fc48e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the maximum numeric value of the arguments.  <a href="group__math__hpp.html#ga91b65ec5e6ef74cfe1aaaad06fc48e77">More...</a><br /></td></tr>
 <tr class="separator:ga91b65ec5e6ef74cfe1aaaad06fc48e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf61aa4d8f42ef2e7929a684caed498f8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gaf61aa4d8f42ef2e7929a684caed498f8"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gaf61aa4d8f42ef2e7929a684caed498f8">tue::math::select</a> (bool condition, const T &amp;value, const T &amp;otherwise=T(0)) noexcept</td></tr>
-<tr class="memdesc:gaf61aa4d8f42ef2e7929a684caed498f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a return value based on <code>condition</code>.  <a href="group__math__hpp.html#gaf61aa4d8f42ef2e7929a684caed498f8">More...</a><br /></td></tr>
-<tr class="separator:gaf61aa4d8f42ef2e7929a684caed498f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9725b7ea82a857615093ecc0e4707d3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:gac9725b7ea82a857615093ecc0e4707d3"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &amp;&amp;std::is_arithmetic&lt; U &gt;::value, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gac9725b7ea82a857615093ecc0e4707d3">tue::math::less</a> (T lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:gac9725b7ea82a857615093ecc0e4707d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is less than <code>rhs</code>.  <a href="group__math__hpp.html#gac9725b7ea82a857615093ecc0e4707d3">More...</a><br /></td></tr>
-<tr class="separator:gac9725b7ea82a857615093ecc0e4707d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22b1d4b4b92fa2c6c78e1ad767c978e4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:ga22b1d4b4b92fa2c6c78e1ad767c978e4"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &amp;&amp;std::is_arithmetic&lt; U &gt;::value, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga22b1d4b4b92fa2c6c78e1ad767c978e4">tue::math::less_equal</a> (T lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:ga22b1d4b4b92fa2c6c78e1ad767c978e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is less than or equal to <code>rhs</code>.  <a href="group__math__hpp.html#ga22b1d4b4b92fa2c6c78e1ad767c978e4">More...</a><br /></td></tr>
-<tr class="separator:ga22b1d4b4b92fa2c6c78e1ad767c978e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe8b56be5aed77036523b68d57c0fdb8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:gafe8b56be5aed77036523b68d57c0fdb8"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &amp;&amp;std::is_arithmetic&lt; U &gt;::value, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gafe8b56be5aed77036523b68d57c0fdb8">tue::math::greater</a> (T lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:gafe8b56be5aed77036523b68d57c0fdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is greater than <code>rhs</code>.  <a href="group__math__hpp.html#gafe8b56be5aed77036523b68d57c0fdb8">More...</a><br /></td></tr>
-<tr class="separator:gafe8b56be5aed77036523b68d57c0fdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa25fb5e10c9020a7c028a5954b729fe8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:gaa25fb5e10c9020a7c028a5954b729fe8"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &amp;&amp;std::is_arithmetic&lt; U &gt;::value, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gaa25fb5e10c9020a7c028a5954b729fe8">tue::math::greater_equal</a> (T lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:gaa25fb5e10c9020a7c028a5954b729fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is greater than or equal to <code>rhs</code>.  <a href="group__math__hpp.html#gaa25fb5e10c9020a7c028a5954b729fe8">More...</a><br /></td></tr>
-<tr class="separator:gaa25fb5e10c9020a7c028a5954b729fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a9671dd8dcf66ef8c2ed9d9db6ebd96"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:ga4a9671dd8dcf66ef8c2ed9d9db6ebd96"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &amp;&amp;std::is_arithmetic&lt; U &gt;::value, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga4a9671dd8dcf66ef8c2ed9d9db6ebd96">tue::math::equal</a> (T lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:ga4a9671dd8dcf66ef8c2ed9d9db6ebd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is equal to <code>rhs</code>.  <a href="group__math__hpp.html#ga4a9671dd8dcf66ef8c2ed9d9db6ebd96">More...</a><br /></td></tr>
-<tr class="separator:ga4a9671dd8dcf66ef8c2ed9d9db6ebd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga479e361ad983eaa3575c092d815bbc4d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:ga479e361ad983eaa3575c092d815bbc4d"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &amp;&amp;std::is_arithmetic&lt; U &gt;::value, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga479e361ad983eaa3575c092d815bbc4d">tue::math::not_equal</a> (T lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:ga479e361ad983eaa3575c092d815bbc4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is not equal to <code>rhs</code>.  <a href="group__math__hpp.html#ga479e361ad983eaa3575c092d815bbc4d">More...</a><br /></td></tr>
-<tr class="separator:ga479e361ad983eaa3575c092d815bbc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d75c8a8ffd91445fac4d8c983e911c7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:ga1d75c8a8ffd91445fac4d8c983e911c7"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;(std::is_arithmetic&lt; U &gt;::value||is_sized_bool&lt; U &gt;::value)&amp;&amp;sizeof(U)==sizeof(T), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga1d75c8a8ffd91445fac4d8c983e911c7">tue::math::select</a> (T condition, U value) noexcept</td></tr>
+<tr class="memdesc:ga1d75c8a8ffd91445fac4d8c983e911c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a return value based on <code>condition</code>.  <a href="group__math__hpp.html#ga1d75c8a8ffd91445fac4d8c983e911c7">More...</a><br /></td></tr>
+<tr class="separator:ga1d75c8a8ffd91445fac4d8c983e911c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a96c8ff403bbeabbf0e81290991c5a3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:ga1a96c8ff403bbeabbf0e81290991c5a3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;(std::is_arithmetic&lt; U &gt;::value||is_sized_bool&lt; U &gt;::value)&amp;&amp;sizeof(U)==sizeof(T), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga1a96c8ff403bbeabbf0e81290991c5a3">tue::math::select</a> (T condition, U value, U otherwise) noexcept</td></tr>
+<tr class="memdesc:ga1a96c8ff403bbeabbf0e81290991c5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a return value based on <code>condition</code>.  <a href="group__math__hpp.html#ga1a96c8ff403bbeabbf0e81290991c5a3">More...</a><br /></td></tr>
+<tr class="separator:ga1a96c8ff403bbeabbf0e81290991c5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32a7a316fd828798c07c04ce99f9ed5d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga32a7a316fd828798c07c04ce99f9ed5d"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga32a7a316fd828798c07c04ce99f9ed5d">tue::math::less</a> (T lhs, T rhs) noexcept</td></tr>
+<tr class="memdesc:ga32a7a316fd828798c07c04ce99f9ed5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is less than <code>rhs</code>.  <a href="group__math__hpp.html#ga32a7a316fd828798c07c04ce99f9ed5d">More...</a><br /></td></tr>
+<tr class="separator:ga32a7a316fd828798c07c04ce99f9ed5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fbcec6cab0b38e61390db41372b22ca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga8fbcec6cab0b38e61390db41372b22ca"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga8fbcec6cab0b38e61390db41372b22ca">tue::math::less_equal</a> (T lhs, T rhs) noexcept</td></tr>
+<tr class="memdesc:ga8fbcec6cab0b38e61390db41372b22ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is less than or equal to <code>rhs</code>.  <a href="group__math__hpp.html#ga8fbcec6cab0b38e61390db41372b22ca">More...</a><br /></td></tr>
+<tr class="separator:ga8fbcec6cab0b38e61390db41372b22ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga474f1c4b7fe7276d01a0e5e0bf61ebf4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga474f1c4b7fe7276d01a0e5e0bf61ebf4"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga474f1c4b7fe7276d01a0e5e0bf61ebf4">tue::math::greater</a> (T lhs, T rhs) noexcept</td></tr>
+<tr class="memdesc:ga474f1c4b7fe7276d01a0e5e0bf61ebf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is greater than <code>rhs</code>.  <a href="group__math__hpp.html#ga474f1c4b7fe7276d01a0e5e0bf61ebf4">More...</a><br /></td></tr>
+<tr class="separator:ga474f1c4b7fe7276d01a0e5e0bf61ebf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga732a86e1ac2d82ee1a7bb4c8a67ac3a7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga732a86e1ac2d82ee1a7bb4c8a67ac3a7"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga732a86e1ac2d82ee1a7bb4c8a67ac3a7">tue::math::greater_equal</a> (T lhs, T rhs) noexcept</td></tr>
+<tr class="memdesc:ga732a86e1ac2d82ee1a7bb4c8a67ac3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is greater than or equal to <code>rhs</code>.  <a href="group__math__hpp.html#ga732a86e1ac2d82ee1a7bb4c8a67ac3a7">More...</a><br /></td></tr>
+<tr class="separator:ga732a86e1ac2d82ee1a7bb4c8a67ac3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8023dc6204067afe679b91e493e9e0c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac8023dc6204067afe679b91e493e9e0c"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value||is_sized_bool&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gac8023dc6204067afe679b91e493e9e0c">tue::math::equal</a> (T lhs, T rhs) noexcept</td></tr>
+<tr class="memdesc:gac8023dc6204067afe679b91e493e9e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is equal to <code>rhs</code>.  <a href="group__math__hpp.html#gac8023dc6204067afe679b91e493e9e0c">More...</a><br /></td></tr>
+<tr class="separator:gac8023dc6204067afe679b91e493e9e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9e67289c7c002cd1ae87c1d462a8bfd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac9e67289c7c002cd1ae87c1d462a8bfd"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value||is_sized_bool&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gac9e67289c7c002cd1ae87c1d462a8bfd">tue::math::not_equal</a> (T lhs, T rhs) noexcept</td></tr>
+<tr class="memdesc:gac9e67289c7c002cd1ae87c1d462a8bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is not equal to <code>rhs</code>.  <a href="group__math__hpp.html#gac9e67289c7c002cd1ae87c1d462a8bfd">More...</a><br /></td></tr>
+<tr class="separator:gac9e67289c7c002cd1ae87c1d462a8bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Global math functions for arithmetic types. </p>
@@ -1135,32 +1139,26 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaf61aa4d8f42ef2e7929a684caed498f8"></a>
+<a class="anchor" id="ga1d75c8a8ffd91445fac4d8c983e911c7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename U &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T tue::math::select </td>
+          <td class="memname">std::enable_if_t&lt; is_sized_bool&lt;T&gt;::value &amp;&amp; (std::is_arithmetic&lt;U&gt;::value || is_sized_bool&lt;U&gt;::value) &amp;&amp; sizeof(U) == sizeof(T), U&gt; tue::math::select </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>condition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>otherwise</em> = <code>T(0)</code>&#160;</td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1178,7 +1176,67 @@ template&lt;typename T &gt; </div>
 <p>Selects a return value based on <code>condition</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The return type.</td></tr>
+    <tr><td class="paramname">T</td><td>The condition type. </td></tr>
+    <tr><td class="paramname">U</td><td>The return type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condition</td><td>The condition. </td></tr>
+    <tr><td class="paramname">value</td><td>The return value when condition is <code>true</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>value</code> or <code>0</code> depending on <code>condition</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1a96c8ff403bbeabbf0e81290991c5a3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt; is_sized_bool&lt;T&gt;::value &amp;&amp; (std::is_arithmetic&lt;U&gt;::value || is_sized_bool&lt;U&gt;::value) &amp;&amp; sizeof(U) == sizeof(T), U&gt; tue::math::select </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>condition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>otherwise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects a return value based on <code>condition</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The condition type. </td></tr>
+    <tr><td class="paramname">U</td><td>The return type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1194,17 +1252,17 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gac9725b7ea82a857615093ecc0e4707d3"></a>
+<a class="anchor" id="ga32a7a316fd828798c07c04ce99f9ed5d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value &amp;&amp; std::is_arithmetic&lt;U&gt;::value, bool&gt; tue::math::less </td>
+          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value, sized_bool_t&lt;sizeof(T)&gt; &gt; tue::math::less </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1212,7 +1270,7 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1231,8 +1289,7 @@ template&lt;typename T , typename U &gt; </div>
 <p>Computes whether or not <code>lhs</code> is less than <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The type of parameter <code>rhs</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of parameters <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1243,21 +1300,21 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>lhs</code> is less than <code>rhs</code> and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>trueX</code> if <code>lhs</code> is less than <code>rhs</code> and <code>falseX</code> otherwise (where <code>X</code> is the number of bits in <code>T</code>). </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga22b1d4b4b92fa2c6c78e1ad767c978e4"></a>
+<a class="anchor" id="ga8fbcec6cab0b38e61390db41372b22ca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value &amp;&amp; std::is_arithmetic&lt;U&gt;::value, bool&gt; tue::math::less_equal </td>
+          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value, sized_bool_t&lt;sizeof(T)&gt; &gt; tue::math::less_equal </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1265,7 +1322,7 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1284,8 +1341,7 @@ template&lt;typename T , typename U &gt; </div>
 <p>Computes whether or not <code>lhs</code> is less than or equal to <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The type of parameter <code>rhs</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of parameters <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1296,21 +1352,21 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>lhs</code> is less than or equal to <code>rhs</code> and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>trueX</code> if <code>lhs</code> is less than or equal to <code>rhs</code> and <code>falseX</code> otherwise (where <code>X</code> is the number of bits in <code>T</code>). </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gafe8b56be5aed77036523b68d57c0fdb8"></a>
+<a class="anchor" id="ga474f1c4b7fe7276d01a0e5e0bf61ebf4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value &amp;&amp; std::is_arithmetic&lt;U&gt;::value, bool&gt; tue::math::greater </td>
+          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value, sized_bool_t&lt;sizeof(T)&gt; &gt; tue::math::greater </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1318,7 +1374,7 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1337,8 +1393,7 @@ template&lt;typename T , typename U &gt; </div>
 <p>Computes whether or not <code>lhs</code> is greater than <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The type of parameter <code>rhs</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of parameters <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1349,21 +1404,21 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>lhs</code> is greater than <code>rhs</code> and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>trueX</code> if <code>lhs</code> is greater than <code>rhs</code> and <code>falseX</code> otherwise (where <code>X</code> is the number of bits in <code>T</code>). </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gaa25fb5e10c9020a7c028a5954b729fe8"></a>
+<a class="anchor" id="ga732a86e1ac2d82ee1a7bb4c8a67ac3a7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value &amp;&amp; std::is_arithmetic&lt;U&gt;::value, bool&gt; tue::math::greater_equal </td>
+          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value, sized_bool_t&lt;sizeof(T)&gt; &gt; tue::math::greater_equal </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1371,7 +1426,7 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1390,8 +1445,7 @@ template&lt;typename T , typename U &gt; </div>
 <p>Computes whether or not <code>lhs</code> is greater than or equal to <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The type of parameter <code>rhs</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of parameters <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1402,21 +1456,21 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>lhs</code> is greater than or equal to <code>rhs</code> and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>trueX</code> if <code>lhs</code> is greater than or equal to <code>rhs</code> and <code>falseX</code> otherwise (where <code>X</code> is the number of bits in <code>T</code>). </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga4a9671dd8dcf66ef8c2ed9d9db6ebd96"></a>
+<a class="anchor" id="gac8023dc6204067afe679b91e493e9e0c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value &amp;&amp; std::is_arithmetic&lt;U&gt;::value, bool&gt; tue::math::equal </td>
+          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value || is_sized_bool&lt;T&gt;::value, sized_bool_t&lt;sizeof(T)&gt; &gt; tue::math::equal </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1424,7 +1478,7 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1443,8 +1497,7 @@ template&lt;typename T , typename U &gt; </div>
 <p>Computes whether or not <code>lhs</code> is equal to <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The type of parameter <code>rhs</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of parameters <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1455,21 +1508,21 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>lhs</code> is equal to <code>rhs</code> and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>trueX</code> if <code>lhs</code> is equal to <code>rhs</code> and <code>falseX</code> otherwise (where <code>X</code> is the number of bits in <code>T</code>). </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga479e361ad983eaa3575c092d815bbc4d"></a>
+<a class="anchor" id="gac9e67289c7c002cd1ae87c1d462a8bfd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value &amp;&amp; std::is_arithmetic&lt;U&gt;::value, bool&gt; tue::math::not_equal </td>
+          <td class="memname">constexpr std::enable_if_t&lt; std::is_arithmetic&lt;T&gt;::value || is_sized_bool&lt;T&gt;::value, sized_bool_t&lt;sizeof(T)&gt; &gt; tue::math::not_equal </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1477,7 +1530,7 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1496,8 +1549,7 @@ template&lt;typename T , typename U &gt; </div>
 <p>Computes whether or not <code>lhs</code> is not equal to <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>lhs</code>. </td></tr>
-    <tr><td class="paramname">U</td><td>The type of parameter <code>rhs</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of parameters <code>lhs</code> and <code>rhs</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1508,7 +1560,7 @@ template&lt;typename T , typename U &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>lhs</code> is not equal to <code>rhs</code> and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>trueX</code> if <code>lhs</code> is not equal to <code>rhs</code> and <code>falseX</code> otherwise (where <code>X</code> is the number of bits in <code>T</code>). </dd></dl>
 
 </div>
 </div>
