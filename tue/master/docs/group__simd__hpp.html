@@ -678,7 +678,7 @@ class tue::simd&lt; T, N &gt;</h3>
 <p><code>simd</code> has the same size requirements as <code>T[N]</code> and its alignment equals its size. It's accelerated by compiler and architecture-specific SIMD intrinsics where possible, but standards-compliant fallbacks are always available otherwise.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type. Must be a sized boolean type or an arithmetic type other than <code>bool</code>. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type. <code>is_simd_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
     <tr><td class="paramname">N</td><td>The component count. Must be 2, 4, 8, 16, 32, or 64. </td></tr>
   </table>
   </dd>

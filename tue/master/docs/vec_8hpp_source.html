@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">class </span><a class="code" href="group__vec__hpp.html#classtue_1_1vec">vec</a></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">struct </span>{ std::enable_if_t&lt;(N &gt;= 2 &amp;&amp; N &lt;= 4), T&gt; <a class="code" href="group__vec__hpp.html#a29bdc4aac460dc17a79b5b970f8ee1d6">data</a>[N]; } impl_;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">struct </span>{ std::enable_if_t&lt;(N &gt;= 2 &amp;&amp; N &lt;= 4), T[N]&gt; <a class="code" href="group__vec__hpp.html#a29bdc4aac460dc17a79b5b970f8ee1d6">data</a>; } impl_;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group__vec__hpp.html#a2b2e15201aea9f9a87be9dafd10ed004">  131</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="group__vec__hpp.html#a2b2e15201aea9f9a87be9dafd10ed004">component_type</a> = T;</div>
