@@ -77,8 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">&lt;tue/simd.hpp&gt;</div>  </div>
 </div><!--header-->
@@ -366,53 +365,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gro
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gac2206481c0ddcce59ee120ae2f7e8f77">tue::bool64x8</a> = simd8&lt; bool64 &gt;</td></tr>
 <tr class="memdesc:gac2206481c0ddcce59ee120ae2f7e8f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">An 8-component SIMD vector with <code>bool64</code> components. <br /></td></tr>
 <tr class="separator:gac2206481c0ddcce59ee120ae2f7e8f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c53b88a6df169c82e9d63a98de90a82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7c53b88a6df169c82e9d63a98de90a82"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga7c53b88a6df169c82e9d63a98de90a82">tue::simd&lt; T, N &gt;::component_type</a> = T</td></tr>
-<tr class="memdesc:ga7c53b88a6df169c82e9d63a98de90a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component type. <br /></td></tr>
-<tr class="separator:ga7c53b88a6df169c82e9d63a98de90a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga074028df497882a150d74b6ffc1a57e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga074028df497882a150d74b6ffc1a57e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga074028df497882a150d74b6ffc1a57e8">tue::simd&lt; T, N &gt;::simd</a> () noexcept=default</td></tr>
-<tr class="memdesc:ga074028df497882a150d74b6ffc1a57e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component. <br /></td></tr>
-<tr class="separator:ga074028df497882a150d74b6ffc1a57e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0343fced4319274798f0a2e05644410b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga0343fced4319274798f0a2e05644410b">tue::simd&lt; T, N &gt;::simd</a> (T x) noexcept</td></tr>
-<tr class="memdesc:ga0343fced4319274798f0a2e05644410b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the same value.  <a href="#ga0343fced4319274798f0a2e05644410b">More...</a><br /></td></tr>
-<tr class="separator:ga0343fced4319274798f0a2e05644410b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 2&gt;&gt; </td></tr>
-<tr class="memitem:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gafd4536fc0f1b3f45bf2a49c5c0efdbc5">tue::simd&lt; T, N &gt;::simd</a> (T x, T y) noexcept</td></tr>
-<tr class="memdesc:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#gafd4536fc0f1b3f45bf2a49c5c0efdbc5">More...</a><br /></td></tr>
-<tr class="separator:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 4&gt;&gt; </td></tr>
-<tr class="memitem:gab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gab9fdb83de5b506c62c311334bd90b6ba">tue::simd&lt; T, N &gt;::simd</a> (T x, T y, T z, T w) noexcept</td></tr>
-<tr class="memdesc:gab9fdb83de5b506c62c311334bd90b6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#gab9fdb83de5b506c62c311334bd90b6ba">More...</a><br /></td></tr>
-<tr class="separator:gab9fdb83de5b506c62c311334bd90b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39db50138e0d4e2b726825b2460660ac"><td class="memTemplParams" colspan="2">template&lt;typename U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T)&gt;&gt; </td></tr>
-<tr class="memitem:ga39db50138e0d4e2b726825b2460660ac"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga39db50138e0d4e2b726825b2460660ac">tue::simd&lt; T, N &gt;::simd</a> (const simd&lt; U, N &gt; &amp;s) noexcept</td></tr>
-<tr class="memdesc:ga39db50138e0d4e2b726825b2460660ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly casts another <code>simd</code> to a new component type.  <a href="#ga39db50138e0d4e2b726825b2460660ac">More...</a><br /></td></tr>
-<tr class="separator:ga39db50138e0d4e2b726825b2460660ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c8862176d9e1afc87c561dd8d20b78b"><td class="memItemLeft" align="right" valign="top">static simd&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga3c8862176d9e1afc87c561dd8d20b78b">tue::simd&lt; T, N &gt;::zero</a> () noexcept</td></tr>
-<tr class="memdesc:ga3c8862176d9e1afc87c561dd8d20b78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <code>simd</code> with each component set to <code>0</code>.  <a href="#ga3c8862176d9e1afc87c561dd8d20b78b">More...</a><br /></td></tr>
-<tr class="separator:ga3c8862176d9e1afc87c561dd8d20b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90583ff4738f0a70ef5f7abb13fc5526"><td class="memItemLeft" align="right" valign="top">static simd&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga90583ff4738f0a70ef5f7abb13fc5526">tue::simd&lt; T, N &gt;::load</a> (const T *data) noexcept</td></tr>
-<tr class="memdesc:ga90583ff4738f0a70ef5f7abb13fc5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given aligned component array into a new <code>simd</code>.  <a href="#ga90583ff4738f0a70ef5f7abb13fc5526">More...</a><br /></td></tr>
-<tr class="separator:ga90583ff4738f0a70ef5f7abb13fc5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79ba351337690784ae27070029a62759"><td class="memItemLeft" align="right" valign="top">static simd&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga79ba351337690784ae27070029a62759">tue::simd&lt; T, N &gt;::loadu</a> (const T *data) noexcept</td></tr>
-<tr class="memdesc:ga79ba351337690784ae27070029a62759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given unaligned component array into a new <code>simd</code>.  <a href="#ga79ba351337690784ae27070029a62759">More...</a><br /></td></tr>
-<tr class="separator:ga79ba351337690784ae27070029a62759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga0eed6f0239c5681c4bdd572d0cc3e15b">tue::simd&lt; T, N &gt;::store</a> (T *data) const  noexcept</td></tr>
-<tr class="memdesc:ga0eed6f0239c5681c4bdd572d0cc3e15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given aligned component array.  <a href="#ga0eed6f0239c5681c4bdd572d0cc3e15b">More...</a><br /></td></tr>
-<tr class="separator:ga0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7d04ebc42d160b8896c60208879feae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gad7d04ebc42d160b8896c60208879feae">tue::simd&lt; T, N &gt;::storeu</a> (T *data) const  noexcept</td></tr>
-<tr class="memdesc:gad7d04ebc42d160b8896c60208879feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given unaligned component array.  <a href="#gad7d04ebc42d160b8896c60208879feae">More...</a><br /></td></tr>
-<tr class="separator:gad7d04ebc42d160b8896c60208879feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95f3b36d20aae79d94b44a34e1739c51"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">tue::simd&lt; T, N &gt;::data</a> () const  noexcept</td></tr>
-<tr class="memdesc:ga95f3b36d20aae79d94b44a34e1739c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="#ga95f3b36d20aae79d94b44a34e1739c51">More...</a><br /></td></tr>
-<tr class="separator:ga95f3b36d20aae79d94b44a34e1739c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f86ec2af366d90937cde8b9f4b4d323"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga9f86ec2af366d90937cde8b9f4b4d323">tue::simd&lt; T, N &gt;::data</a> () noexcept</td></tr>
-<tr class="memdesc:ga9f86ec2af366d90937cde8b9f4b4d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="#ga9f86ec2af366d90937cde8b9f4b4d323">More...</a><br /></td></tr>
-<tr class="separator:ga9f86ec2af366d90937cde8b9f4b4d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga4fdfd5caa7be2aead53f4a0c061b49ab">tue::operator+</a> (const simd&lt; T, N &gt; &amp;s) noexcept</td></tr>
 <tr class="memdesc:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the unary plus of each component of <code>s</code>.  <a href="group__simd__hpp.html#ga4fdfd5caa7be2aead53f4a0c061b49ab">More...</a><br /></td></tr>
@@ -609,17 +564,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga5514ee5f814e24ab181b2c87d82ab8e3">tue::math::not_equal</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::not_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga5514ee5f814e24ab181b2c87d82ab8e3">More...</a><br /></td></tr>
 <tr class="separator:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga49f5df5b6540d0e4080ff2e10fbf8c6b"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga49f5df5b6540d0e4080ff2e10fbf8c6b">tue::simd&lt; T, N &gt;::component_count</a> = N</td></tr>
-<tr class="memdesc:ga49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component count. <br /></td></tr>
-<tr class="separator:ga49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa43c60f245c2dd5c6bf3a6fa3cdb5057"></a>
-static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gaa43c60f245c2dd5c6bf3a6fa3cdb5057">tue::simd&lt; T, N &gt;::is_accelerated</a> = false</td></tr>
-<tr class="memdesc:gaa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this type is accelerated by SIMD intrinsics. <br /></td></tr>
-<tr class="separator:gaa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The <code>simd</code> class template and its associated utility classes and functions. </p>
@@ -685,62 +629,476 @@ class tue::simd&lt; T, N &gt;</h3>
 </dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
-<tr class="memitem:ga7c53b88a6df169c82e9d63a98de90a82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7c53b88a6df169c82e9d63a98de90a82"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga7c53b88a6df169c82e9d63a98de90a82">component_type</a> = T</td></tr>
-<tr class="memdesc:ga7c53b88a6df169c82e9d63a98de90a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component type. <br /></td></tr>
-<tr class="separator:ga7c53b88a6df169c82e9d63a98de90a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c53b88a6df169c82e9d63a98de90a82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c53b88a6df169c82e9d63a98de90a82"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a7c53b88a6df169c82e9d63a98de90a82">component_type</a> = T</td></tr>
+<tr class="memdesc:a7c53b88a6df169c82e9d63a98de90a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component type. <br /></td></tr>
+<tr class="separator:a7c53b88a6df169c82e9d63a98de90a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
-<tr class="memitem:ga074028df497882a150d74b6ffc1a57e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga074028df497882a150d74b6ffc1a57e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga074028df497882a150d74b6ffc1a57e8">simd</a> () noexcept=default</td></tr>
-<tr class="memdesc:ga074028df497882a150d74b6ffc1a57e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component. <br /></td></tr>
-<tr class="separator:ga074028df497882a150d74b6ffc1a57e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0343fced4319274798f0a2e05644410b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga0343fced4319274798f0a2e05644410b">simd</a> (T x) noexcept</td></tr>
-<tr class="memdesc:ga0343fced4319274798f0a2e05644410b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the same value.  <a href="group__simd__hpp.html#ga0343fced4319274798f0a2e05644410b">More...</a><br /></td></tr>
-<tr class="separator:ga0343fced4319274798f0a2e05644410b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 2&gt;&gt; </td></tr>
-<tr class="memitem:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gafd4536fc0f1b3f45bf2a49c5c0efdbc5">simd</a> (T x, T y) noexcept</td></tr>
-<tr class="memdesc:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="group__simd__hpp.html#gafd4536fc0f1b3f45bf2a49c5c0efdbc5">More...</a><br /></td></tr>
-<tr class="separator:gafd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 4&gt;&gt; </td></tr>
-<tr class="memitem:gab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gab9fdb83de5b506c62c311334bd90b6ba">simd</a> (T x, T y, T z, T w) noexcept</td></tr>
-<tr class="memdesc:gab9fdb83de5b506c62c311334bd90b6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="group__simd__hpp.html#gab9fdb83de5b506c62c311334bd90b6ba">More...</a><br /></td></tr>
-<tr class="separator:gab9fdb83de5b506c62c311334bd90b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39db50138e0d4e2b726825b2460660ac"><td class="memTemplParams" colspan="2">template&lt;typename U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T)&gt;&gt; </td></tr>
-<tr class="memitem:ga39db50138e0d4e2b726825b2460660ac"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga39db50138e0d4e2b726825b2460660ac">simd</a> (const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; U, N &gt; &amp;s) noexcept</td></tr>
-<tr class="memdesc:ga39db50138e0d4e2b726825b2460660ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly casts another <code>simd</code> to a new component type.  <a href="group__simd__hpp.html#ga39db50138e0d4e2b726825b2460660ac">More...</a><br /></td></tr>
-<tr class="separator:ga39db50138e0d4e2b726825b2460660ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga0eed6f0239c5681c4bdd572d0cc3e15b">store</a> (T *<a class="el" href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">data</a>) const  noexcept</td></tr>
-<tr class="memdesc:ga0eed6f0239c5681c4bdd572d0cc3e15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given aligned component array.  <a href="group__simd__hpp.html#ga0eed6f0239c5681c4bdd572d0cc3e15b">More...</a><br /></td></tr>
-<tr class="separator:ga0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7d04ebc42d160b8896c60208879feae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gad7d04ebc42d160b8896c60208879feae">storeu</a> (T *<a class="el" href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">data</a>) const  noexcept</td></tr>
-<tr class="memdesc:gad7d04ebc42d160b8896c60208879feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given unaligned component array.  <a href="group__simd__hpp.html#gad7d04ebc42d160b8896c60208879feae">More...</a><br /></td></tr>
-<tr class="separator:gad7d04ebc42d160b8896c60208879feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95f3b36d20aae79d94b44a34e1739c51"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">data</a> () const  noexcept</td></tr>
-<tr class="memdesc:ga95f3b36d20aae79d94b44a34e1739c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">More...</a><br /></td></tr>
-<tr class="separator:ga95f3b36d20aae79d94b44a34e1739c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f86ec2af366d90937cde8b9f4b4d323"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga9f86ec2af366d90937cde8b9f4b4d323">data</a> () noexcept</td></tr>
-<tr class="memdesc:ga9f86ec2af366d90937cde8b9f4b4d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="group__simd__hpp.html#ga9f86ec2af366d90937cde8b9f4b4d323">More...</a><br /></td></tr>
-<tr class="separator:ga9f86ec2af366d90937cde8b9f4b4d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074028df497882a150d74b6ffc1a57e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a074028df497882a150d74b6ffc1a57e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a074028df497882a150d74b6ffc1a57e8">simd</a> () noexcept=default</td></tr>
+<tr class="memdesc:a074028df497882a150d74b6ffc1a57e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component. <br /></td></tr>
+<tr class="separator:a074028df497882a150d74b6ffc1a57e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0343fced4319274798f0a2e05644410b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a0343fced4319274798f0a2e05644410b">simd</a> (T x) noexcept</td></tr>
+<tr class="memdesc:a0343fced4319274798f0a2e05644410b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the same value.  <a href="#a0343fced4319274798f0a2e05644410b">More...</a><br /></td></tr>
+<tr class="separator:a0343fced4319274798f0a2e05644410b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 2&gt;&gt; </td></tr>
+<tr class="memitem:afd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#afd4536fc0f1b3f45bf2a49c5c0efdbc5">simd</a> (T x, T y) noexcept</td></tr>
+<tr class="memdesc:afd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#afd4536fc0f1b3f45bf2a49c5c0efdbc5">More...</a><br /></td></tr>
+<tr class="separator:afd4536fc0f1b3f45bf2a49c5c0efdbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 4&gt;&gt; </td></tr>
+<tr class="memitem:ab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ab9fdb83de5b506c62c311334bd90b6ba">simd</a> (T x, T y, T z, T w) noexcept</td></tr>
+<tr class="memdesc:ab9fdb83de5b506c62c311334bd90b6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#ab9fdb83de5b506c62c311334bd90b6ba">More...</a><br /></td></tr>
+<tr class="separator:ab9fdb83de5b506c62c311334bd90b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39db50138e0d4e2b726825b2460660ac"><td class="memTemplParams" colspan="2">template&lt;typename U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T)&gt;&gt; </td></tr>
+<tr class="memitem:a39db50138e0d4e2b726825b2460660ac"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a39db50138e0d4e2b726825b2460660ac">simd</a> (const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; U, N &gt; &amp;s) noexcept</td></tr>
+<tr class="memdesc:a39db50138e0d4e2b726825b2460660ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly casts another <code>simd</code> to a new component type.  <a href="#a39db50138e0d4e2b726825b2460660ac">More...</a><br /></td></tr>
+<tr class="separator:a39db50138e0d4e2b726825b2460660ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a0eed6f0239c5681c4bdd572d0cc3e15b">store</a> (T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) const  noexcept</td></tr>
+<tr class="memdesc:a0eed6f0239c5681c4bdd572d0cc3e15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given aligned component array.  <a href="#a0eed6f0239c5681c4bdd572d0cc3e15b">More...</a><br /></td></tr>
+<tr class="separator:a0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d04ebc42d160b8896c60208879feae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ad7d04ebc42d160b8896c60208879feae">storeu</a> (T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) const  noexcept</td></tr>
+<tr class="memdesc:ad7d04ebc42d160b8896c60208879feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given unaligned component array.  <a href="#ad7d04ebc42d160b8896c60208879feae">More...</a><br /></td></tr>
+<tr class="separator:ad7d04ebc42d160b8896c60208879feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f3b36d20aae79d94b44a34e1739c51"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a> () const  noexcept</td></tr>
+<tr class="memdesc:a95f3b36d20aae79d94b44a34e1739c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="#a95f3b36d20aae79d94b44a34e1739c51">More...</a><br /></td></tr>
+<tr class="separator:a95f3b36d20aae79d94b44a34e1739c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f86ec2af366d90937cde8b9f4b4d323"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a9f86ec2af366d90937cde8b9f4b4d323">data</a> () noexcept</td></tr>
+<tr class="memdesc:a9f86ec2af366d90937cde8b9f4b4d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="#a9f86ec2af366d90937cde8b9f4b4d323">More...</a><br /></td></tr>
+<tr class="separator:a9f86ec2af366d90937cde8b9f4b4d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:ga3c8862176d9e1afc87c561dd8d20b78b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga3c8862176d9e1afc87c561dd8d20b78b">zero</a> () noexcept</td></tr>
-<tr class="memdesc:ga3c8862176d9e1afc87c561dd8d20b78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <code>simd</code> with each component set to <code>0</code>.  <a href="group__simd__hpp.html#ga3c8862176d9e1afc87c561dd8d20b78b">More...</a><br /></td></tr>
-<tr class="separator:ga3c8862176d9e1afc87c561dd8d20b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90583ff4738f0a70ef5f7abb13fc5526"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga90583ff4738f0a70ef5f7abb13fc5526">load</a> (const T *<a class="el" href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
-<tr class="memdesc:ga90583ff4738f0a70ef5f7abb13fc5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given aligned component array into a new <code>simd</code>.  <a href="group__simd__hpp.html#ga90583ff4738f0a70ef5f7abb13fc5526">More...</a><br /></td></tr>
-<tr class="separator:ga90583ff4738f0a70ef5f7abb13fc5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79ba351337690784ae27070029a62759"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga79ba351337690784ae27070029a62759">loadu</a> (const T *<a class="el" href="group__simd__hpp.html#ga95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
-<tr class="memdesc:ga79ba351337690784ae27070029a62759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given unaligned component array into a new <code>simd</code>.  <a href="group__simd__hpp.html#ga79ba351337690784ae27070029a62759">More...</a><br /></td></tr>
-<tr class="separator:ga79ba351337690784ae27070029a62759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8862176d9e1afc87c561dd8d20b78b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a3c8862176d9e1afc87c561dd8d20b78b">zero</a> () noexcept</td></tr>
+<tr class="memdesc:a3c8862176d9e1afc87c561dd8d20b78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <code>simd</code> with each component set to <code>0</code>.  <a href="#a3c8862176d9e1afc87c561dd8d20b78b">More...</a><br /></td></tr>
+<tr class="separator:a3c8862176d9e1afc87c561dd8d20b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90583ff4738f0a70ef5f7abb13fc5526"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a90583ff4738f0a70ef5f7abb13fc5526">load</a> (const T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
+<tr class="memdesc:a90583ff4738f0a70ef5f7abb13fc5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given aligned component array into a new <code>simd</code>.  <a href="#a90583ff4738f0a70ef5f7abb13fc5526">More...</a><br /></td></tr>
+<tr class="separator:a90583ff4738f0a70ef5f7abb13fc5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ba351337690784ae27070029a62759"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a79ba351337690784ae27070029a62759">loadu</a> (const T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
+<tr class="memdesc:a79ba351337690784ae27070029a62759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given unaligned component array into a new <code>simd</code>.  <a href="#a79ba351337690784ae27070029a62759">More...</a><br /></td></tr>
+<tr class="separator:a79ba351337690784ae27070029a62759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
-<tr class="memitem:ga49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga49f5df5b6540d0e4080ff2e10fbf8c6b"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga49f5df5b6540d0e4080ff2e10fbf8c6b">component_count</a> = N</td></tr>
-<tr class="memdesc:ga49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component count. <br /></td></tr>
-<tr class="separator:ga49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa43c60f245c2dd5c6bf3a6fa3cdb5057"></a>
-static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gaa43c60f245c2dd5c6bf3a6fa3cdb5057">is_accelerated</a> = false</td></tr>
-<tr class="memdesc:gaa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this type is accelerated by SIMD intrinsics. <br /></td></tr>
-<tr class="separator:gaa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49f5df5b6540d0e4080ff2e10fbf8c6b"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a49f5df5b6540d0e4080ff2e10fbf8c6b">component_count</a> = N</td></tr>
+<tr class="memdesc:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component count. <br /></td></tr>
+<tr class="separator:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa43c60f245c2dd5c6bf3a6fa3cdb5057"></a>
+static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#aa43c60f245c2dd5c6bf3a6fa3cdb5057">is_accelerated</a> = false</td></tr>
+<tr class="memdesc:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this type is accelerated by SIMD intrinsics. <br /></td></tr>
+<tr class="separator:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
+<a class="anchor" id="a0343fced4319274798f0a2e05644410b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::<a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs each component with the same value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The value to construct each component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afd4536fc0f1b3f45bf2a49c5c0efdbc5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<div class="memtemplate">
+template&lt;int M = N, typename  = std::enable_if_t&lt;M == 2&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::<a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs each component with the value of the corresponding argument. </p>
+<p>This overload is only available when <code>N</code> equals <code>2</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The value to construct the first component with. </td></tr>
+    <tr><td class="paramname">y</td><td>The value to construct the second component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9fdb83de5b506c62c311334bd90b6ba"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<div class="memtemplate">
+template&lt;int M = N, typename  = std::enable_if_t&lt;M == 4&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::<a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs each component with the value of the corresponding argument. </p>
+<p>This overload is only available when <code>N</code> equals <code>4</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The value to construct the first component with. </td></tr>
+    <tr><td class="paramname">y</td><td>The value to construct the second component with. </td></tr>
+    <tr><td class="paramname">z</td><td>The value to construct the third component with. </td></tr>
+    <tr><td class="paramname">w</td><td>The value to construct the fourth component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a39db50138e0d4e2b726825b2460660ac"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<div class="memtemplate">
+template&lt;typename U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T)&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::<a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; U, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Explicitly casts another <code>simd</code> to a new component type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>The component type of <code>s</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The <code>simd</code> to cast from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h4 class="groupheader">Member Function Documentation</h4>
+<a class="anchor" id="a3c8862176d9e1afc87c561dd8d20b78b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt;T, N&gt; <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::zero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an <code>simd</code> with each component set to <code>0</code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>An <code>simd</code> with each component set to <code>0</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90583ff4738f0a70ef5f7abb13fc5526"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt;T, N&gt; <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::load </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the given aligned component array into a new <code>simd</code>. </p>
+<p>The source array must have the same alignment as this <code>simd</code> type. If the source array null, unaligned, or doesn't contain at least <code>N</code> components, behavior is undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The source component array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new <code>simd</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a79ba351337690784ae27070029a62759"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt;T, N&gt; <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::loadu </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the given unaligned component array into a new <code>simd</code>. </p>
+<p>If the source array is null or doesn't contain at least <code>N</code> components, behavior is undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The source component array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new <code>simd</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0eed6f0239c5681c4bdd572d0cc3e15b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::store </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store's this <code>simd</code>'s underlying component array in the given aligned component array. </p>
+<p>The destination array must have the same alignment as this <code>simd</code> type. If the destination array is null, unaligned, or doesn't contain room for all <code>N</code> components, behavior is undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The destination component array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7d04ebc42d160b8896c60208879feae"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::storeu </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store's this <code>simd</code>'s underlying component array in the given unaligned component array. </p>
+<p>If the destination array is null or doesn't contain room for all <code>N</code> components, behavior is undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The destination component array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a95f3b36d20aae79d94b44a34e1739c51"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T* <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to this <code>simd</code>'s underlying component array. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to this <code>simd</code>'s underlying component array. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9f86ec2af366d90937cde8b9f4b4d323"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to this <code>simd</code>'s underlying component array. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to this <code>simd</code>'s underlying component array. </dd></dl>
+
+</div>
+</div>
 
 </div>
 </div>
@@ -878,418 +1236,6 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga0343fced4319274798f0a2e05644410b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::simd </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs each component with the same value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to construct each component with. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gafd4536fc0f1b3f45bf2a49c5c0efdbc5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<div class="memtemplate">
-template&lt;int M = N, typename  = std::enable_if_t&lt;M == 2&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::simd </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs each component with the value of the corresponding argument. </p>
-<p>This overload is only available when <code>N</code> equals <code>2</code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to construct the first component with. </td></tr>
-    <tr><td class="paramname">y</td><td>The value to construct the second component with. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gab9fdb83de5b506c62c311334bd90b6ba"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<div class="memtemplate">
-template&lt;int M = N, typename  = std::enable_if_t&lt;M == 4&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::simd </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>w</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs each component with the value of the corresponding argument. </p>
-<p>This overload is only available when <code>N</code> equals <code>4</code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to construct the first component with. </td></tr>
-    <tr><td class="paramname">y</td><td>The value to construct the second component with. </td></tr>
-    <tr><td class="paramname">z</td><td>The value to construct the third component with. </td></tr>
-    <tr><td class="paramname">w</td><td>The value to construct the fourth component with. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga39db50138e0d4e2b726825b2460660ac"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<div class="memtemplate">
-template&lt;typename U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T)&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::simd </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; U, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Explicitly casts another <code>simd</code> to a new component type. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">U</td><td>The component type of <code>s</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>The <code>simd</code> to cast from. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga3c8862176d9e1afc87c561dd8d20b78b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static simd&lt;T, N&gt; <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::zero </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an <code>simd</code> with each component set to <code>0</code>. </p>
-<dl class="section return"><dt>Returns</dt><dd>An <code>simd</code> with each component set to <code>0</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga90583ff4738f0a70ef5f7abb13fc5526"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static simd&lt;T, N&gt; <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::load </td>
-          <td>(</td>
-          <td class="paramtype">const T *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loads the given aligned component array into a new <code>simd</code>. </p>
-<p>The source array must have the same alignment as this <code>simd</code> type. If the source array null, unaligned, or doesn't contain at least <code>N</code> components, behavior is undefined.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The source component array. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new <code>simd</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga79ba351337690784ae27070029a62759"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static simd&lt;T, N&gt; <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::loadu </td>
-          <td>(</td>
-          <td class="paramtype">const T *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loads the given unaligned component array into a new <code>simd</code>. </p>
-<p>If the source array is null or doesn't contain at least <code>N</code> components, behavior is undefined.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The source component array. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new <code>simd</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga0eed6f0239c5681c4bdd572d0cc3e15b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::store </td>
-          <td>(</td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Store's this <code>simd</code>'s underlying component array in the given aligned component array. </p>
-<p>The destination array must have the same alignment as this <code>simd</code> type. If the destination array is null, unaligned, or doesn't contain room for all <code>N</code> components, behavior is undefined.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The destination component array. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gad7d04ebc42d160b8896c60208879feae"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::storeu </td>
-          <td>(</td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Store's this <code>simd</code>'s underlying component array in the given unaligned component array. </p>
-<p>If the destination array is null or doesn't contain room for all <code>N</code> components, behavior is undefined.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The destination component array. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga95f3b36d20aae79d94b44a34e1739c51"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T* <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::data </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to this <code>simd</code>'s underlying component array. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to this <code>simd</code>'s underlying component array. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga9f86ec2af366d90937cde8b9f4b4d323"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T* <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::data </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to this <code>simd</code>'s underlying component array. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to this <code>simd</code>'s underlying component array. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga4fdfd5caa7be2aead53f4a0c061b49ab"></a>
 <div class="memitem">
 <div class="memproto">

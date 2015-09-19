@@ -100,14 +100,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">inline</span> constexpr std::enable_if_t&lt;std::is_same&lt;T, U&gt;::value, <span class="keyword">const</span> T&amp;&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">nocopy_cast</a>(<span class="keyword">const</span> U&amp; x) noexcept</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        nocopy_cast(<span class="keyword">const</span> U&amp; x) noexcept</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">return</span> x;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">inline</span> constexpr std::enable_if_t&lt;!std::is_same&lt;T, U&gt;::value, T&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">nocopy_cast</a>(<span class="keyword">const</span> U&amp; x) noexcept</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        nocopy_cast(<span class="keyword">const</span> U&amp; x) noexcept</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(x);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
@@ -115,14 +115,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">inline</span> constexpr std::conditional_t&lt;std::is_same&lt;T, U&gt;::value, <span class="keyword">const</span> T&amp;, T&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">   51</a></span>&#160;    <a class="code" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">nocopy_cast</a>(<span class="keyword">const</span> U&amp; x) noexcept</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">   51</a></span>&#160;    nocopy_cast(<span class="keyword">const</span> U&amp; x) noexcept</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">tue::detail_::nocopy_cast</a>&lt;T, U&gt;(x);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> tue::detail_::nocopy_cast&lt;T, U&gt;(x);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> nocopy_cast(U&amp;&amp; x) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="ttc" id="namespacetue_html"><div class="ttname"><a href="namespacetue.html">tue</a></div><div class="ttdef"><b>Definition:</b> mat.hpp:17</div></div>
-<div class="ttc" id="group__nocopy__cast__hpp_html_ga527a1151661097e55f119a04d68071c6"><div class="ttname"><a href="group__nocopy__cast__hpp.html#ga527a1151661097e55f119a04d68071c6">tue::nocopy_cast</a></div><div class="ttdeci">constexpr std::conditional_t&lt; std::is_same&lt; T, U &gt;::value, const T &amp;, T &gt; nocopy_cast(const U &amp;x) noexcept</div><div class="ttdoc">Casts x to type T, avoiding a copy if possible. </div><div class="ttdef"><b>Definition:</b> nocopy_cast.hpp:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
