@@ -341,10 +341,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::max(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga7e3fbe4481c99a13a02cc438a12f4a70">tue::math::max</a> (const vec&lt; T, N &gt; &amp;v1, const vec&lt; T, N &gt; &amp;v2) noexcept</td></tr>
 <tr class="memdesc:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of components of <code>v1</code> and <code>v2</code>.  <a href="group__vec__hpp.html#ga7e3fbe4481c99a13a02cc438a12f4a70">More...</a><br /></td></tr>
 <tr class="separator:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15194f84eb2bf7116d16dd8598046979"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
-<tr class="memitem:ga15194f84eb2bf7116d16dd8598046979"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::select(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga15194f84eb2bf7116d16dd8598046979">tue::math::select</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values) noexcept</td></tr>
-<tr class="memdesc:ga15194f84eb2bf7116d16dd8598046979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>`.  <a href="group__vec__hpp.html#ga15194f84eb2bf7116d16dd8598046979">More...</a><br /></td></tr>
-<tr class="separator:ga15194f84eb2bf7116d16dd8598046979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2de9e308ed244412938394d01075d93b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
+<tr class="memitem:ga2de9e308ed244412938394d01075d93b"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::mask(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga2de9e308ed244412938394d01075d93b">tue::math::mask</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values) noexcept</td></tr>
+<tr class="memdesc:ga2de9e308ed244412938394d01075d93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::mask()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>`.  <a href="group__vec__hpp.html#ga2de9e308ed244412938394d01075d93b">More...</a><br /></td></tr>
+<tr class="separator:ga2de9e308ed244412938394d01075d93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
 <tr class="memitem:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::select(std::declval&lt; T &gt;), std::declval&lt; U &gt;), std::declval&lt; U &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga16c91ce767aaed8000283bb7b1ea63fa">tue::math::select</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values, const vec&lt; U, N &gt; &amp;otherwise) noexcept</td></tr>
 <tr class="memdesc:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of components from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__vec__hpp.html#ga16c91ce767aaed8000283bb7b1ea63fa">More...</a><br /></td></tr>
@@ -6836,7 +6836,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga15194f84eb2bf7116d16dd8598046979"></a>
+<a class="anchor" id="ga2de9e308ed244412938394d01075d93b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6846,7 +6846,7 @@ template&lt;typename T , typename U , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype( tue::math::select(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), N&gt; tue::math::select </td>
+          <td class="memname">vec&lt;decltype( tue::math::mask(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), N&gt; tue::math::mask </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -6870,7 +6870,7 @@ template&lt;typename T , typename U , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::select()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>`. </p>
+<p>Computes <code>tue::math::mask()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>`. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of <code>conditions</code>. </td></tr>
@@ -6886,7 +6886,7 @@ template&lt;typename T , typename U , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::select()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::mask()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>. </dd></dl>
 
 </div>
 </div>

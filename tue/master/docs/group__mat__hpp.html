@@ -403,10 +403,10 @@ template&lt;typename T , typename U , int TC, int TR, int UC, int UR&gt; </td></
 <tr class="memitem:ga26a1ed88b184940195f0092262f15abd"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::max(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga26a1ed88b184940195f0092262f15abd">tue::math::max</a> (const mat&lt; T, C, R &gt; &amp;m1, const mat&lt; T, C, R &gt; &amp;m2) noexcept</td></tr>
 <tr class="memdesc:ga26a1ed88b184940195f0092262f15abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of columns of <code>m1</code> and <code>m2</code>.  <a href="group__mat__hpp.html#ga26a1ed88b184940195f0092262f15abd">More...</a><br /></td></tr>
 <tr class="separator:ga26a1ed88b184940195f0092262f15abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58eac8d4ab78cfd1e89ac4201c089ef9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga58eac8d4ab78cfd1e89ac4201c089ef9"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::select(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga58eac8d4ab78cfd1e89ac4201c089ef9">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values) noexcept</td></tr>
-<tr class="memdesc:ga58eac8d4ab78cfd1e89ac4201c089ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>.  <a href="group__mat__hpp.html#ga58eac8d4ab78cfd1e89ac4201c089ef9">More...</a><br /></td></tr>
-<tr class="separator:ga58eac8d4ab78cfd1e89ac4201c089ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac404ef99da9b3e5fcfab379d7416714d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gac404ef99da9b3e5fcfab379d7416714d"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::mask(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gac404ef99da9b3e5fcfab379d7416714d">tue::math::mask</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values) noexcept</td></tr>
+<tr class="memdesc:gac404ef99da9b3e5fcfab379d7416714d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::mask()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>.  <a href="group__mat__hpp.html#gac404ef99da9b3e5fcfab379d7416714d">More...</a><br /></td></tr>
+<tr class="separator:gac404ef99da9b3e5fcfab379d7416714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa5a4e28902c3731918234b80b928ccf8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gaa5a4e28902c3731918234b80b928ccf8"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::select(std::declval&lt; T &gt;), std::declval&lt; U &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa5a4e28902c3731918234b80b928ccf8">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values, const mat&lt; U, C, R &gt; &amp;otherwise) noexcept</td></tr>
 <tr class="memdesc:gaa5a4e28902c3731918234b80b928ccf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of columns from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__mat__hpp.html#gaa5a4e28902c3731918234b80b928ccf8">More...</a><br /></td></tr>
@@ -5780,7 +5780,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga58eac8d4ab78cfd1e89ac4201c089ef9"></a>
+<a class="anchor" id="gac404ef99da9b3e5fcfab379d7416714d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5790,7 +5790,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype( tue::math::select(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::select </td>
+          <td class="memname">mat&lt;decltype( tue::math::mask(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::mask </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -5814,7 +5814,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::select()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>. </p>
+<p>Computes <code>tue::math::mask()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of <code>conditions</code>. </td></tr>
@@ -5831,7 +5831,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::select()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::mask()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>. </dd></dl>
 
 </div>
 </div>
