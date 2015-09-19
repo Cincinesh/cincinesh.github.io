@@ -393,10 +393,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="memTemplItemLeft" align="right" valign="top">decltype(tue::math::rsqrt(std::declval&lt; T &gt;()))&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga9d1eb4c46bebc4e81d55a18a0c0266b7">tue::math::rlength</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the reciprocal of the vector length of <code>v</code>.  <a href="group__vec__hpp.html#ga9d1eb4c46bebc4e81d55a18a0c0266b7">More...</a><br /></td></tr>
 <tr class="separator:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10b2c6b049472b4589505eede1402307"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga10b2c6b049472b4589505eede1402307"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::sqrt(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga10b2c6b049472b4589505eede1402307">tue::math::normalize</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga10b2c6b049472b4589505eede1402307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a normalized copy of <code>v</code>.  <a href="group__vec__hpp.html#ga10b2c6b049472b4589505eede1402307">More...</a><br /></td></tr>
-<tr class="separator:ga10b2c6b049472b4589505eede1402307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12cdd6fa062d9c996ac4736fcbec5411"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga12cdd6fa062d9c996ac4736fcbec5411"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::rsqrt(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga12cdd6fa062d9c996ac4736fcbec5411">tue::math::normalize</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:ga12cdd6fa062d9c996ac4736fcbec5411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a normalized copy of <code>v</code>.  <a href="group__vec__hpp.html#ga12cdd6fa062d9c996ac4736fcbec5411">More...</a><br /></td></tr>
+<tr class="separator:ga12cdd6fa062d9c996ac4736fcbec5411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The <code>vec</code> class template and its associate functions. </p>
@@ -7485,6 +7485,7 @@ template&lt;typename T , int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Computes the reciprocal of the vector length of <code>v</code>. </p>
+<p>If the vector length of <code>v</code> equals <code>0</code>, behavior is undefined.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of <code>v</code>. </td></tr>
@@ -7502,7 +7503,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga10b2c6b049472b4589505eede1402307"></a>
+<a class="anchor" id="ga12cdd6fa062d9c996ac4736fcbec5411"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -7512,7 +7513,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::sqrt(std::declval&lt;T&gt;))), N&gt; tue::math::normalize </td>
+          <td class="memname">vec&lt;decltype(tue::math::rsqrt(std::declval&lt;T&gt;))), N&gt; tue::math::normalize </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>

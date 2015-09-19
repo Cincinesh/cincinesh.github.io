@@ -510,6 +510,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Computes the reciprocal of <code>x</code>. </p>
+<p>If <code>x</code> equals <code>0</code>, behavior is undefined.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of parameter <code>x</code>. </td></tr>
@@ -593,7 +594,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Computes the reciprocal of the nonnegative square root of <code>x</code>. </p>
-<p>If <code>x</code> is negative, behavior is undefined.</p>
+<p>If <code>x &lt;= 0</code>, behavior is undefined.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of parameter <code>x</code>. </td></tr>

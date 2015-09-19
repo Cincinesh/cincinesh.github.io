@@ -113,13 +113,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> rangle = <a class="code" href="group__mat__hpp.html#ga877010d857778a44dd333a21048cd460">tue::math::rsqrt</a>(<a class="code" href="group__vec__hpp.html#ga2e01209d81cb2ec0b743d87561f8acde">length2</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> axis_x = <a class="code" href="group__mat__hpp.html#ga58eac8d4ab78cfd1e89ac4201c089ef9">tue::math::select</a>(</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                nzmask, x * rangle, T(0));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                nzmask, x * rangle);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> axis_y = <a class="code" href="group__mat__hpp.html#ga58eac8d4ab78cfd1e89ac4201c089ef9">tue::math::select</a>(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                nzmask, y * rangle, T(0));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                nzmask, y * rangle);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> axis_z = <a class="code" href="group__mat__hpp.html#ga58eac8d4ab78cfd1e89ac4201c089ef9">tue::math::select</a>(</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                nzmask, z * rangle, T(1));</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> angle = <a class="code" href="group__mat__hpp.html#ga58eac8d4ab78cfd1e89ac4201c089ef9">tue::math::select</a>(</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                nzmask, <a class="code" href="group__mat__hpp.html#ga1deff8b20e3645b4617d4cb404f4ad40">tue::math::recip</a>(rangle), T(0));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                nzmask, <a class="code" href="group__mat__hpp.html#ga1deff8b20e3645b4617d4cb404f4ad40">tue::math::recip</a>(rangle));</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> { axis_x, axis_y, axis_z, angle };</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
