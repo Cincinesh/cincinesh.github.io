@@ -134,14 +134,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga46699384882a38e79ea46f2896da95af"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_arithmetic_simd_component&lt; T &gt;::value, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga46699384882a38e79ea46f2896da95af">tue::math::max</a> (T x, T y) noexcept</td></tr>
 <tr class="memdesc:ga46699384882a38e79ea46f2896da95af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the maximum numeric value of the arguments.  <a href="group__math__hpp.html#ga46699384882a38e79ea46f2896da95af">More...</a><br /></td></tr>
 <tr class="separator:ga46699384882a38e79ea46f2896da95af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83a87721b91eeb0bca9605ff57aa9463"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:ga83a87721b91eeb0bca9605ff57aa9463"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;is_simd_component&lt; U &gt;::value &amp;&amp;sizeof(U)==sizeof(T), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga83a87721b91eeb0bca9605ff57aa9463">tue::math::mask</a> (T condition, U value) noexcept</td></tr>
-<tr class="memdesc:ga83a87721b91eeb0bca9605ff57aa9463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of <code>condition</code> and <code>value</code>.  <a href="group__math__hpp.html#ga83a87721b91eeb0bca9605ff57aa9463">More...</a><br /></td></tr>
-<tr class="separator:ga83a87721b91eeb0bca9605ff57aa9463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade2662bc806f7e1f23e01795f5528e17"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:gade2662bc806f7e1f23e01795f5528e17"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;is_simd_component&lt; U &gt;::value &amp;&amp;sizeof(U)==sizeof(T), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gade2662bc806f7e1f23e01795f5528e17">tue::math::select</a> (T condition, U value, U otherwise) noexcept</td></tr>
-<tr class="memdesc:gade2662bc806f7e1f23e01795f5528e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a return value based on <code>condition</code>.  <a href="group__math__hpp.html#gade2662bc806f7e1f23e01795f5528e17">More...</a><br /></td></tr>
-<tr class="separator:gade2662bc806f7e1f23e01795f5528e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcb2df895fa7ece43cda598b6c22431a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:gafcb2df895fa7ece43cda598b6c22431a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;is_simd_component&lt; U &gt;::value &amp;&amp;sizeof(T)==sizeof(U), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gafcb2df895fa7ece43cda598b6c22431a">tue::math::mask</a> (T condition, U value) noexcept</td></tr>
+<tr class="memdesc:gafcb2df895fa7ece43cda598b6c22431a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of <code>condition</code> and <code>value</code>.  <a href="group__math__hpp.html#gafcb2df895fa7ece43cda598b6c22431a">More...</a><br /></td></tr>
+<tr class="separator:gafcb2df895fa7ece43cda598b6c22431a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a795e7e4358a4f672bdfdf4edb5bc3e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:ga7a795e7e4358a4f672bdfdf4edb5bc3e"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;is_simd_component&lt; U &gt;::value &amp;&amp;sizeof(T)==sizeof(U), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga7a795e7e4358a4f672bdfdf4edb5bc3e">tue::math::select</a> (T condition, U value, U otherwise) noexcept</td></tr>
+<tr class="memdesc:ga7a795e7e4358a4f672bdfdf4edb5bc3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a return value based on <code>condition</code>.  <a href="group__math__hpp.html#ga7a795e7e4358a4f672bdfdf4edb5bc3e">More...</a><br /></td></tr>
+<tr class="separator:ga7a795e7e4358a4f672bdfdf4edb5bc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0d51cbf6213dfe602327040dbfd6225"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gad0d51cbf6213dfe602327040dbfd6225"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_arithmetic_simd_component&lt; T &gt;::value, sized_bool_t&lt; sizeof(T)&gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gad0d51cbf6213dfe602327040dbfd6225">tue::math::less</a> (T lhs, T rhs) noexcept</td></tr>
 <tr class="memdesc:gad0d51cbf6213dfe602327040dbfd6225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes whether or not <code>lhs</code> is less than <code>rhs</code>.  <a href="group__math__hpp.html#gad0d51cbf6213dfe602327040dbfd6225">More...</a><br /></td></tr>
@@ -716,7 +716,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga83a87721b91eeb0bca9605ff57aa9463"></a>
+<a class="anchor" id="gafcb2df895fa7ece43cda598b6c22431a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -726,7 +726,7 @@ template&lt;typename T , typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if_t&lt; is_sized_bool&lt;T&gt;::value &amp;&amp; is_simd_component&lt;U&gt;::value &amp;&amp; sizeof(U) == sizeof(T), U&gt; tue::math::mask </td>
+          <td class="memname">std::enable_if_t&lt; is_sized_bool&lt;T&gt;::value &amp;&amp; is_simd_component&lt;U&gt;::value &amp;&amp; sizeof(T) == sizeof(U), U&gt; tue::math::mask </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>condition</em>, </td>
@@ -769,7 +769,7 @@ template&lt;typename T , typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gade2662bc806f7e1f23e01795f5528e17"></a>
+<a class="anchor" id="ga7a795e7e4358a4f672bdfdf4edb5bc3e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -779,7 +779,7 @@ template&lt;typename T , typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if_t&lt; is_sized_bool&lt;T&gt;::value &amp;&amp; is_simd_component&lt;U&gt;::value &amp;&amp; sizeof(U) == sizeof(T), U&gt; tue::math::select </td>
+          <td class="memname">std::enable_if_t&lt; is_sized_bool&lt;T&gt;::value &amp;&amp; is_simd_component&lt;U&gt;::value &amp;&amp; sizeof(T) == sizeof(U), U&gt; tue::math::select </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>condition</em>, </td>
