@@ -136,7 +136,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga46699384882a38e79ea46f2896da95af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83a87721b91eeb0bca9605ff57aa9463"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:ga83a87721b91eeb0bca9605ff57aa9463"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;is_simd_component&lt; U &gt;::value &amp;&amp;sizeof(U)==sizeof(T), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#ga83a87721b91eeb0bca9605ff57aa9463">tue::math::mask</a> (T condition, U value) noexcept</td></tr>
-<tr class="memdesc:ga83a87721b91eeb0bca9605ff57aa9463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masks a return value using <code>condition</code>.  <a href="group__math__hpp.html#ga83a87721b91eeb0bca9605ff57aa9463">More...</a><br /></td></tr>
+<tr class="memdesc:ga83a87721b91eeb0bca9605ff57aa9463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmasks the return value using <code>condition</code>.  <a href="group__math__hpp.html#ga83a87721b91eeb0bca9605ff57aa9463">More...</a><br /></td></tr>
 <tr class="separator:ga83a87721b91eeb0bca9605ff57aa9463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade2662bc806f7e1f23e01795f5528e17"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:gade2662bc806f7e1f23e01795f5528e17"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;is_simd_component&lt; U &gt;::value &amp;&amp;sizeof(U)==sizeof(T), U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__math__hpp.html#gade2662bc806f7e1f23e01795f5528e17">tue::math::select</a> (T condition, U value, U otherwise) noexcept</td></tr>
@@ -750,7 +750,7 @@ template&lt;typename T , typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Masks a return value using <code>condition</code>. </p>
+<p>Bitmasks the return value using <code>condition</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The condition type. </td></tr>
