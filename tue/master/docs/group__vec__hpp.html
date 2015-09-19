@@ -389,6 +389,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2e01209d81cb2ec0b743d87561f8acde"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga2e01209d81cb2ec0b743d87561f8acde">tue::math::length2</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:ga2e01209d81cb2ec0b743d87561f8acde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the vector length squared of <code>v</code>.  <a href="group__vec__hpp.html#ga2e01209d81cb2ec0b743d87561f8acde">More...</a><br /></td></tr>
 <tr class="separator:ga2e01209d81cb2ec0b743d87561f8acde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="memTemplItemLeft" align="right" valign="top">decltype(tue::math::rsqrt(std::declval&lt; T &gt;()))&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga9d1eb4c46bebc4e81d55a18a0c0266b7">tue::math::rlength</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the reciprocal of the vector length of <code>v</code>.  <a href="group__vec__hpp.html#ga9d1eb4c46bebc4e81d55a18a0c0266b7">More...</a><br /></td></tr>
+<tr class="separator:ga9d1eb4c46bebc4e81d55a18a0c0266b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10b2c6b049472b4589505eede1402307"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga10b2c6b049472b4589505eede1402307"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::sqrt(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga10b2c6b049472b4589505eede1402307">tue::math::normalize</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:ga10b2c6b049472b4589505eede1402307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a normalized copy of <code>v</code>.  <a href="group__vec__hpp.html#ga10b2c6b049472b4589505eede1402307">More...</a><br /></td></tr>
@@ -7453,6 +7457,48 @@ template&lt;typename T , int N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The vector length squared of <code>v</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9d1eb4c46bebc4e81d55a18a0c0266b7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(tue::math::rsqrt(std::declval&lt;T&gt;())) tue::math::rlength </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the reciprocal of the vector length of <code>v</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type of <code>v</code>. </td></tr>
+    <tr><td class="paramname">N</td><td>The component count of <code>v</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>A <code>vec</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reciprocal of the vector length of <code>v</code>. </dd></dl>
 
 </div>
 </div>

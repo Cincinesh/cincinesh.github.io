@@ -86,14 +86,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4c4b0f1dfcb460a62b527bd5d37d0845"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga4c4b0f1dfcb460a62b527bd5d37d0845"><td class="memTemplItemLeft" align="right" valign="top">vec4&lt; decltype(tue::math::sqrt(std::declval&lt; T &gt;)))&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a> (const T &amp;x, const T &amp;y, const T &amp;z) noexcept</td></tr>
-<tr class="memdesc:ga4c4b0f1dfcb460a62b527bd5d37d0845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a rotation vector to an axis-angle vector.  <a href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">More...</a><br /></td></tr>
-<tr class="separator:ga4c4b0f1dfcb460a62b527bd5d37d0845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6072b98df1074284142bf7df076e3a57"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga6072b98df1074284142bf7df076e3a57"><td class="memTemplItemLeft" align="right" valign="top">vec4&lt; decltype(tue::math::sqrt(std::declval&lt; T &gt;)))&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__transform__hpp.html#ga6072b98df1074284142bf7df076e3a57">tue::transform::axis_angle</a> (const vec3&lt; T &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga6072b98df1074284142bf7df076e3a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a rotation vector to an axis-angle vector.  <a href="group__transform__hpp.html#ga6072b98df1074284142bf7df076e3a57">More...</a><br /></td></tr>
-<tr class="separator:ga6072b98df1074284142bf7df076e3a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f034182e2bf260bcaf8160e99ce950f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga2f034182e2bf260bcaf8160e99ce950f"><td class="memTemplItemLeft" align="right" valign="top">vec4&lt; decltype(tue::math::rsqrt(std::declval&lt; T &gt;)))&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__transform__hpp.html#ga2f034182e2bf260bcaf8160e99ce950f">tue::transform::axis_angle</a> (const T &amp;x, const T &amp;y, const T &amp;z) noexcept</td></tr>
+<tr class="memdesc:ga2f034182e2bf260bcaf8160e99ce950f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a rotation vector to an axis-angle vector.  <a href="group__transform__hpp.html#ga2f034182e2bf260bcaf8160e99ce950f">More...</a><br /></td></tr>
+<tr class="separator:ga2f034182e2bf260bcaf8160e99ce950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaada11e7ef981811658d37f39a757b8d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaada11e7ef981811658d37f39a757b8d6"><td class="memTemplItemLeft" align="right" valign="top">vec4&lt; decltype(tue::math::rsqrt(std::declval&lt; T &gt;)))&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__transform__hpp.html#gaada11e7ef981811658d37f39a757b8d6">tue::transform::axis_angle</a> (const vec3&lt; T &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:gaada11e7ef981811658d37f39a757b8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a rotation vector to an axis-angle vector.  <a href="group__transform__hpp.html#gaada11e7ef981811658d37f39a757b8d6">More...</a><br /></td></tr>
+<tr class="separator:gaada11e7ef981811658d37f39a757b8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9efecc071fa6b6ebee971fd94dbef28c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga9efecc071fa6b6ebee971fd94dbef28c"><td class="memTemplItemLeft" align="right" valign="top">constexpr vec3&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__transform__hpp.html#ga9efecc071fa6b6ebee971fd94dbef28c">tue::transform::rotation_vec</a> (const T &amp;axis_x, const T &amp;axis_y, const T &amp;axis_z, const T &amp;angle) noexcept</td></tr>
 <tr class="memdesc:ga9efecc071fa6b6ebee971fd94dbef28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an axis-angle pair to a rotation vector.  <a href="group__transform__hpp.html#ga9efecc071fa6b6ebee971fd94dbef28c">More...</a><br /></td></tr>
@@ -210,7 +210,7 @@ Functions</h2></td></tr>
  A rotation matrix is just a specific type of transformation matrix that can rotate vectors using matrix multiplication. It's useful for composing with other types of transformation matrices. </li>
 </ul>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga4c4b0f1dfcb460a62b527bd5d37d0845"></a>
+<a class="anchor" id="ga2f034182e2bf260bcaf8160e99ce950f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -220,7 +220,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec4&lt;decltype(tue::math::sqrt(std::declval&lt;T&gt;)))&gt; tue::transform::axis_angle </td>
+          <td class="memname">vec4&lt;decltype(tue::math::rsqrt(std::declval&lt;T&gt;)))&gt; tue::transform::axis_angle </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -270,7 +270,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga6072b98df1074284142bf7df076e3a57"></a>
+<a class="anchor" id="gaada11e7ef981811658d37f39a757b8d6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -280,7 +280,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec4&lt;decltype(tue::math::sqrt(std::declval&lt;T&gt;)))&gt; tue::transform::axis_angle </td>
+          <td class="memname">vec4&lt;decltype(tue::math::rsqrt(std::declval&lt;T&gt;)))&gt; tue::transform::axis_angle </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#ga006798d7302cecb8217a0f94d7e2c5e5">vec3</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -1250,7 +1250,7 @@ template&lt;typename T , int C = 4, int R = 4&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 3D rotation matrix.</dd></dl>
 <div class="fragment"><div class="line"><span class="keywordflow">return</span> tue::transform::rotation_mat&lt;T, C, R&gt;(</div>
-<div class="line">    <a class="code" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a>(x, y, z));</div>
+<div class="line">    <a class="code" href="group__transform__hpp.html#ga2f034182e2bf260bcaf8160e99ce950f">tue::transform::axis_angle</a>(x, y, z));</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1296,7 +1296,7 @@ template&lt;typename T , int C = 4, int R = 4&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 3D rotation matrix.</dd></dl>
 <div class="fragment"><div class="line"><span class="keywordflow">return</span> tue::transform::rotation_mat&lt;T, C, R&gt;(</div>
-<div class="line">    <a class="code" href="group__transform__hpp.html#ga4c4b0f1dfcb460a62b527bd5d37d0845">tue::transform::axis_angle</a>(v));</div>
+<div class="line">    <a class="code" href="group__transform__hpp.html#ga2f034182e2bf260bcaf8160e99ce950f">tue::transform::axis_angle</a>(v));</div>
 </div><!-- fragment --> 
 </div>
 </div>
