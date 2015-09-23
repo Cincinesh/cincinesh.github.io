@@ -469,6 +469,9 @@ class tue::mat&lt; T, C, R &gt;</h3>
 <tr class="memitem:a95f46807f349d360ece5885ee5adcf5c"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a95f46807f349d360ece5885ee5adcf5c">mat</a> (const T &amp;x) noexcept</td></tr>
 <tr class="memdesc:a95f46807f349d360ece5885ee5adcf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component along the main diagonal with the same value, and all other components with <code>0</code>.  <a href="#a95f46807f349d360ece5885ee5adcf5c">More...</a><br /></td></tr>
 <tr class="separator:a95f46807f349d360ece5885ee5adcf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e34d5d7d491f3421dcb8a4fa4b9556"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a16e34d5d7d491f3421dcb8a4fa4b9556">mat</a> (const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, R &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:a16e34d5d7d491f3421dcb8a4fa4b9556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each column with the same values.  <a href="#a16e34d5d7d491f3421dcb8a4fa4b9556">More...</a><br /></td></tr>
+<tr class="separator:a16e34d5d7d491f3421dcb8a4fa4b9556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212aee0ad727c3c67bbffa3c1d503f93"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a212aee0ad727c3c67bbffa3c1d503f93">mat</a> (const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, R &gt; &amp;c0, const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, R &gt; &amp;c1) noexcept</td></tr>
 <tr class="memdesc:a212aee0ad727c3c67bbffa3c1d503f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code>mat</code> with the given columns.  <a href="#a212aee0ad727c3c67bbffa3c1d503f93">More...</a><br /></td></tr>
 <tr class="separator:a212aee0ad727c3c67bbffa3c1d503f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -712,6 +715,40 @@ template&lt;typename T, int C, int R&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>The value to construct the main diagonal with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a16e34d5d7d491f3421dcb8a4fa4b9556"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int C, int R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::<a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs each column with the same values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The values to construct each column with. </td></tr>
   </table>
   </dd>
 </dl>
