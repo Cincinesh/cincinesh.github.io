@@ -643,10 +643,9 @@ template&lt;typename U , int N&gt; </td></tr>
 <tr class="memdesc:afbbe48ebdfaee578257993a6cd5b2b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts right each column of this <code>mat</code> by the corresponding column from <code>m</code>.  <a href="#afbbe48ebdfaee578257993a6cd5b2b49">More...</a><br /></td></tr>
 <tr class="separator:afbbe48ebdfaee578257993a6cd5b2b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:ac1a5919e6de9cdcb0d281c7aa7f79e30"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:ac1a5919e6de9cdcb0d281c7aa7f79e30"><td class="memTemplItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ac1a5919e6de9cdcb0d281c7aa7f79e30">fill</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:ac1a5919e6de9cdcb0d281c7aa7f79e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with each column constructed with the same value.  <a href="#ac1a5919e6de9cdcb0d281c7aa7f79e30">More...</a><br /></td></tr>
-<tr class="separator:ac1a5919e6de9cdcb0d281c7aa7f79e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e689c865320629a34d643001375eb05"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a4e689c865320629a34d643001375eb05">fill</a> (const T &amp;x) noexcept</td></tr>
+<tr class="memdesc:a4e689c865320629a34d643001375eb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with each component constructed with the same value.  <a href="#a4e689c865320629a34d643001375eb05">More...</a><br /></td></tr>
+<tr class="separator:a4e689c865320629a34d643001375eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aed86fdfdc9f5c6bdf1540e5610d363e6">identity</a> () noexcept</td></tr>
 <tr class="memdesc:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with the main diagonal set to <code>1</code> and all other components set to <code>0</code>.  <a href="#aed86fdfdc9f5c6bdf1540e5610d363e6">More...</a><br /></td></tr>
 <tr class="separator:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1110,13 +1109,11 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac1a5919e6de9cdcb0d281c7aa7f79e30"></a>
+<a class="anchor" id="a4e689c865320629a34d643001375eb05"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T, int C, int R&gt; </div>
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1124,7 +1121,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td class="memname">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::fill </td>
           <td>(</td>
-          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1136,20 +1133,14 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <code>mat</code> with each column constructed with the same value. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">U</td><td>The type of parameter <code>x</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns a <code>mat</code> with each component constructed with the same value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The value to construct each column with. </td></tr>
+    <tr><td class="paramname">x</td><td>The value to construct each component with. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <code>mat</code> with each column constructed with the same value. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>mat</code> with each component constructed with the same value. </dd></dl>
 
 </div>
 </div>
