@@ -90,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:structtue_1_1is__sized__bool"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sized__bool__hpp.html#structtue_1_1is__sized__bool">tue::is_sized_bool&lt; T &gt;</a></td></tr>
-<tr class="memdesc:structtue_1_1is__sized__bool"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a type is a sized boolean type (<code>bool8</code>, <code>bool16</code>, <code>bool32</code>, or <code>bool64</code>).  <a href="group__sized__bool__hpp.html#structtue_1_1is__sized__bool">More...</a><br /></td></tr>
+<tr class="memdesc:structtue_1_1is__sized__bool"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a type is a sized boolean type.  <a href="group__sized__bool__hpp.html#structtue_1_1is__sized__bool">More...</a><br /></td></tr>
 <tr class="separator:structtue_1_1is__sized__bool"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -169,8 +169,13 @@ Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 struct tue::is_sized_bool&lt; T &gt;</h3>
 
-<p>Checks if a type is a sized boolean type (<code>bool8</code>, <code>bool16</code>, <code>bool32</code>, or <code>bool64</code>). </p>
-<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> if true and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise.</p>
+<p>Checks if a type is a sized boolean type. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>tue::bool8</code></li>
+<li><code>tue::bool16</code></li>
+<li><code>tue::bool32</code></li>
+<li><code>tue::bool64</code></li>
+</ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type to check. </td></tr>

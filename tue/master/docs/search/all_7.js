@@ -25,6 +25,7 @@ var searchData=
   ['is_5fintegral_5fsimd_5fcomponent',['is_integral_simd_component',['../group__simd__hpp.html#structtue_1_1is__integral__simd__component',1,'tue']]],
   ['is_5fsimd_5fcomponent',['is_simd_component',['../group__simd__hpp.html#structtue_1_1is__simd__component',1,'tue']]],
   ['is_5fsized_5fbool',['is_sized_bool',['../group__sized__bool__hpp.html#structtue_1_1is__sized__bool',1,'tue']]],
+  ['is_5fvec_5fcomponent',['is_vec_component',['../group__vec__hpp.html#structtue_1_1is__vec__component',1,'tue']]],
   ['ivec2',['ivec2',['../group__vec__hpp.html#gaaa8b32b0ce7dc8f928ff3cc2209fafd9',1,'tue']]],
   ['ivec3',['ivec3',['../group__vec__hpp.html#ga656b055f02b5f0944e46ee3da99ded96',1,'tue']]],
   ['ivec4',['ivec4',['../group__vec__hpp.html#ga9fe56a1390c8fc31db77065d32d048c1',1,'tue']]]

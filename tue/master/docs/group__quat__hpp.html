@@ -147,7 +147,7 @@ class tue::quat&lt; T &gt;</h3>
 <p><code>quat</code> has the same size and alignment requirements as <code>T[4]</code>. The first three components represent the vector part of the quaternion. The fourth component represents the scalar part.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type. <code>is_vec_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
   </table>
   </dd>
 </dl>

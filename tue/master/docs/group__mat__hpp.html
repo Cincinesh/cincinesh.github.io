@@ -199,42 +199,42 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa07d7dace8c23fdb460f29e46f705077"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(~std::declval&lt; T &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa07d7dace8c23fdb460f29e46f705077">tue::operator~</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:gaa07d7dace8c23fdb460f29e46f705077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise NOT of each column of <code>m</code>.  <a href="group__mat__hpp.html#gaa07d7dace8c23fdb460f29e46f705077">More...</a><br /></td></tr>
 <tr class="separator:gaa07d7dace8c23fdb460f29e46f705077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8cab1002e95ce96d8891f0de4627829d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga8cab1002e95ce96d8891f0de4627829d"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga8cab1002e95ce96d8891f0de4627829d">tue::operator+</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga8cab1002e95ce96d8891f0de4627829d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga8cab1002e95ce96d8891f0de4627829d">More...</a><br /></td></tr>
-<tr class="separator:ga8cab1002e95ce96d8891f0de4627829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac76f3a35597e93a7054366218030d02f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gac76f3a35597e93a7054366218030d02f"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gac76f3a35597e93a7054366218030d02f">tue::operator+</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gac76f3a35597e93a7054366218030d02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gac76f3a35597e93a7054366218030d02f">More...</a><br /></td></tr>
-<tr class="separator:gac76f3a35597e93a7054366218030d02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1644a674687d3555bd68eb11e001f58"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gab1644a674687d3555bd68eb11e001f58"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab1644a674687d3555bd68eb11e001f58">tue::operator+</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gab1644a674687d3555bd68eb11e001f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gab1644a674687d3555bd68eb11e001f58">More...</a><br /></td></tr>
+<tr class="separator:gab1644a674687d3555bd68eb11e001f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21e81d717d2e7a1007b6070472e1e824"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga21e81d717d2e7a1007b6070472e1e824"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga21e81d717d2e7a1007b6070472e1e824">tue::operator+</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga21e81d717d2e7a1007b6070472e1e824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga21e81d717d2e7a1007b6070472e1e824">More...</a><br /></td></tr>
+<tr class="separator:ga21e81d717d2e7a1007b6070472e1e824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga797da95865c09dbb33905d289aac7d83"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:ga797da95865c09dbb33905d289aac7d83"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)+std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga797da95865c09dbb33905d289aac7d83">tue::operator+</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga797da95865c09dbb33905d289aac7d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sums of each column of <code>lhs</code> and each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga797da95865c09dbb33905d289aac7d83">More...</a><br /></td></tr>
 <tr class="separator:ga797da95865c09dbb33905d289aac7d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93d2bf41f5fed036bc14c735c0e31a9f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga93d2bf41f5fed036bc14c735c0e31a9f"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)-std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga93d2bf41f5fed036bc14c735c0e31a9f">tue::operator-</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga93d2bf41f5fed036bc14c735c0e31a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the differences between <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga93d2bf41f5fed036bc14c735c0e31a9f">More...</a><br /></td></tr>
-<tr class="separator:ga93d2bf41f5fed036bc14c735c0e31a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2cd833594a51eff1aca2f488d0d9bbb3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga2cd833594a51eff1aca2f488d0d9bbb3"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)-std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga2cd833594a51eff1aca2f488d0d9bbb3">tue::operator-</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga2cd833594a51eff1aca2f488d0d9bbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the differences between each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga2cd833594a51eff1aca2f488d0d9bbb3">More...</a><br /></td></tr>
-<tr class="separator:ga2cd833594a51eff1aca2f488d0d9bbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcbd8369f10ddbafca8c4644227b7c3b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gafcbd8369f10ddbafca8c4644227b7c3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)-std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gafcbd8369f10ddbafca8c4644227b7c3b">tue::operator-</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gafcbd8369f10ddbafca8c4644227b7c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the differences between <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gafcbd8369f10ddbafca8c4644227b7c3b">More...</a><br /></td></tr>
+<tr class="separator:gafcbd8369f10ddbafca8c4644227b7c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85e116ffaf8bbf4eb9cbfd6c107ea986"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga85e116ffaf8bbf4eb9cbfd6c107ea986"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)-std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga85e116ffaf8bbf4eb9cbfd6c107ea986">tue::operator-</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga85e116ffaf8bbf4eb9cbfd6c107ea986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the differences between each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga85e116ffaf8bbf4eb9cbfd6c107ea986">More...</a><br /></td></tr>
+<tr class="separator:ga85e116ffaf8bbf4eb9cbfd6c107ea986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2c8e4f0603a59fa3d6e423ef87b4c2d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gaa2c8e4f0603a59fa3d6e423ef87b4c2d"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)-std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa2c8e4f0603a59fa3d6e423ef87b4c2d">tue::operator-</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gaa2c8e4f0603a59fa3d6e423ef87b4c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the differences between each column of <code>lhs</code> and each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#gaa2c8e4f0603a59fa3d6e423ef87b4c2d">More...</a><br /></td></tr>
 <tr class="separator:gaa2c8e4f0603a59fa3d6e423ef87b4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e4de31b9aa222a3c775327eff004f82"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga5e4de31b9aa222a3c775327eff004f82"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5e4de31b9aa222a3c775327eff004f82">tue::operator*</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga5e4de31b9aa222a3c775327eff004f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the products of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga5e4de31b9aa222a3c775327eff004f82">More...</a><br /></td></tr>
-<tr class="separator:ga5e4de31b9aa222a3c775327eff004f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade54eaf0cc1490820a12b8eaf9a3c265"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gade54eaf0cc1490820a12b8eaf9a3c265"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gade54eaf0cc1490820a12b8eaf9a3c265">tue::operator*</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gade54eaf0cc1490820a12b8eaf9a3c265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the products of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gade54eaf0cc1490820a12b8eaf9a3c265">More...</a><br /></td></tr>
+<tr class="separator:gade54eaf0cc1490820a12b8eaf9a3c265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad34bf6bf898ec2a9876d2b2cee9f535f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gad34bf6bf898ec2a9876d2b2cee9f535f"><td class="memTemplItemLeft" align="right" valign="top">constexpr vec&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gad34bf6bf898ec2a9876d2b2cee9f535f">tue::operator*</a> (const vec&lt; T, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gad34bf6bf898ec2a9876d2b2cee9f535f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the matrix product of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gad34bf6bf898ec2a9876d2b2cee9f535f">More...</a><br /></td></tr>
 <tr class="separator:gad34bf6bf898ec2a9876d2b2cee9f535f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85a886a850046ad927e21d590cdeff04"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga85a886a850046ad927e21d590cdeff04"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga85a886a850046ad927e21d590cdeff04">tue::operator*</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga85a886a850046ad927e21d590cdeff04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the products of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga85a886a850046ad927e21d590cdeff04">More...</a><br /></td></tr>
-<tr class="separator:ga85a886a850046ad927e21d590cdeff04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga724681a2c9560ba64ec32cdfdfdf54f3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga724681a2c9560ba64ec32cdfdfdf54f3"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga724681a2c9560ba64ec32cdfdfdf54f3">tue::operator*</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga724681a2c9560ba64ec32cdfdfdf54f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the products of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga724681a2c9560ba64ec32cdfdfdf54f3">More...</a><br /></td></tr>
+<tr class="separator:ga724681a2c9560ba64ec32cdfdfdf54f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb7b725c10f654beaf6ac1b4c2e5e739"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gaeb7b725c10f654beaf6ac1b4c2e5e739"><td class="memTemplItemLeft" align="right" valign="top">constexpr vec&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaeb7b725c10f654beaf6ac1b4c2e5e739">tue::operator*</a> (const mat&lt; T, C, R &gt; &amp;lhs, const vec&lt; U, C &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gaeb7b725c10f654beaf6ac1b4c2e5e739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the matrix product of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gaeb7b725c10f654beaf6ac1b4c2e5e739">More...</a><br /></td></tr>
@@ -243,86 +243,86 @@ Functions</h2></td></tr>
 <tr class="memitem:ga496433423f8744e525f4aa9a6dadb329"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)*std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga496433423f8744e525f4aa9a6dadb329">tue::operator*</a> (const mat&lt; T, N, R &gt; &amp;lhs, const mat&lt; U, C, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga496433423f8744e525f4aa9a6dadb329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the matrix product of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga496433423f8744e525f4aa9a6dadb329">More...</a><br /></td></tr>
 <tr class="separator:ga496433423f8744e525f4aa9a6dadb329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7a9522d9fa104fde61bd8628589cc00"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gad7a9522d9fa104fde61bd8628589cc00"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)/std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gad7a9522d9fa104fde61bd8628589cc00">tue::operator/</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gad7a9522d9fa104fde61bd8628589cc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the quotients of <code>lhs</code> over each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gad7a9522d9fa104fde61bd8628589cc00">More...</a><br /></td></tr>
-<tr class="separator:gad7a9522d9fa104fde61bd8628589cc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac211ba40e222b9b8dcbc429c98c4ebe7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gac211ba40e222b9b8dcbc429c98c4ebe7"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)/std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gac211ba40e222b9b8dcbc429c98c4ebe7">tue::operator/</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gac211ba40e222b9b8dcbc429c98c4ebe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the quotients of each column of <code>lhs</code> over <code>rhs</code>.  <a href="group__mat__hpp.html#gac211ba40e222b9b8dcbc429c98c4ebe7">More...</a><br /></td></tr>
-<tr class="separator:gac211ba40e222b9b8dcbc429c98c4ebe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb089f96caec4311a221ab76729f0e9e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gaeb089f96caec4311a221ab76729f0e9e"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)/std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaeb089f96caec4311a221ab76729f0e9e">tue::operator/</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gaeb089f96caec4311a221ab76729f0e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the quotients of <code>lhs</code> over each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gaeb089f96caec4311a221ab76729f0e9e">More...</a><br /></td></tr>
+<tr class="separator:gaeb089f96caec4311a221ab76729f0e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62844dd3759063535fb62dd2c2fb11da"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga62844dd3759063535fb62dd2c2fb11da"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)/std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga62844dd3759063535fb62dd2c2fb11da">tue::operator/</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga62844dd3759063535fb62dd2c2fb11da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the quotients of each column of <code>lhs</code> over <code>rhs</code>.  <a href="group__mat__hpp.html#ga62844dd3759063535fb62dd2c2fb11da">More...</a><br /></td></tr>
+<tr class="separator:ga62844dd3759063535fb62dd2c2fb11da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ca0edc97d146e5d7553edc224ae6b10"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:ga8ca0edc97d146e5d7553edc224ae6b10"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)/std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga8ca0edc97d146e5d7553edc224ae6b10">tue::operator/</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga8ca0edc97d146e5d7553edc224ae6b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the quotients of each column of <code>lhs</code> over each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga8ca0edc97d146e5d7553edc224ae6b10">More...</a><br /></td></tr>
 <tr class="separator:ga8ca0edc97d146e5d7553edc224ae6b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa84248be4b6871653bee8abd74b7e6d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gafa84248be4b6871653bee8abd74b7e6d"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)%std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gafa84248be4b6871653bee8abd74b7e6d">tue::operator%</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gafa84248be4b6871653bee8abd74b7e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the modulos of <code>lhs</code> over each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gafa84248be4b6871653bee8abd74b7e6d">More...</a><br /></td></tr>
-<tr class="separator:gafa84248be4b6871653bee8abd74b7e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga768566365f3f6389102fea3898756a11"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga768566365f3f6389102fea3898756a11"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)%std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga768566365f3f6389102fea3898756a11">tue::operator%</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga768566365f3f6389102fea3898756a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the modulos of each column of <code>lhs</code> over <code>rhs</code>.  <a href="group__mat__hpp.html#ga768566365f3f6389102fea3898756a11">More...</a><br /></td></tr>
-<tr class="separator:ga768566365f3f6389102fea3898756a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5db23838849e6df1e9cb2e0372581ca1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5db23838849e6df1e9cb2e0372581ca1"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)%std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5db23838849e6df1e9cb2e0372581ca1">tue::operator%</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga5db23838849e6df1e9cb2e0372581ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the modulos of <code>lhs</code> over each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga5db23838849e6df1e9cb2e0372581ca1">More...</a><br /></td></tr>
+<tr class="separator:ga5db23838849e6df1e9cb2e0372581ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb8ddd66598aaea819264addb9441c80"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gaeb8ddd66598aaea819264addb9441c80"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)%std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaeb8ddd66598aaea819264addb9441c80">tue::operator%</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gaeb8ddd66598aaea819264addb9441c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the modulos of each column of <code>lhs</code> over <code>rhs</code>.  <a href="group__mat__hpp.html#gaeb8ddd66598aaea819264addb9441c80">More...</a><br /></td></tr>
+<tr class="separator:gaeb8ddd66598aaea819264addb9441c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga532739222ec07d79696eba0d312944c3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:ga532739222ec07d79696eba0d312944c3"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)%std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga532739222ec07d79696eba0d312944c3">tue::operator%</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga532739222ec07d79696eba0d312944c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the modulos of each column of <code>lhs</code> over each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga532739222ec07d79696eba0d312944c3">More...</a><br /></td></tr>
 <tr class="separator:ga532739222ec07d79696eba0d312944c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2667c6f80f547ad4bec4f2c8c921d4d8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga2667c6f80f547ad4bec4f2c8c921d4d8"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)&amp;std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga2667c6f80f547ad4bec4f2c8c921d4d8">tue::operator&amp;</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga2667c6f80f547ad4bec4f2c8c921d4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga2667c6f80f547ad4bec4f2c8c921d4d8">More...</a><br /></td></tr>
-<tr class="separator:ga2667c6f80f547ad4bec4f2c8c921d4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6d5133b97d2c4fd27ff8bc42e595f0a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gab6d5133b97d2c4fd27ff8bc42e595f0a"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)&amp;std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab6d5133b97d2c4fd27ff8bc42e595f0a">tue::operator&amp;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gab6d5133b97d2c4fd27ff8bc42e595f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gab6d5133b97d2c4fd27ff8bc42e595f0a">More...</a><br /></td></tr>
-<tr class="separator:gab6d5133b97d2c4fd27ff8bc42e595f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cff4234c46b11c2b0c11e50e9358f35"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga7cff4234c46b11c2b0c11e50e9358f35"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)&amp;std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga7cff4234c46b11c2b0c11e50e9358f35">tue::operator&amp;</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga7cff4234c46b11c2b0c11e50e9358f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga7cff4234c46b11c2b0c11e50e9358f35">More...</a><br /></td></tr>
+<tr class="separator:ga7cff4234c46b11c2b0c11e50e9358f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga933c909f74b8c6f26630709cc5ee07ca"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga933c909f74b8c6f26630709cc5ee07ca"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)&amp;std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga933c909f74b8c6f26630709cc5ee07ca">tue::operator&amp;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga933c909f74b8c6f26630709cc5ee07ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga933c909f74b8c6f26630709cc5ee07ca">More...</a><br /></td></tr>
+<tr class="separator:ga933c909f74b8c6f26630709cc5ee07ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga076647c106e6fd9cb38ddb0e4d8611f6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:ga076647c106e6fd9cb38ddb0e4d8611f6"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)&amp;std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga076647c106e6fd9cb38ddb0e4d8611f6">tue::operator&amp;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga076647c106e6fd9cb38ddb0e4d8611f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise AND of each column of <code>lhs</code> and each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga076647c106e6fd9cb38ddb0e4d8611f6">More...</a><br /></td></tr>
 <tr class="separator:ga076647c106e6fd9cb38ddb0e4d8611f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ac73cccfe3a2c55ce2992e6c454cdf9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga9ac73cccfe3a2c55ce2992e6c454cdf9"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)|std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga9ac73cccfe3a2c55ce2992e6c454cdf9">tue::operator|</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga9ac73cccfe3a2c55ce2992e6c454cdf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise OR of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga9ac73cccfe3a2c55ce2992e6c454cdf9">More...</a><br /></td></tr>
-<tr class="separator:ga9ac73cccfe3a2c55ce2992e6c454cdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b54bb1cc08fb19345f30a652ec91843"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga9b54bb1cc08fb19345f30a652ec91843"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)|std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga9b54bb1cc08fb19345f30a652ec91843">tue::operator|</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga9b54bb1cc08fb19345f30a652ec91843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise OR of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga9b54bb1cc08fb19345f30a652ec91843">More...</a><br /></td></tr>
-<tr class="separator:ga9b54bb1cc08fb19345f30a652ec91843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga309489790323d76920d10fda7e18b0e1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga309489790323d76920d10fda7e18b0e1"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)|std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga309489790323d76920d10fda7e18b0e1">tue::operator|</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga309489790323d76920d10fda7e18b0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise OR of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga309489790323d76920d10fda7e18b0e1">More...</a><br /></td></tr>
+<tr class="separator:ga309489790323d76920d10fda7e18b0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8105861f02626e2b42b752eb41a88079"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga8105861f02626e2b42b752eb41a88079"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)|std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga8105861f02626e2b42b752eb41a88079">tue::operator|</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga8105861f02626e2b42b752eb41a88079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise OR of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga8105861f02626e2b42b752eb41a88079">More...</a><br /></td></tr>
+<tr class="separator:ga8105861f02626e2b42b752eb41a88079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf55cd551d4ffb60b5acb1ab29d64e1f9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gaf55cd551d4ffb60b5acb1ab29d64e1f9"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)|std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaf55cd551d4ffb60b5acb1ab29d64e1f9">tue::operator|</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gaf55cd551d4ffb60b5acb1ab29d64e1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise OR of each column of <code>lhs</code> and each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#gaf55cd551d4ffb60b5acb1ab29d64e1f9">More...</a><br /></td></tr>
 <tr class="separator:gaf55cd551d4ffb60b5acb1ab29d64e1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74d49d02e2f974ed577b4f899268732e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga74d49d02e2f974ed577b4f899268732e"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)^std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga74d49d02e2f974ed577b4f899268732e">tue::operator^</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga74d49d02e2f974ed577b4f899268732e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise XOR of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga74d49d02e2f974ed577b4f899268732e">More...</a><br /></td></tr>
-<tr class="separator:ga74d49d02e2f974ed577b4f899268732e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab626587f2316574cf4edff655ab486a1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gab626587f2316574cf4edff655ab486a1"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)^std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab626587f2316574cf4edff655ab486a1">tue::operator^</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gab626587f2316574cf4edff655ab486a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise XOR of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gab626587f2316574cf4edff655ab486a1">More...</a><br /></td></tr>
-<tr class="separator:gab626587f2316574cf4edff655ab486a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7347232415c843bfae601f78bf8f5c69"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga7347232415c843bfae601f78bf8f5c69"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)^std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga7347232415c843bfae601f78bf8f5c69">tue::operator^</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga7347232415c843bfae601f78bf8f5c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise XOR of <code>lhs</code> and each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga7347232415c843bfae601f78bf8f5c69">More...</a><br /></td></tr>
+<tr class="separator:ga7347232415c843bfae601f78bf8f5c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd01f1da79cbd83ba0c5143803f557ed"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gacd01f1da79cbd83ba0c5143803f557ed"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;)^std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gacd01f1da79cbd83ba0c5143803f557ed">tue::operator^</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gacd01f1da79cbd83ba0c5143803f557ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise XOR of each column of <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#gacd01f1da79cbd83ba0c5143803f557ed">More...</a><br /></td></tr>
+<tr class="separator:gacd01f1da79cbd83ba0c5143803f557ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade0afc7bcf6be71962fe78267235f178"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gade0afc7bcf6be71962fe78267235f178"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;)^std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gade0afc7bcf6be71962fe78267235f178">tue::operator^</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gade0afc7bcf6be71962fe78267235f178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise XOR of each column of <code>lhs</code> and each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#gade0afc7bcf6be71962fe78267235f178">More...</a><br /></td></tr>
 <tr class="separator:gade0afc7bcf6be71962fe78267235f178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb4f82b39dfceefaa6b16c5a72747e52"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gaeb4f82b39dfceefaa6b16c5a72747e52"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;) shift_left std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaeb4f82b39dfceefaa6b16c5a72747e52">tue::operator&lt;&lt;</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gaeb4f82b39dfceefaa6b16c5a72747e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts left of <code>lhs</code> by each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gaeb4f82b39dfceefaa6b16c5a72747e52">More...</a><br /></td></tr>
-<tr class="separator:gaeb4f82b39dfceefaa6b16c5a72747e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3049ee1814dc912e911655f2d7d53064"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga3049ee1814dc912e911655f2d7d53064"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;) shift_left std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga3049ee1814dc912e911655f2d7d53064">tue::operator&lt;&lt;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga3049ee1814dc912e911655f2d7d53064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts left of each column of <code>lhs</code> by <code>rhs</code>.  <a href="group__mat__hpp.html#ga3049ee1814dc912e911655f2d7d53064">More...</a><br /></td></tr>
-<tr class="separator:ga3049ee1814dc912e911655f2d7d53064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0dce0b786973ab1605aa42a3c464377"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gab0dce0b786973ab1605aa42a3c464377"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;) shift_left std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab0dce0b786973ab1605aa42a3c464377">tue::operator&lt;&lt;</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gab0dce0b786973ab1605aa42a3c464377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts left of <code>lhs</code> by each column of <code>rhs</code>.  <a href="group__mat__hpp.html#gab0dce0b786973ab1605aa42a3c464377">More...</a><br /></td></tr>
+<tr class="separator:gab0dce0b786973ab1605aa42a3c464377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d8f05b8ba308c5e1f34ea44d3d514b1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga9d8f05b8ba308c5e1f34ea44d3d514b1"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;) shift_left std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga9d8f05b8ba308c5e1f34ea44d3d514b1">tue::operator&lt;&lt;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga9d8f05b8ba308c5e1f34ea44d3d514b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts left of each column of <code>lhs</code> by <code>rhs</code>.  <a href="group__mat__hpp.html#ga9d8f05b8ba308c5e1f34ea44d3d514b1">More...</a><br /></td></tr>
+<tr class="separator:ga9d8f05b8ba308c5e1f34ea44d3d514b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2549949c7896c79cf64712c4239fcda"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:gaa2549949c7896c79cf64712c4239fcda"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;) shift_left std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa2549949c7896c79cf64712c4239fcda">tue::operator&lt;&lt;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gaa2549949c7896c79cf64712c4239fcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts left of each column of <code>lhs</code> by each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#gaa2549949c7896c79cf64712c4239fcda">More...</a><br /></td></tr>
 <tr class="separator:gaa2549949c7896c79cf64712c4239fcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga884968403e590a3ca8ad37be0dafabb1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:ga884968403e590a3ca8ad37be0dafabb1"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;) shift_right std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga884968403e590a3ca8ad37be0dafabb1">tue::operator&gt;&gt;</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga884968403e590a3ca8ad37be0dafabb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts right of <code>lhs</code> by each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga884968403e590a3ca8ad37be0dafabb1">More...</a><br /></td></tr>
-<tr class="separator:ga884968403e590a3ca8ad37be0dafabb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed0137897d3203f9c08016d4b6dd6404"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gaed0137897d3203f9c08016d4b6dd6404"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;) shift_right std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaed0137897d3203f9c08016d4b6dd6404">tue::operator&gt;&gt;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gaed0137897d3203f9c08016d4b6dd6404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts right of each column of <code>lhs</code> by <code>rhs</code>.  <a href="group__mat__hpp.html#gaed0137897d3203f9c08016d4b6dd6404">More...</a><br /></td></tr>
-<tr class="separator:gaed0137897d3203f9c08016d4b6dd6404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga288dfc7575c317d12a4fbb83f20a8dff"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga288dfc7575c317d12a4fbb83f20a8dff"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; T &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;) shift_right std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga288dfc7575c317d12a4fbb83f20a8dff">tue::operator&gt;&gt;</a> (const T &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:ga288dfc7575c317d12a4fbb83f20a8dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts right of <code>lhs</code> by each column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga288dfc7575c317d12a4fbb83f20a8dff">More...</a><br /></td></tr>
+<tr class="separator:ga288dfc7575c317d12a4fbb83f20a8dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac98cdf2ac121f5e26021c78b529b0a8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gaac98cdf2ac121f5e26021c78b529b0a8"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if_t&lt; is_vec_component&lt; U &gt;::value, mat&lt; decltype(std::declval&lt; T &gt;) shift_right std::declval&lt; U &gt;)), C, R &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaac98cdf2ac121f5e26021c78b529b0a8">tue::operator&gt;&gt;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const U &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:gaac98cdf2ac121f5e26021c78b529b0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts right of each column of <code>lhs</code> by <code>rhs</code>.  <a href="group__mat__hpp.html#gaac98cdf2ac121f5e26021c78b529b0a8">More...</a><br /></td></tr>
+<tr class="separator:gaac98cdf2ac121f5e26021c78b529b0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1235dc009c8267d7eb34ea7aad5d652b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
 <tr class="memitem:ga1235dc009c8267d7eb34ea7aad5d652b"><td class="memTemplItemLeft" align="right" valign="top">constexpr mat&lt; decltype(std::declval&lt; T &gt;) shift_right std::declval&lt; U &gt;)), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga1235dc009c8267d7eb34ea7aad5d652b">tue::operator&gt;&gt;</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga1235dc009c8267d7eb34ea7aad5d652b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bitwise shifts right of each column of <code>lhs</code> by each corresponding column of <code>rhs</code>.  <a href="group__mat__hpp.html#ga1235dc009c8267d7eb34ea7aad5d652b">More...</a><br /></td></tr>
@@ -451,7 +451,7 @@ class tue::mat&lt; T, C, R &gt;</h3>
 <p><code>mat</code> have the same size and alignment requirements as <code>vec&lt;T, R&gt;[C]</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type. </td></tr>
+    <tr><td class="paramname">T</td><td>The component type. <code>is_vec_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
     <tr><td class="paramname">C</td><td>The column count. Must be 2, 3, or 4. </td></tr>
     <tr><td class="paramname">R</td><td>The row count. Must be 2, 3, or 4. </td></tr>
   </table>
@@ -538,82 +538,82 @@ class tue::mat&lt; T, C, R &gt;</h3>
 <tr class="memitem:a93d0a72082f65007dd7cb0ccab5714eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a93d0a72082f65007dd7cb0ccab5714eb">operator--</a> (int) noexcept</td></tr>
 <tr class="memdesc:a93d0a72082f65007dd7cb0ccab5714eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-decrements each column of this <code>mat</code>.  <a href="#a93d0a72082f65007dd7cb0ccab5714eb">More...</a><br /></td></tr>
 <tr class="separator:a93d0a72082f65007dd7cb0ccab5714eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe19ebe31d606b5011d84c91228ddee1"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:afe19ebe31d606b5011d84c91228ddee1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#afe19ebe31d606b5011d84c91228ddee1">operator+=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:afe19ebe31d606b5011d84c91228ddee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <code>x</code> to each column of this <code>mat</code>.  <a href="#afe19ebe31d606b5011d84c91228ddee1">More...</a><br /></td></tr>
-<tr class="separator:afe19ebe31d606b5011d84c91228ddee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093595d4ecf9d2038f6020d4f5599838"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a093595d4ecf9d2038f6020d4f5599838"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a093595d4ecf9d2038f6020d4f5599838">operator+=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:a093595d4ecf9d2038f6020d4f5599838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <code>x</code> to each column of this <code>mat</code>.  <a href="#a093595d4ecf9d2038f6020d4f5599838">More...</a><br /></td></tr>
+<tr class="separator:a093595d4ecf9d2038f6020d4f5599838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc4393f4e76c066018cadc743654009"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:afbc4393f4e76c066018cadc743654009"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#afbc4393f4e76c066018cadc743654009">operator+=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:afbc4393f4e76c066018cadc743654009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds each column of <code>m</code> to the corresponding column of this <code>mat</code>.  <a href="#afbc4393f4e76c066018cadc743654009">More...</a><br /></td></tr>
 <tr class="separator:afbc4393f4e76c066018cadc743654009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d939fcedb4290f8a690efd49152731"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a95d939fcedb4290f8a690efd49152731"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a95d939fcedb4290f8a690efd49152731">operator-=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:a95d939fcedb4290f8a690efd49152731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts <code>x</code> from each column of this <code>mat</code>.  <a href="#a95d939fcedb4290f8a690efd49152731">More...</a><br /></td></tr>
-<tr class="separator:a95d939fcedb4290f8a690efd49152731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb7cdd922afa21004ea47cf3d98934d"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:aebb7cdd922afa21004ea47cf3d98934d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aebb7cdd922afa21004ea47cf3d98934d">operator-=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:aebb7cdd922afa21004ea47cf3d98934d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts <code>x</code> from each column of this <code>mat</code>.  <a href="#aebb7cdd922afa21004ea47cf3d98934d">More...</a><br /></td></tr>
+<tr class="separator:aebb7cdd922afa21004ea47cf3d98934d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54769f745dc7fc3f28c39bd605c0eecc"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a54769f745dc7fc3f28c39bd605c0eecc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a54769f745dc7fc3f28c39bd605c0eecc">operator-=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a54769f745dc7fc3f28c39bd605c0eecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts each column of <code>m</code> from the corresponding column of this <code>mat</code>.  <a href="#a54769f745dc7fc3f28c39bd605c0eecc">More...</a><br /></td></tr>
 <tr class="separator:a54769f745dc7fc3f28c39bd605c0eecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa22010a2ec3a09ccf648854ad6bba092"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:aa22010a2ec3a09ccf648854ad6bba092"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aa22010a2ec3a09ccf648854ad6bba092">operator*=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:aa22010a2ec3a09ccf648854ad6bba092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each column of this <code>mat</code> by <code>x</code>.  <a href="#aa22010a2ec3a09ccf648854ad6bba092">More...</a><br /></td></tr>
-<tr class="separator:aa22010a2ec3a09ccf648854ad6bba092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a2bc36e0227f6153744891dc7d2a42"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a13a2bc36e0227f6153744891dc7d2a42"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a13a2bc36e0227f6153744891dc7d2a42">operator*=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:a13a2bc36e0227f6153744891dc7d2a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each column of this <code>mat</code> by <code>x</code>.  <a href="#a13a2bc36e0227f6153744891dc7d2a42">More...</a><br /></td></tr>
+<tr class="separator:a13a2bc36e0227f6153744891dc7d2a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0efbbdd776568b21e01f9a5e0bf23475"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a0efbbdd776568b21e01f9a5e0bf23475"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a0efbbdd776568b21e01f9a5e0bf23475">operator*=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, C &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a0efbbdd776568b21e01f9a5e0bf23475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies this mat by <code>m</code>.  <a href="#a0efbbdd776568b21e01f9a5e0bf23475">More...</a><br /></td></tr>
 <tr class="separator:a0efbbdd776568b21e01f9a5e0bf23475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7538921dd0f830de787e4735cfe780db"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a7538921dd0f830de787e4735cfe780db"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a7538921dd0f830de787e4735cfe780db">operator/=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:a7538921dd0f830de787e4735cfe780db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides each column of this <code>mat</code> by <code>x</code>.  <a href="#a7538921dd0f830de787e4735cfe780db">More...</a><br /></td></tr>
-<tr class="separator:a7538921dd0f830de787e4735cfe780db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21a130f23fb286bca35d338cd01c115"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ae21a130f23fb286bca35d338cd01c115"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ae21a130f23fb286bca35d338cd01c115">operator/=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:ae21a130f23fb286bca35d338cd01c115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides each column of this <code>mat</code> by <code>x</code>.  <a href="#ae21a130f23fb286bca35d338cd01c115">More...</a><br /></td></tr>
+<tr class="separator:ae21a130f23fb286bca35d338cd01c115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c74e0e744465a7410a02a383cc49cc"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a07c74e0e744465a7410a02a383cc49cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a07c74e0e744465a7410a02a383cc49cc">operator/=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a07c74e0e744465a7410a02a383cc49cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides each column of this <code>mat</code> by the corresponding column from <code>m</code>.  <a href="#a07c74e0e744465a7410a02a383cc49cc">More...</a><br /></td></tr>
 <tr class="separator:a07c74e0e744465a7410a02a383cc49cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c902f3f70f72c555447ecfc60893482"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a5c902f3f70f72c555447ecfc60893482"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a5c902f3f70f72c555447ecfc60893482">operator%=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:a5c902f3f70f72c555447ecfc60893482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modulos each column of this <code>mat</code> by <code>x</code>.  <a href="#a5c902f3f70f72c555447ecfc60893482">More...</a><br /></td></tr>
-<tr class="separator:a5c902f3f70f72c555447ecfc60893482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb64311f5ab31d80a5742336adf13b3a"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:abb64311f5ab31d80a5742336adf13b3a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#abb64311f5ab31d80a5742336adf13b3a">operator%=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:abb64311f5ab31d80a5742336adf13b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modulos each column of this <code>mat</code> by <code>x</code>.  <a href="#abb64311f5ab31d80a5742336adf13b3a">More...</a><br /></td></tr>
+<tr class="separator:abb64311f5ab31d80a5742336adf13b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f77553ed195075427125ab55e624ec"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a15f77553ed195075427125ab55e624ec"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a15f77553ed195075427125ab55e624ec">operator%=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a15f77553ed195075427125ab55e624ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modulos each column of this <code>mat</code> by the corresponding column from <code>m</code>.  <a href="#a15f77553ed195075427125ab55e624ec">More...</a><br /></td></tr>
 <tr class="separator:a15f77553ed195075427125ab55e624ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc00e0fc886b35749316dbb0b5f847be"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:adc00e0fc886b35749316dbb0b5f847be"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#adc00e0fc886b35749316dbb0b5f847be">operator&amp;=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:adc00e0fc886b35749316dbb0b5f847be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise ANDs each column of this <code>mat</code> with <code>x</code>.  <a href="#adc00e0fc886b35749316dbb0b5f847be">More...</a><br /></td></tr>
-<tr class="separator:adc00e0fc886b35749316dbb0b5f847be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bf26c4bba39f8821bd0e13381f66e3"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a20bf26c4bba39f8821bd0e13381f66e3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a20bf26c4bba39f8821bd0e13381f66e3">operator&amp;=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:a20bf26c4bba39f8821bd0e13381f66e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise ANDs each column of this <code>mat</code> with <code>x</code>.  <a href="#a20bf26c4bba39f8821bd0e13381f66e3">More...</a><br /></td></tr>
+<tr class="separator:a20bf26c4bba39f8821bd0e13381f66e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8aafda72f0ecaac4c5ef57e7ef01113"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:af8aafda72f0ecaac4c5ef57e7ef01113"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#af8aafda72f0ecaac4c5ef57e7ef01113">operator&amp;=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:af8aafda72f0ecaac4c5ef57e7ef01113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise ANDs each column of this <code>mat</code> with the corresponding column from <code>m</code>.  <a href="#af8aafda72f0ecaac4c5ef57e7ef01113">More...</a><br /></td></tr>
 <tr class="separator:af8aafda72f0ecaac4c5ef57e7ef01113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149a83688ca4f63610957b5d43ef14af"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a149a83688ca4f63610957b5d43ef14af"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a149a83688ca4f63610957b5d43ef14af">operator|=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:a149a83688ca4f63610957b5d43ef14af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise ORs each column of this <code>mat</code> with <code>x</code>.  <a href="#a149a83688ca4f63610957b5d43ef14af">More...</a><br /></td></tr>
-<tr class="separator:a149a83688ca4f63610957b5d43ef14af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee41eb563ec9fad346aa15fb5928f0e"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a9ee41eb563ec9fad346aa15fb5928f0e"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a9ee41eb563ec9fad346aa15fb5928f0e">operator|=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:a9ee41eb563ec9fad346aa15fb5928f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise ORs each column of this <code>mat</code> with <code>x</code>.  <a href="#a9ee41eb563ec9fad346aa15fb5928f0e">More...</a><br /></td></tr>
+<tr class="separator:a9ee41eb563ec9fad346aa15fb5928f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19012fac9e03e39514b0ce56a6e5990d"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a19012fac9e03e39514b0ce56a6e5990d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a19012fac9e03e39514b0ce56a6e5990d">operator|=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a19012fac9e03e39514b0ce56a6e5990d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise ORs each column of this <code>mat</code> with the corresponding column from <code>m</code>.  <a href="#a19012fac9e03e39514b0ce56a6e5990d">More...</a><br /></td></tr>
 <tr class="separator:a19012fac9e03e39514b0ce56a6e5990d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9dddf9f5c312862de9a0db03064355"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:afe9dddf9f5c312862de9a0db03064355"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#afe9dddf9f5c312862de9a0db03064355">operator^=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:afe9dddf9f5c312862de9a0db03064355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise XORs each column of this <code>mat</code> with <code>x</code>.  <a href="#afe9dddf9f5c312862de9a0db03064355">More...</a><br /></td></tr>
-<tr class="separator:afe9dddf9f5c312862de9a0db03064355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ad6c691f39015294c8901fda9a1aa8"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a49ad6c691f39015294c8901fda9a1aa8"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a49ad6c691f39015294c8901fda9a1aa8">operator^=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:a49ad6c691f39015294c8901fda9a1aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise XORs each column of this <code>mat</code> with <code>x</code>.  <a href="#a49ad6c691f39015294c8901fda9a1aa8">More...</a><br /></td></tr>
+<tr class="separator:a49ad6c691f39015294c8901fda9a1aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed5af7a7260f1cc45b65e373c8deb36"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a0ed5af7a7260f1cc45b65e373c8deb36"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a0ed5af7a7260f1cc45b65e373c8deb36">operator^=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a0ed5af7a7260f1cc45b65e373c8deb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise XORs each column of this <code>mat</code> with the corresponding column from <code>m</code>.  <a href="#a0ed5af7a7260f1cc45b65e373c8deb36">More...</a><br /></td></tr>
 <tr class="separator:a0ed5af7a7260f1cc45b65e373c8deb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9de0453c673691cfe7cf79a3645bf1c"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:af9de0453c673691cfe7cf79a3645bf1c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#af9de0453c673691cfe7cf79a3645bf1c">operator&lt;&lt;=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:af9de0453c673691cfe7cf79a3645bf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts left each column of this <code>mat</code> by <code>x</code>.  <a href="#af9de0453c673691cfe7cf79a3645bf1c">More...</a><br /></td></tr>
-<tr class="separator:af9de0453c673691cfe7cf79a3645bf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf984ee024e827cfc993d63b71461b6d"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:aaf984ee024e827cfc993d63b71461b6d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aaf984ee024e827cfc993d63b71461b6d">operator&lt;&lt;=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:aaf984ee024e827cfc993d63b71461b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts left each column of this <code>mat</code> by <code>x</code>.  <a href="#aaf984ee024e827cfc993d63b71461b6d">More...</a><br /></td></tr>
+<tr class="separator:aaf984ee024e827cfc993d63b71461b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de1d21744fb1cd440e71b581f052c2b"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a6de1d21744fb1cd440e71b581f052c2b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a6de1d21744fb1cd440e71b581f052c2b">operator&lt;&lt;=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a6de1d21744fb1cd440e71b581f052c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts left each column of this <code>mat</code> by the corresponding column from <code>m</code>.  <a href="#a6de1d21744fb1cd440e71b581f052c2b">More...</a><br /></td></tr>
 <tr class="separator:a6de1d21744fb1cd440e71b581f052c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15b154adff6b2e26f0ebd25a1efed31"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:af15b154adff6b2e26f0ebd25a1efed31"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#af15b154adff6b2e26f0ebd25a1efed31">operator&gt;&gt;=</a> (const U &amp;x) noexcept</td></tr>
-<tr class="memdesc:af15b154adff6b2e26f0ebd25a1efed31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts right each column of this <code>mat</code> by <code>x</code>.  <a href="#af15b154adff6b2e26f0ebd25a1efed31">More...</a><br /></td></tr>
-<tr class="separator:af15b154adff6b2e26f0ebd25a1efed31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37755b31d19dd495c7c92c32a0b55dd"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ab37755b31d19dd495c7c92c32a0b55dd"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt; U &gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ab37755b31d19dd495c7c92c32a0b55dd">operator&gt;&gt;=</a> (const U &amp;x) noexcept</td></tr>
+<tr class="memdesc:ab37755b31d19dd495c7c92c32a0b55dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts right each column of this <code>mat</code> by <code>x</code>.  <a href="#ab37755b31d19dd495c7c92c32a0b55dd">More...</a><br /></td></tr>
+<tr class="separator:ab37755b31d19dd495c7c92c32a0b55dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbbe48ebdfaee578257993a6cd5b2b49"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:afbbe48ebdfaee578257993a6cd5b2b49"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#afbbe48ebdfaee578257993a6cd5b2b49">operator&gt;&gt;=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:afbbe48ebdfaee578257993a6cd5b2b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts right each column of this <code>mat</code> by the corresponding column from <code>m</code>.  <a href="#afbbe48ebdfaee578257993a6cd5b2b49">More...</a><br /></td></tr>
@@ -1597,7 +1597,7 @@ template&lt;typename T, int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afe19ebe31d606b5011d84c91228ddee1"></a>
+<a class="anchor" id="a093595d4ecf9d2038f6020d4f5599838"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1609,7 +1609,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator+= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator+= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -1683,7 +1683,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a95d939fcedb4290f8a690efd49152731"></a>
+<a class="anchor" id="aebb7cdd922afa21004ea47cf3d98934d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1695,7 +1695,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator-= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator-= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -1769,7 +1769,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa22010a2ec3a09ccf648854ad6bba092"></a>
+<a class="anchor" id="a13a2bc36e0227f6153744891dc7d2a42"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1781,7 +1781,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator*= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator*= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -1855,7 +1855,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7538921dd0f830de787e4735cfe780db"></a>
+<a class="anchor" id="ae21a130f23fb286bca35d338cd01c115"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1867,7 +1867,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator/= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator/= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -1941,7 +1941,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5c902f3f70f72c555447ecfc60893482"></a>
+<a class="anchor" id="abb64311f5ab31d80a5742336adf13b3a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1953,7 +1953,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator%= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator%= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -2027,7 +2027,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adc00e0fc886b35749316dbb0b5f847be"></a>
+<a class="anchor" id="a20bf26c4bba39f8821bd0e13381f66e3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2039,7 +2039,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator&amp;= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator&amp;= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -2113,7 +2113,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a149a83688ca4f63610957b5d43ef14af"></a>
+<a class="anchor" id="a9ee41eb563ec9fad346aa15fb5928f0e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2125,7 +2125,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator|= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator|= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -2199,7 +2199,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afe9dddf9f5c312862de9a0db03064355"></a>
+<a class="anchor" id="a49ad6c691f39015294c8901fda9a1aa8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2211,7 +2211,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator^= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator^= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -2285,7 +2285,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af9de0453c673691cfe7cf79a3645bf1c"></a>
+<a class="anchor" id="aaf984ee024e827cfc993d63b71461b6d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2297,7 +2297,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator&lt;&lt;= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator&lt;&lt;= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -2371,7 +2371,7 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af15b154adff6b2e26f0ebd25a1efed31"></a>
+<a class="anchor" id="ab37755b31d19dd495c7c92c32a0b55dd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2383,7 +2383,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator&gt;&gt;= </td>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="group__vec__hpp.html#structtue_1_1is__vec__component">is_vec_component</a>&lt;U&gt;::value, <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt;T, C, R&gt;&amp;&gt; <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::operator&gt;&gt;= </td>
           <td>(</td>
           <td class="paramtype">const U &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -3114,7 +3114,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga8cab1002e95ce96d8891f0de4627829d"></a>
+<a class="anchor" id="gab1644a674687d3555bd68eb11e001f58"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3124,7 +3124,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) + std::declval&lt;U&gt;)), C, R&gt; tue::operator+ </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) + std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator+ </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3169,7 +3169,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gac76f3a35597e93a7054366218030d02f"></a>
+<a class="anchor" id="ga21e81d717d2e7a1007b6070472e1e824"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3179,7 +3179,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) + std::declval&lt;U&gt;)), C, R&gt; tue::operator+ </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) + std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator+ </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3279,7 +3279,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga93d2bf41f5fed036bc14c735c0e31a9f"></a>
+<a class="anchor" id="gafcbd8369f10ddbafca8c4644227b7c3b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3289,7 +3289,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) - std::declval&lt;U&gt;)), C, R&gt; tue::operator- </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) - std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator- </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3334,7 +3334,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga2cd833594a51eff1aca2f488d0d9bbb3"></a>
+<a class="anchor" id="ga85e116ffaf8bbf4eb9cbfd6c107ea986"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3344,7 +3344,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) - std::declval&lt;U&gt;)), C, R&gt; tue::operator- </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) - std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator- </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3444,7 +3444,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga5e4de31b9aa222a3c775327eff004f82"></a>
+<a class="anchor" id="gade54eaf0cc1490820a12b8eaf9a3c265"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3454,7 +3454,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) * std::declval&lt;U&gt;)), C, R&gt; tue::operator* </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) * std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator* </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3555,7 +3555,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga85a886a850046ad927e21d590cdeff04"></a>
+<a class="anchor" id="ga724681a2c9560ba64ec32cdfdfdf54f3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3565,7 +3565,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) * std::declval&lt;U&gt;)), C, R&gt; tue::operator* </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) * std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3722,7 +3722,7 @@ template&lt;typename T , typename U , int C, int N, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gad7a9522d9fa104fde61bd8628589cc00"></a>
+<a class="anchor" id="gaeb089f96caec4311a221ab76729f0e9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3732,7 +3732,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) / std::declval&lt;U&gt;)), C, R&gt; tue::operator/ </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) / std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator/ </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3777,7 +3777,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gac211ba40e222b9b8dcbc429c98c4ebe7"></a>
+<a class="anchor" id="ga62844dd3759063535fb62dd2c2fb11da"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3787,7 +3787,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) / std::declval&lt;U&gt;)), C, R&gt; tue::operator/ </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) / std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator/ </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3887,7 +3887,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gafa84248be4b6871653bee8abd74b7e6d"></a>
+<a class="anchor" id="ga5db23838849e6df1e9cb2e0372581ca1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3897,7 +3897,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) % std::declval&lt;U&gt;)), C, R&gt; tue::operator% </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) % std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator% </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3942,7 +3942,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga768566365f3f6389102fea3898756a11"></a>
+<a class="anchor" id="gaeb8ddd66598aaea819264addb9441c80"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3952,7 +3952,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) % std::declval&lt;U&gt;)), C, R&gt; tue::operator% </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) % std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator% </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4052,7 +4052,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga2667c6f80f547ad4bec4f2c8c921d4d8"></a>
+<a class="anchor" id="ga7cff4234c46b11c2b0c11e50e9358f35"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4062,7 +4062,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) &amp; std::declval&lt;U&gt;)), C, R&gt; tue::operator&amp; </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) &amp; std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator&amp; </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4107,7 +4107,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gab6d5133b97d2c4fd27ff8bc42e595f0a"></a>
+<a class="anchor" id="ga933c909f74b8c6f26630709cc5ee07ca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4117,7 +4117,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) &amp; std::declval&lt;U&gt;)), C, R&gt; tue::operator&amp; </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) &amp; std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator&amp; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4217,7 +4217,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga9ac73cccfe3a2c55ce2992e6c454cdf9"></a>
+<a class="anchor" id="ga309489790323d76920d10fda7e18b0e1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4227,7 +4227,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) | std::declval&lt;U&gt;)), C, R&gt; tue::operator| </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) | std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator| </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4272,7 +4272,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga9b54bb1cc08fb19345f30a652ec91843"></a>
+<a class="anchor" id="ga8105861f02626e2b42b752eb41a88079"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4282,7 +4282,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) | std::declval&lt;U&gt;)), C, R&gt; tue::operator| </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) | std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator| </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4382,7 +4382,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga74d49d02e2f974ed577b4f899268732e"></a>
+<a class="anchor" id="ga7347232415c843bfae601f78bf8f5c69"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4392,7 +4392,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) ^ std::declval&lt;U&gt;)), C, R&gt; tue::operator^ </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) ^ std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator^ </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4437,7 +4437,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gab626587f2316574cf4edff655ab486a1"></a>
+<a class="anchor" id="gacd01f1da79cbd83ba0c5143803f557ed"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4447,7 +4447,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype(std::declval&lt;T&gt;) ^ std::declval&lt;U&gt;)), C, R&gt; tue::operator^ </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) ^ std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator^ </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4547,7 +4547,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaeb4f82b39dfceefaa6b16c5a72747e52"></a>
+<a class="anchor" id="gab0dce0b786973ab1605aa42a3c464377"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4557,7 +4557,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( std::declval&lt;T&gt;) shift_left std::declval&lt;U&gt;)), C, R&gt; tue::operator&lt;&lt; </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) shift_left std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4602,7 +4602,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga3049ee1814dc912e911655f2d7d53064"></a>
+<a class="anchor" id="ga9d8f05b8ba308c5e1f34ea44d3d514b1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4612,7 +4612,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( std::declval&lt;T&gt;) shift_left std::declval&lt;U&gt;)), C, R&gt; tue::operator&lt;&lt; </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) shift_left std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4712,7 +4712,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga884968403e590a3ca8ad37be0dafabb1"></a>
+<a class="anchor" id="ga288dfc7575c317d12a4fbb83f20a8dff"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4722,7 +4722,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( std::declval&lt;T&gt;) shift_right std::declval&lt;U&gt;)), C, R&gt; tue::operator&gt;&gt; </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;T&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) shift_right std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator&gt;&gt; </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4767,7 +4767,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaed0137897d3203f9c08016d4b6dd6404"></a>
+<a class="anchor" id="gaac98cdf2ac121f5e26021c78b529b0a8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4777,7 +4777,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr mat&lt;decltype( std::declval&lt;T&gt;) shift_right std::declval&lt;U&gt;)), C, R&gt; tue::operator&gt;&gt; </td>
+          <td class="memname">constexpr std::enable_if_t&lt; is_vec_component&lt;U&gt;::value, mat&lt;decltype(std::declval&lt;T&gt;) shift_right std::declval&lt;U&gt;)), C, R&gt; &gt; tue::operator&gt;&gt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
