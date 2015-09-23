@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b',['b',['../group__vec__hpp.html#ga93deed2fdb7fae174ce88d778de0e0c8',1,'tue::vec']]],
+  ['b',['b',['../group__vec__hpp.html#a93deed2fdb7fae174ce88d778de0e0c8',1,'tue::vec']]],
   ['bool16',['bool16',['../group__sized__bool__hpp.html#ga33a57414f284cc18482ebe644825af62',1,'tue']]],
   ['bool16x16',['bool16x16',['../group__simd__hpp.html#gab3adbf08553be211ca1a89dd714b7cf6',1,'tue']]],
   ['bool16x2',['bool16x2',['../group__simd__hpp.html#ga0acbae371d89a5ad9dc4a12df2acb14e',1,'tue']]],
