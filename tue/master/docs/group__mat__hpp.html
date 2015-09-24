@@ -335,70 +335,62 @@ Functions</h2></td></tr>
 <tr class="memitem:gab98bdf9495d8068da11fdd1d2bcf905b"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gab98bdf9495d8068da11fdd1d2bcf905b">tue::operator!=</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; U, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gab98bdf9495d8068da11fdd1d2bcf905b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether or not two <code>mat</code>'s compare not equal.  <a href="group__mat__hpp.html#gab98bdf9495d8068da11fdd1d2bcf905b">More...</a><br /></td></tr>
 <tr class="separator:gab98bdf9495d8068da11fdd1d2bcf905b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga333b4c2ee973302842fcf3ab051b6d5c"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga333b4c2ee973302842fcf3ab051b6d5c"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::sin(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga333b4c2ee973302842fcf3ab051b6d5c">tue::math::sin</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga333b4c2ee973302842fcf3ab051b6d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sin()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga333b4c2ee973302842fcf3ab051b6d5c">More...</a><br /></td></tr>
-<tr class="separator:ga333b4c2ee973302842fcf3ab051b6d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga01de421d5c8b70b8c34dde09d2f2aa0e"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga01de421d5c8b70b8c34dde09d2f2aa0e"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::cos(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga01de421d5c8b70b8c34dde09d2f2aa0e">tue::math::cos</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga01de421d5c8b70b8c34dde09d2f2aa0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::cos()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga01de421d5c8b70b8c34dde09d2f2aa0e">More...</a><br /></td></tr>
-<tr class="separator:ga01de421d5c8b70b8c34dde09d2f2aa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa605b1024bac63a98fe133ee562bd83b"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:gaa605b1024bac63a98fe133ee562bd83b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">tue::math::sincos</a> (const mat&lt; T, C, R &gt; &amp;m, decltype(tue::math::sin(m))&amp;sin_out, decltype(tue::math::sin(m))&amp;cos_out) noexcept</td></tr>
-<tr class="memdesc:gaa605b1024bac63a98fe133ee562bd83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sincos()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#gaa605b1024bac63a98fe133ee562bd83b">More...</a><br /></td></tr>
-<tr class="separator:gaa605b1024bac63a98fe133ee562bd83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga909bf1ba4c0d22b7227d949ace7e94d9"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga909bf1ba4c0d22b7227d949ace7e94d9"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::exp(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga909bf1ba4c0d22b7227d949ace7e94d9">tue::math::exp</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga909bf1ba4c0d22b7227d949ace7e94d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::exp()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga909bf1ba4c0d22b7227d949ace7e94d9">More...</a><br /></td></tr>
-<tr class="separator:ga909bf1ba4c0d22b7227d949ace7e94d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99ede8d5b5b38622a07094f39a05965c"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga99ede8d5b5b38622a07094f39a05965c"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::log(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga99ede8d5b5b38622a07094f39a05965c">tue::math::log</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga99ede8d5b5b38622a07094f39a05965c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::log()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga99ede8d5b5b38622a07094f39a05965c">More...</a><br /></td></tr>
-<tr class="separator:ga99ede8d5b5b38622a07094f39a05965c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcbdd155662b3a70db96c6271d3e65b0"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:gadcbdd155662b3a70db96c6271d3e65b0"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::abs(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gadcbdd155662b3a70db96c6271d3e65b0">tue::math::abs</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:gadcbdd155662b3a70db96c6271d3e65b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::abs()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#gadcbdd155662b3a70db96c6271d3e65b0">More...</a><br /></td></tr>
-<tr class="separator:gadcbdd155662b3a70db96c6271d3e65b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61f14ab22b2d4633cf7c9619ce0fc65d"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga61f14ab22b2d4633cf7c9619ce0fc65d"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::pow(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga61f14ab22b2d4633cf7c9619ce0fc65d">tue::math::pow</a> (const T &amp;base, const mat&lt; T, C, R &gt; &amp;exponents) noexcept</td></tr>
-<tr class="memdesc:ga61f14ab22b2d4633cf7c9619ce0fc65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for <code>base</code> and each column of <code>exponents</code>.  <a href="group__mat__hpp.html#ga61f14ab22b2d4633cf7c9619ce0fc65d">More...</a><br /></td></tr>
-<tr class="separator:ga61f14ab22b2d4633cf7c9619ce0fc65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d807d4ceb83871dee0d94dbc66a16f0"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga9d807d4ceb83871dee0d94dbc66a16f0"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::pow(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga9d807d4ceb83871dee0d94dbc66a16f0">tue::math::pow</a> (const mat&lt; T, C, R &gt; &amp;bases, const T &amp;exponent) noexcept</td></tr>
-<tr class="memdesc:ga9d807d4ceb83871dee0d94dbc66a16f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for each column of <code>bases</code> and <code>exponent</code>.  <a href="group__mat__hpp.html#ga9d807d4ceb83871dee0d94dbc66a16f0">More...</a><br /></td></tr>
-<tr class="separator:ga9d807d4ceb83871dee0d94dbc66a16f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5901c3a8484d3d7b8b62766826f627a"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:gad5901c3a8484d3d7b8b62766826f627a"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::pow(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gad5901c3a8484d3d7b8b62766826f627a">tue::math::pow</a> (const mat&lt; T, C, R &gt; &amp;bases, const mat&lt; T, C, R &gt; &amp;exponents) noexcept</td></tr>
-<tr class="memdesc:gad5901c3a8484d3d7b8b62766826f627a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for each column of <code>bases</code> and each corresponding column of <code>exponents</code>.  <a href="group__mat__hpp.html#gad5901c3a8484d3d7b8b62766826f627a">More...</a><br /></td></tr>
-<tr class="separator:gad5901c3a8484d3d7b8b62766826f627a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1deff8b20e3645b4617d4cb404f4ad40"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga1deff8b20e3645b4617d4cb404f4ad40"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::recip(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga1deff8b20e3645b4617d4cb404f4ad40">tue::math::recip</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga1deff8b20e3645b4617d4cb404f4ad40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::recip()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga1deff8b20e3645b4617d4cb404f4ad40">More...</a><br /></td></tr>
-<tr class="separator:ga1deff8b20e3645b4617d4cb404f4ad40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad690b1d2c29c75bd7429bd83e5ad286e"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:gad690b1d2c29c75bd7429bd83e5ad286e"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::sqrt(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gad690b1d2c29c75bd7429bd83e5ad286e">tue::math::sqrt</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:gad690b1d2c29c75bd7429bd83e5ad286e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sqrt()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#gad690b1d2c29c75bd7429bd83e5ad286e">More...</a><br /></td></tr>
-<tr class="separator:gad690b1d2c29c75bd7429bd83e5ad286e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga877010d857778a44dd333a21048cd460"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga877010d857778a44dd333a21048cd460"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::rsqrt(std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga877010d857778a44dd333a21048cd460">tue::math::rsqrt</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
-<tr class="memdesc:ga877010d857778a44dd333a21048cd460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::rsqrt()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga877010d857778a44dd333a21048cd460">More...</a><br /></td></tr>
-<tr class="separator:ga877010d857778a44dd333a21048cd460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa691eea9a6a8d7428a5aa604f765d5b6"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:gaa691eea9a6a8d7428a5aa604f765d5b6"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::min(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa691eea9a6a8d7428a5aa604f765d5b6">tue::math::min</a> (const mat&lt; T, C, R &gt; &amp;m1, const mat&lt; T, C, R &gt; &amp;m2) noexcept</td></tr>
-<tr class="memdesc:gaa691eea9a6a8d7428a5aa604f765d5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::min()</code> for each corresponding pair of columns from <code>m1</code> and <code>m2</code>.  <a href="group__mat__hpp.html#gaa691eea9a6a8d7428a5aa604f765d5b6">More...</a><br /></td></tr>
-<tr class="separator:gaa691eea9a6a8d7428a5aa604f765d5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26a1ed88b184940195f0092262f15abd"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
-<tr class="memitem:ga26a1ed88b184940195f0092262f15abd"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::max(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga26a1ed88b184940195f0092262f15abd">tue::math::max</a> (const mat&lt; T, C, R &gt; &amp;m1, const mat&lt; T, C, R &gt; &amp;m2) noexcept</td></tr>
-<tr class="memdesc:ga26a1ed88b184940195f0092262f15abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of columns from <code>m1</code> and <code>m2</code>.  <a href="group__mat__hpp.html#ga26a1ed88b184940195f0092262f15abd">More...</a><br /></td></tr>
-<tr class="separator:ga26a1ed88b184940195f0092262f15abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac404ef99da9b3e5fcfab379d7416714d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gac404ef99da9b3e5fcfab379d7416714d"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::mask(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gac404ef99da9b3e5fcfab379d7416714d">tue::math::mask</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values) noexcept</td></tr>
-<tr class="memdesc:gac404ef99da9b3e5fcfab379d7416714d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::mask()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>.  <a href="group__mat__hpp.html#gac404ef99da9b3e5fcfab379d7416714d">More...</a><br /></td></tr>
-<tr class="separator:gac404ef99da9b3e5fcfab379d7416714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5a4e28902c3731918234b80b928ccf8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
-<tr class="memitem:gaa5a4e28902c3731918234b80b928ccf8"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::select(std::declval&lt; T &gt;), std::declval&lt; U &gt;), std::declval&lt; U &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa5a4e28902c3731918234b80b928ccf8">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values, const mat&lt; U, C, R &gt; &amp;otherwise) noexcept</td></tr>
-<tr class="memdesc:gaa5a4e28902c3731918234b80b928ccf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of columns from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__mat__hpp.html#gaa5a4e28902c3731918234b80b928ccf8">More...</a><br /></td></tr>
-<tr class="separator:gaa5a4e28902c3731918234b80b928ccf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f6ae28ba3a684c889d97135251a2a8d"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5f6ae28ba3a684c889d97135251a2a8d"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5f6ae28ba3a684c889d97135251a2a8d">tue::math::sin</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:ga5f6ae28ba3a684c889d97135251a2a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sin()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga5f6ae28ba3a684c889d97135251a2a8d">More...</a><br /></td></tr>
+<tr class="separator:ga5f6ae28ba3a684c889d97135251a2a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58ca317305f155313cbab62f1cab8ddd"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga58ca317305f155313cbab62f1cab8ddd"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga58ca317305f155313cbab62f1cab8ddd">tue::math::cos</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:ga58ca317305f155313cbab62f1cab8ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::cos()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga58ca317305f155313cbab62f1cab8ddd">More...</a><br /></td></tr>
+<tr class="separator:ga58ca317305f155313cbab62f1cab8ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14a144006bf050cae7763d80abfcb159"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga14a144006bf050cae7763d80abfcb159"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga14a144006bf050cae7763d80abfcb159">tue::math::sincos</a> (const mat&lt; T, C, R &gt; &amp;m, mat&lt; T, C, R &gt; &amp;sin_out, mat&lt; T, C, R &gt; &amp;cos_out) noexcept</td></tr>
+<tr class="memdesc:ga14a144006bf050cae7763d80abfcb159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sincos()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga14a144006bf050cae7763d80abfcb159">More...</a><br /></td></tr>
+<tr class="separator:ga14a144006bf050cae7763d80abfcb159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc38cd877f3644db338bd51fa16b3966"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:gacc38cd877f3644db338bd51fa16b3966"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gacc38cd877f3644db338bd51fa16b3966">tue::math::exp</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:gacc38cd877f3644db338bd51fa16b3966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::exp()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#gacc38cd877f3644db338bd51fa16b3966">More...</a><br /></td></tr>
+<tr class="separator:gacc38cd877f3644db338bd51fa16b3966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e826bd5c7c1296ce0824b257bcfe30d"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga1e826bd5c7c1296ce0824b257bcfe30d"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga1e826bd5c7c1296ce0824b257bcfe30d">tue::math::log</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:ga1e826bd5c7c1296ce0824b257bcfe30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::log()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga1e826bd5c7c1296ce0824b257bcfe30d">More...</a><br /></td></tr>
+<tr class="separator:ga1e826bd5c7c1296ce0824b257bcfe30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf0fa9acb7cbd0cf42c79a515753942a"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:gadf0fa9acb7cbd0cf42c79a515753942a"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gadf0fa9acb7cbd0cf42c79a515753942a">tue::math::abs</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:gadf0fa9acb7cbd0cf42c79a515753942a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::abs()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#gadf0fa9acb7cbd0cf42c79a515753942a">More...</a><br /></td></tr>
+<tr class="separator:gadf0fa9acb7cbd0cf42c79a515753942a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga254225b7863108d2cef2730afddd1baa"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga254225b7863108d2cef2730afddd1baa"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga254225b7863108d2cef2730afddd1baa">tue::math::pow</a> (const mat&lt; T, C, R &gt; &amp;bases, const mat&lt; T, C, R &gt; &amp;exponents) noexcept</td></tr>
+<tr class="memdesc:ga254225b7863108d2cef2730afddd1baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for each column of <code>bases</code> and each corresponding column of <code>exponents</code>.  <a href="group__mat__hpp.html#ga254225b7863108d2cef2730afddd1baa">More...</a><br /></td></tr>
+<tr class="separator:ga254225b7863108d2cef2730afddd1baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c4f9ff2bc3638da0909144363d66912"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5c4f9ff2bc3638da0909144363d66912"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5c4f9ff2bc3638da0909144363d66912">tue::math::recip</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:ga5c4f9ff2bc3638da0909144363d66912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::recip()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga5c4f9ff2bc3638da0909144363d66912">More...</a><br /></td></tr>
+<tr class="separator:ga5c4f9ff2bc3638da0909144363d66912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2728551ee1c66d43ced049f76dd570fe"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga2728551ee1c66d43ced049f76dd570fe"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga2728551ee1c66d43ced049f76dd570fe">tue::math::sqrt</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:ga2728551ee1c66d43ced049f76dd570fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sqrt()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#ga2728551ee1c66d43ced049f76dd570fe">More...</a><br /></td></tr>
+<tr class="separator:ga2728551ee1c66d43ced049f76dd570fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac007ddc51128fdc36624ec4b24e5c0a9"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:gac007ddc51128fdc36624ec4b24e5c0a9"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gac007ddc51128fdc36624ec4b24e5c0a9">tue::math::rsqrt</a> (const mat&lt; T, C, R &gt; &amp;m) noexcept</td></tr>
+<tr class="memdesc:gac007ddc51128fdc36624ec4b24e5c0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::rsqrt()</code> for each column of <code>m</code>.  <a href="group__mat__hpp.html#gac007ddc51128fdc36624ec4b24e5c0a9">More...</a><br /></td></tr>
+<tr class="separator:gac007ddc51128fdc36624ec4b24e5c0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fc22b68face47b6cb954e14249db350"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5fc22b68face47b6cb954e14249db350"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5fc22b68face47b6cb954e14249db350">tue::math::min</a> (const mat&lt; T, C, R &gt; &amp;m1, const mat&lt; T, C, R &gt; &amp;m2) noexcept</td></tr>
+<tr class="memdesc:ga5fc22b68face47b6cb954e14249db350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::min()</code> for each corresponding pair of columns from <code>m1</code> and <code>m2</code>.  <a href="group__mat__hpp.html#ga5fc22b68face47b6cb954e14249db350">More...</a><br /></td></tr>
+<tr class="separator:ga5fc22b68face47b6cb954e14249db350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2af2897af4ed159329dbe559c6af3b23"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
+<tr class="memitem:ga2af2897af4ed159329dbe559c6af3b23"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga2af2897af4ed159329dbe559c6af3b23">tue::math::max</a> (const mat&lt; T, C, R &gt; &amp;m1, const mat&lt; T, C, R &gt; &amp;m2) noexcept</td></tr>
+<tr class="memdesc:ga2af2897af4ed159329dbe559c6af3b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of columns from <code>m1</code> and <code>m2</code>.  <a href="group__mat__hpp.html#ga2af2897af4ed159329dbe559c6af3b23">More...</a><br /></td></tr>
+<tr class="separator:ga2af2897af4ed159329dbe559c6af3b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7d61622d424afd55c5babff0e169a48"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:gaa7d61622d424afd55c5babff0e169a48"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; U, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#gaa7d61622d424afd55c5babff0e169a48">tue::math::mask</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values) noexcept</td></tr>
+<tr class="memdesc:gaa7d61622d424afd55c5babff0e169a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::mask()</code> for each corresponding pair of columns from <code>conditions</code> and <code>values</code>.  <a href="group__mat__hpp.html#gaa7d61622d424afd55c5babff0e169a48">More...</a><br /></td></tr>
+<tr class="separator:gaa7d61622d424afd55c5babff0e169a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a4dca6290c3689f56dc244878964b1c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int C, int R&gt; </td></tr>
+<tr class="memitem:ga5a4dca6290c3689f56dc244878964b1c"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; U, C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga5a4dca6290c3689f56dc244878964b1c">tue::math::select</a> (const mat&lt; T, C, R &gt; &amp;conditions, const mat&lt; U, C, R &gt; &amp;values, const mat&lt; U, C, R &gt; &amp;otherwise) noexcept</td></tr>
+<tr class="memdesc:ga5a4dca6290c3689f56dc244878964b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of columns from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__mat__hpp.html#ga5a4dca6290c3689f56dc244878964b1c">More...</a><br /></td></tr>
+<tr class="separator:ga5a4dca6290c3689f56dc244878964b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50fcc530e9c5fd072068b4cc3cecfd56"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, int R&gt; </td></tr>
 <tr class="memitem:ga50fcc530e9c5fd072068b4cc3cecfd56"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; decltype(tue::math::less(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), C, R &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ga50fcc530e9c5fd072068b4cc3cecfd56">tue::math::less</a> (const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga50fcc530e9c5fd072068b4cc3cecfd56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less()</code> for each corresponding pair of columns from <code>lhs</code> and <code>rhs</code>.  <a href="group__mat__hpp.html#ga50fcc530e9c5fd072068b4cc3cecfd56">More...</a><br /></td></tr>
@@ -5024,7 +5016,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga333b4c2ee973302842fcf3ab051b6d5c"></a>
+<a class="anchor" id="ga5f6ae28ba3a684c889d97135251a2a8d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5034,7 +5026,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::sin(std::declval&lt;T&gt;))), C, R&gt; tue::math::sin </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::sin </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5067,7 +5059,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga01de421d5c8b70b8c34dde09d2f2aa0e"></a>
+<a class="anchor" id="ga58ca317305f155313cbab62f1cab8ddd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5077,7 +5069,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::cos(std::declval&lt;T&gt;))), C, R&gt; tue::math::cos </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::cos </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5110,7 +5102,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaa605b1024bac63a98fe133ee562bd83b"></a>
+<a class="anchor" id="ga14a144006bf050cae7763d80abfcb159"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5128,13 +5120,13 @@ template&lt;typename T , int C, int R&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decltype(tue::math::sin(m))&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>sin_out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decltype(tue::math::sin(m))&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>cos_out</em>&#160;</td>
         </tr>
         <tr>
@@ -5170,7 +5162,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga909bf1ba4c0d22b7227d949ace7e94d9"></a>
+<a class="anchor" id="gacc38cd877f3644db338bd51fa16b3966"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5180,7 +5172,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::exp(std::declval&lt;T&gt;))), C, R&gt; tue::math::exp </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::exp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5213,7 +5205,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga99ede8d5b5b38622a07094f39a05965c"></a>
+<a class="anchor" id="ga1e826bd5c7c1296ce0824b257bcfe30d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5223,7 +5215,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::log(std::declval&lt;T&gt;))), C, R&gt; tue::math::log </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::log </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5256,7 +5248,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gadcbdd155662b3a70db96c6271d3e65b0"></a>
+<a class="anchor" id="gadf0fa9acb7cbd0cf42c79a515753942a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5266,7 +5258,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::abs(std::declval&lt;T&gt;))), C, R&gt; tue::math::abs </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::abs </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5299,7 +5291,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga61f14ab22b2d4633cf7c9619ce0fc65d"></a>
+<a class="anchor" id="ga254225b7863108d2cef2730afddd1baa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5309,115 +5301,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype( tue::math::pow(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::pow </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>exponents</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes <code>tue::math::pow()</code> for <code>base</code> and each column of <code>exponents</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>base</code> and the component type of <code>exponents</code>. </td></tr>
-    <tr><td class="paramname">C</td><td>The column count of <code>exponents</code>. </td></tr>
-    <tr><td class="paramname">R</td><td>The row count of <code>exponents</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">base</td><td>The base. </td></tr>
-    <tr><td class="paramname">exponents</td><td>The exponents.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::pow()</code> for <code>base</code> and each column of <code>exponents</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga9d807d4ceb83871dee0d94dbc66a16f0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int C, int R&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mat&lt;decltype( tue::math::pow(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::pow </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bases</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>exponent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes <code>tue::math::pow()</code> for each column of <code>bases</code> and <code>exponent</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>bases</code> and the type of parameter <code>exponent</code>. </td></tr>
-    <tr><td class="paramname">C</td><td>The column count of <code>bases</code>. </td></tr>
-    <tr><td class="paramname">R</td><td>The row count of <code>bases</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bases</td><td>The bases. </td></tr>
-    <tr><td class="paramname">exponent</td><td>The exponent.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::pow()</code> for each column of <code>bases</code> and <code>exponent</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gad5901c3a8484d3d7b8b62766826f627a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int C, int R&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mat&lt;decltype( tue::math::pow(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::pow </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::pow </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>bases</em>, </td>
@@ -5461,7 +5345,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga1deff8b20e3645b4617d4cb404f4ad40"></a>
+<a class="anchor" id="ga5c4f9ff2bc3638da0909144363d66912"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5471,7 +5355,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::recip(std::declval&lt;T&gt;))), C, R&gt; tue::math::recip </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::recip </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5504,7 +5388,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gad690b1d2c29c75bd7429bd83e5ad286e"></a>
+<a class="anchor" id="ga2728551ee1c66d43ced049f76dd570fe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5514,7 +5398,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::sqrt(std::declval&lt;T&gt;))), C, R&gt; tue::math::sqrt </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::sqrt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5547,7 +5431,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga877010d857778a44dd333a21048cd460"></a>
+<a class="anchor" id="gac007ddc51128fdc36624ec4b24e5c0a9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5557,7 +5441,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype(tue::math::rsqrt(std::declval&lt;T&gt;))), C, R&gt; tue::math::rsqrt </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::rsqrt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -5590,7 +5474,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaa691eea9a6a8d7428a5aa604f765d5b6"></a>
+<a class="anchor" id="ga5fc22b68face47b6cb954e14249db350"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5600,7 +5484,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype( tue::math::min(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::min </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::min </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m1</em>, </td>
@@ -5644,7 +5528,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga26a1ed88b184940195f0092262f15abd"></a>
+<a class="anchor" id="ga2af2897af4ed159329dbe559c6af3b23"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5654,7 +5538,7 @@ template&lt;typename T , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype( tue::math::max(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), C, R&gt; tue::math::max </td>
+          <td class="memname">mat&lt;T, C, R&gt; tue::math::max </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>m1</em>, </td>
@@ -5698,7 +5582,7 @@ template&lt;typename T , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gac404ef99da9b3e5fcfab379d7416714d"></a>
+<a class="anchor" id="gaa7d61622d424afd55c5babff0e169a48"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5708,7 +5592,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt;decltype( tue::math::mask(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::mask </td>
+          <td class="memname">mat&lt;U, C, R&gt; tue::math::mask </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -5753,7 +5637,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaa5a4e28902c3731918234b80b928ccf8"></a>
+<a class="anchor" id="ga5a4dca6290c3689f56dc244878964b1c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -5763,7 +5647,7 @@ template&lt;typename T , typename U , int C, int R&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat&lt; decltype(tue::math::select( std::declval&lt;T&gt;), std::declval&lt;U&gt;), std::declval&lt;U&gt;))), C, R&gt; tue::math::select </td>
+          <td class="memname">mat&lt;U, C, R&gt; tue::math::select </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>

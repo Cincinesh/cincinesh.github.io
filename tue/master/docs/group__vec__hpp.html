@@ -288,70 +288,62 @@ Functions</h2></td></tr>
 <tr class="memitem:ga86ca06c0e3597aa244eb0888cfc1417d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga86ca06c0e3597aa244eb0888cfc1417d">tue::operator!=</a> (const vec&lt; T, N &gt; &amp;lhs, const vec&lt; U, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ga86ca06c0e3597aa244eb0888cfc1417d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether or not two <code>vec</code>'s compare not equal.  <a href="group__vec__hpp.html#ga86ca06c0e3597aa244eb0888cfc1417d">More...</a><br /></td></tr>
 <tr class="separator:ga86ca06c0e3597aa244eb0888cfc1417d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga191138063b4845379a7f0fea2f55965d"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga191138063b4845379a7f0fea2f55965d"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::sin(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga191138063b4845379a7f0fea2f55965d">tue::math::sin</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga191138063b4845379a7f0fea2f55965d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sin()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga191138063b4845379a7f0fea2f55965d">More...</a><br /></td></tr>
-<tr class="separator:ga191138063b4845379a7f0fea2f55965d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50662579b8b31058a6ca4e5e636a5e13"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga50662579b8b31058a6ca4e5e636a5e13"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::cos(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga50662579b8b31058a6ca4e5e636a5e13">tue::math::cos</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga50662579b8b31058a6ca4e5e636a5e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::cos()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga50662579b8b31058a6ca4e5e636a5e13">More...</a><br /></td></tr>
-<tr class="separator:ga50662579b8b31058a6ca4e5e636a5e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1b439885207670ec7ca3e165a989052"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:gaf1b439885207670ec7ca3e165a989052"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gaf1b439885207670ec7ca3e165a989052">tue::math::sincos</a> (const vec&lt; T, N &gt; &amp;v, decltype(tue::math::sin(v))&amp;sin_out, decltype(tue::math::sin(v))&amp;cos_out) noexcept</td></tr>
-<tr class="memdesc:gaf1b439885207670ec7ca3e165a989052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sincos()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gaf1b439885207670ec7ca3e165a989052">More...</a><br /></td></tr>
-<tr class="separator:gaf1b439885207670ec7ca3e165a989052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91d5ceeae4ce5b223680792dfbb5ecef"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga91d5ceeae4ce5b223680792dfbb5ecef"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::exp(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga91d5ceeae4ce5b223680792dfbb5ecef">tue::math::exp</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga91d5ceeae4ce5b223680792dfbb5ecef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::exp()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga91d5ceeae4ce5b223680792dfbb5ecef">More...</a><br /></td></tr>
-<tr class="separator:ga91d5ceeae4ce5b223680792dfbb5ecef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3a9186af7cfce82d78cf46d499bfdbb"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:gad3a9186af7cfce82d78cf46d499bfdbb"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::log(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gad3a9186af7cfce82d78cf46d499bfdbb">tue::math::log</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:gad3a9186af7cfce82d78cf46d499bfdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::log()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gad3a9186af7cfce82d78cf46d499bfdbb">More...</a><br /></td></tr>
-<tr class="separator:gad3a9186af7cfce82d78cf46d499bfdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97f8c794a7f462e86b4f5b71ed957a70"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga97f8c794a7f462e86b4f5b71ed957a70"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::abs(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga97f8c794a7f462e86b4f5b71ed957a70">tue::math::abs</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga97f8c794a7f462e86b4f5b71ed957a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::abs()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga97f8c794a7f462e86b4f5b71ed957a70">More...</a><br /></td></tr>
-<tr class="separator:ga97f8c794a7f462e86b4f5b71ed957a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae826955b863549a023c0e5778495cda5"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:gae826955b863549a023c0e5778495cda5"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::pow(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gae826955b863549a023c0e5778495cda5">tue::math::pow</a> (const T &amp;base, const vec&lt; T, N &gt; &amp;exponents) noexcept</td></tr>
-<tr class="memdesc:gae826955b863549a023c0e5778495cda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for <code>base</code> and each component of <code>exponents</code>.  <a href="group__vec__hpp.html#gae826955b863549a023c0e5778495cda5">More...</a><br /></td></tr>
-<tr class="separator:gae826955b863549a023c0e5778495cda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e1eb13291fd8c1b14475b8117ff7d18"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga4e1eb13291fd8c1b14475b8117ff7d18"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::pow(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga4e1eb13291fd8c1b14475b8117ff7d18">tue::math::pow</a> (const vec&lt; T, N &gt; &amp;bases, const T &amp;exponent) noexcept</td></tr>
-<tr class="memdesc:ga4e1eb13291fd8c1b14475b8117ff7d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for each component of <code>bases</code> and <code>exponent</code>.  <a href="group__vec__hpp.html#ga4e1eb13291fd8c1b14475b8117ff7d18">More...</a><br /></td></tr>
-<tr class="separator:ga4e1eb13291fd8c1b14475b8117ff7d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38dae2b33a9ecde2e234b75fa9e4607e"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga38dae2b33a9ecde2e234b75fa9e4607e"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::pow(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga38dae2b33a9ecde2e234b75fa9e4607e">tue::math::pow</a> (const vec&lt; T, N &gt; &amp;bases, const vec&lt; T, N &gt; &amp;exponents) noexcept</td></tr>
-<tr class="memdesc:ga38dae2b33a9ecde2e234b75fa9e4607e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for each component of <code>bases</code> and each corresponding component of <code>exponents</code>.  <a href="group__vec__hpp.html#ga38dae2b33a9ecde2e234b75fa9e4607e">More...</a><br /></td></tr>
-<tr class="separator:ga38dae2b33a9ecde2e234b75fa9e4607e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87f26c8ced75fd25cf9e74ca8a99f482"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga87f26c8ced75fd25cf9e74ca8a99f482"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::recip(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga87f26c8ced75fd25cf9e74ca8a99f482">tue::math::recip</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga87f26c8ced75fd25cf9e74ca8a99f482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::recip()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga87f26c8ced75fd25cf9e74ca8a99f482">More...</a><br /></td></tr>
-<tr class="separator:ga87f26c8ced75fd25cf9e74ca8a99f482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e4b84cf142d29a55b330bab92ee47e5"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga9e4b84cf142d29a55b330bab92ee47e5"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::sqrt(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga9e4b84cf142d29a55b330bab92ee47e5">tue::math::sqrt</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga9e4b84cf142d29a55b330bab92ee47e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sqrt()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga9e4b84cf142d29a55b330bab92ee47e5">More...</a><br /></td></tr>
-<tr class="separator:ga9e4b84cf142d29a55b330bab92ee47e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27934897feb5e94aaeb5622bd60d0c0b"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga27934897feb5e94aaeb5622bd60d0c0b"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::rsqrt(std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga27934897feb5e94aaeb5622bd60d0c0b">tue::math::rsqrt</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:ga27934897feb5e94aaeb5622bd60d0c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::rsqrt()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga27934897feb5e94aaeb5622bd60d0c0b">More...</a><br /></td></tr>
-<tr class="separator:ga27934897feb5e94aaeb5622bd60d0c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4538a1d41038521963f0320677baefbe"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga4538a1d41038521963f0320677baefbe"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::min(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga4538a1d41038521963f0320677baefbe">tue::math::min</a> (const vec&lt; T, N &gt; &amp;v1, const vec&lt; T, N &gt; &amp;v2) noexcept</td></tr>
-<tr class="memdesc:ga4538a1d41038521963f0320677baefbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::min()</code> for each corresponding pair of components from <code>v1</code> and <code>v2</code>.  <a href="group__vec__hpp.html#ga4538a1d41038521963f0320677baefbe">More...</a><br /></td></tr>
-<tr class="separator:ga4538a1d41038521963f0320677baefbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::max(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga7e3fbe4481c99a13a02cc438a12f4a70">tue::math::max</a> (const vec&lt; T, N &gt; &amp;v1, const vec&lt; T, N &gt; &amp;v2) noexcept</td></tr>
-<tr class="memdesc:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of components from <code>v1</code> and <code>v2</code>.  <a href="group__vec__hpp.html#ga7e3fbe4481c99a13a02cc438a12f4a70">More...</a><br /></td></tr>
-<tr class="separator:ga7e3fbe4481c99a13a02cc438a12f4a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2de9e308ed244412938394d01075d93b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
-<tr class="memitem:ga2de9e308ed244412938394d01075d93b"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::mask(std::declval&lt; T &gt;), std::declval&lt; U &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga2de9e308ed244412938394d01075d93b">tue::math::mask</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values) noexcept</td></tr>
-<tr class="memdesc:ga2de9e308ed244412938394d01075d93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::mask()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>.  <a href="group__vec__hpp.html#ga2de9e308ed244412938394d01075d93b">More...</a><br /></td></tr>
-<tr class="separator:ga2de9e308ed244412938394d01075d93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
-<tr class="memitem:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::select(std::declval&lt; T &gt;), std::declval&lt; U &gt;), std::declval&lt; U &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga16c91ce767aaed8000283bb7b1ea63fa">tue::math::select</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values, const vec&lt; U, N &gt; &amp;otherwise) noexcept</td></tr>
-<tr class="memdesc:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of components from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__vec__hpp.html#ga16c91ce767aaed8000283bb7b1ea63fa">More...</a><br /></td></tr>
-<tr class="separator:ga16c91ce767aaed8000283bb7b1ea63fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2221f7d6163759d3d179211aee6a1180"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga2221f7d6163759d3d179211aee6a1180"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga2221f7d6163759d3d179211aee6a1180">tue::math::sin</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:ga2221f7d6163759d3d179211aee6a1180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sin()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga2221f7d6163759d3d179211aee6a1180">More...</a><br /></td></tr>
+<tr class="separator:ga2221f7d6163759d3d179211aee6a1180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea9bbc314613975b7690924832b45d59"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gaea9bbc314613975b7690924832b45d59"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gaea9bbc314613975b7690924832b45d59">tue::math::cos</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:gaea9bbc314613975b7690924832b45d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::cos()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gaea9bbc314613975b7690924832b45d59">More...</a><br /></td></tr>
+<tr class="separator:gaea9bbc314613975b7690924832b45d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc685809ac180f0a7c2f328f8e5a2aee"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gabc685809ac180f0a7c2f328f8e5a2aee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gabc685809ac180f0a7c2f328f8e5a2aee">tue::math::sincos</a> (const vec&lt; T, N &gt; &amp;v, vec&lt; T, N &gt; &amp;sin_out, vec&lt; T, N &gt; &amp;cos_out) noexcept</td></tr>
+<tr class="memdesc:gabc685809ac180f0a7c2f328f8e5a2aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sincos()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gabc685809ac180f0a7c2f328f8e5a2aee">More...</a><br /></td></tr>
+<tr class="separator:gabc685809ac180f0a7c2f328f8e5a2aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7e14c4e604c67b4e36350bb42cf7aa4"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gae7e14c4e604c67b4e36350bb42cf7aa4"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gae7e14c4e604c67b4e36350bb42cf7aa4">tue::math::exp</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:gae7e14c4e604c67b4e36350bb42cf7aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::exp()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gae7e14c4e604c67b4e36350bb42cf7aa4">More...</a><br /></td></tr>
+<tr class="separator:gae7e14c4e604c67b4e36350bb42cf7aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadee0d509cd500e113703ebffdf36ded0"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gadee0d509cd500e113703ebffdf36ded0"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gadee0d509cd500e113703ebffdf36ded0">tue::math::log</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:gadee0d509cd500e113703ebffdf36ded0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::log()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gadee0d509cd500e113703ebffdf36ded0">More...</a><br /></td></tr>
+<tr class="separator:gadee0d509cd500e113703ebffdf36ded0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1aaff5a01fc7b83edbc02fd02a4410c2"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga1aaff5a01fc7b83edbc02fd02a4410c2"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga1aaff5a01fc7b83edbc02fd02a4410c2">tue::math::abs</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:ga1aaff5a01fc7b83edbc02fd02a4410c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::abs()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga1aaff5a01fc7b83edbc02fd02a4410c2">More...</a><br /></td></tr>
+<tr class="separator:ga1aaff5a01fc7b83edbc02fd02a4410c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a41da73c440e6cf035cdb928773a386"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga1a41da73c440e6cf035cdb928773a386"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga1a41da73c440e6cf035cdb928773a386">tue::math::pow</a> (const vec&lt; T, N &gt; &amp;bases, const vec&lt; T, N &gt; &amp;exponents) noexcept</td></tr>
+<tr class="memdesc:ga1a41da73c440e6cf035cdb928773a386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::pow()</code> for each component of <code>bases</code> and each corresponding component of <code>exponents</code>.  <a href="group__vec__hpp.html#ga1a41da73c440e6cf035cdb928773a386">More...</a><br /></td></tr>
+<tr class="separator:ga1a41da73c440e6cf035cdb928773a386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga553c1254b85d36638b2c9cc75fab5663"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga553c1254b85d36638b2c9cc75fab5663"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga553c1254b85d36638b2c9cc75fab5663">tue::math::recip</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:ga553c1254b85d36638b2c9cc75fab5663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::recip()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#ga553c1254b85d36638b2c9cc75fab5663">More...</a><br /></td></tr>
+<tr class="separator:ga553c1254b85d36638b2c9cc75fab5663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefe8005b87a43e3c6f2b9c48b0cece4c"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gaefe8005b87a43e3c6f2b9c48b0cece4c"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gaefe8005b87a43e3c6f2b9c48b0cece4c">tue::math::sqrt</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:gaefe8005b87a43e3c6f2b9c48b0cece4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::sqrt()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gaefe8005b87a43e3c6f2b9c48b0cece4c">More...</a><br /></td></tr>
+<tr class="separator:gaefe8005b87a43e3c6f2b9c48b0cece4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8ca4f66973dcfbd12856da0aaa0345e"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gac8ca4f66973dcfbd12856da0aaa0345e"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gac8ca4f66973dcfbd12856da0aaa0345e">tue::math::rsqrt</a> (const vec&lt; T, N &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:gac8ca4f66973dcfbd12856da0aaa0345e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::rsqrt()</code> for each component of <code>v</code>.  <a href="group__vec__hpp.html#gac8ca4f66973dcfbd12856da0aaa0345e">More...</a><br /></td></tr>
+<tr class="separator:gac8ca4f66973dcfbd12856da0aaa0345e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d070ad98ee444a70559323b373fae21"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga3d070ad98ee444a70559323b373fae21"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ga3d070ad98ee444a70559323b373fae21">tue::math::min</a> (const vec&lt; T, N &gt; &amp;v1, const vec&lt; T, N &gt; &amp;v2) noexcept</td></tr>
+<tr class="memdesc:ga3d070ad98ee444a70559323b373fae21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::min()</code> for each corresponding pair of components from <code>v1</code> and <code>v2</code>.  <a href="group__vec__hpp.html#ga3d070ad98ee444a70559323b373fae21">More...</a><br /></td></tr>
+<tr class="separator:ga3d070ad98ee444a70559323b373fae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab128136d8aa28f6bbf665355346fd696"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:gab128136d8aa28f6bbf665355346fd696"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gab128136d8aa28f6bbf665355346fd696">tue::math::max</a> (const vec&lt; T, N &gt; &amp;v1, const vec&lt; T, N &gt; &amp;v2) noexcept</td></tr>
+<tr class="memdesc:gab128136d8aa28f6bbf665355346fd696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of components from <code>v1</code> and <code>v2</code>.  <a href="group__vec__hpp.html#gab128136d8aa28f6bbf665355346fd696">More...</a><br /></td></tr>
+<tr class="separator:gab128136d8aa28f6bbf665355346fd696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab80665f95c30c8c95ca3fa7d88411e9e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
+<tr class="memitem:gab80665f95c30c8c95ca3fa7d88411e9e"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; U, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gab80665f95c30c8c95ca3fa7d88411e9e">tue::math::mask</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values) noexcept</td></tr>
+<tr class="memdesc:gab80665f95c30c8c95ca3fa7d88411e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::mask()</code> for each corresponding pair of components from <code>conditions</code> and <code>values</code>.  <a href="group__vec__hpp.html#gab80665f95c30c8c95ca3fa7d88411e9e">More...</a><br /></td></tr>
+<tr class="separator:gab80665f95c30c8c95ca3fa7d88411e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecfc964fcc4c901702bf695928de484d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
+<tr class="memitem:gaecfc964fcc4c901702bf695928de484d"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; U, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gaecfc964fcc4c901702bf695928de484d">tue::math::select</a> (const vec&lt; T, N &gt; &amp;conditions, const vec&lt; U, N &gt; &amp;values, const vec&lt; U, N &gt; &amp;otherwise) noexcept</td></tr>
+<tr class="memdesc:gaecfc964fcc4c901702bf695928de484d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::select()</code> for each corresponding triple of components from <code>conditions</code>, <code>values</code>, and <code>otherwise</code>.  <a href="group__vec__hpp.html#gaecfc964fcc4c901702bf695928de484d">More...</a><br /></td></tr>
+<tr class="separator:gaecfc964fcc4c901702bf695928de484d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7336a6b4e42a1eb89d74864fb1904ff"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:gab7336a6b4e42a1eb89d74864fb1904ff"><td class="memTemplItemLeft" align="right" valign="top">vec&lt; decltype(tue::math::less(std::declval&lt; T &gt;), std::declval&lt; T &gt;))), N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#gab7336a6b4e42a1eb89d74864fb1904ff">tue::math::less</a> (const vec&lt; T, N &gt; &amp;lhs, const vec&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:gab7336a6b4e42a1eb89d74864fb1904ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__vec__hpp.html#gab7336a6b4e42a1eb89d74864fb1904ff">More...</a><br /></td></tr>
@@ -6218,7 +6210,7 @@ template&lt;typename T , typename U , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga191138063b4845379a7f0fea2f55965d"></a>
+<a class="anchor" id="ga2221f7d6163759d3d179211aee6a1180"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6228,7 +6220,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::sin(std::declval&lt;T&gt;))), N&gt; tue::math::sin </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::sin </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6260,7 +6252,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga50662579b8b31058a6ca4e5e636a5e13"></a>
+<a class="anchor" id="gaea9bbc314613975b7690924832b45d59"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6270,7 +6262,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::cos(std::declval&lt;T&gt;))), N&gt; tue::math::cos </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::cos </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6302,7 +6294,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaf1b439885207670ec7ca3e165a989052"></a>
+<a class="anchor" id="gabc685809ac180f0a7c2f328f8e5a2aee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6320,13 +6312,13 @@ template&lt;typename T , int N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decltype(tue::math::sin(v))&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>sin_out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decltype(tue::math::sin(v))&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>cos_out</em>&#160;</td>
         </tr>
         <tr>
@@ -6361,7 +6353,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga91d5ceeae4ce5b223680792dfbb5ecef"></a>
+<a class="anchor" id="gae7e14c4e604c67b4e36350bb42cf7aa4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6371,7 +6363,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::exp(std::declval&lt;T&gt;))), N&gt; tue::math::exp </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::exp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6403,7 +6395,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gad3a9186af7cfce82d78cf46d499bfdbb"></a>
+<a class="anchor" id="gadee0d509cd500e113703ebffdf36ded0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6413,7 +6405,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::log(std::declval&lt;T&gt;))), N&gt; tue::math::log </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::log </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6445,7 +6437,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga97f8c794a7f462e86b4f5b71ed957a70"></a>
+<a class="anchor" id="ga1aaff5a01fc7b83edbc02fd02a4410c2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6455,7 +6447,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::abs(std::declval&lt;T&gt;))), N&gt; tue::math::abs </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::abs </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6487,7 +6479,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gae826955b863549a023c0e5778495cda5"></a>
+<a class="anchor" id="ga1a41da73c440e6cf035cdb928773a386"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6497,113 +6489,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype( tue::math::pow(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), N&gt; tue::math::pow </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>exponents</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes <code>tue::math::pow()</code> for <code>base</code> and each component of <code>exponents</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of parameter <code>base</code> and the component type of <code>exponents</code>. </td></tr>
-    <tr><td class="paramname">N</td><td>The component count of <code>exponents</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">base</td><td>The base. </td></tr>
-    <tr><td class="paramname">exponents</td><td>The exponents.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::pow()</code> for <code>base</code> and each component of <code>exponents</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga4e1eb13291fd8c1b14475b8117ff7d18"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vec&lt;decltype( tue::math::pow(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), N&gt; tue::math::pow </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bases</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>exponent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes <code>tue::math::pow()</code> for each component of <code>bases</code> and <code>exponent</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The component type of <code>bases</code> and the type of parameter <code>exponent</code>. </td></tr>
-    <tr><td class="paramname">N</td><td>The component count of <code>bases</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bases</td><td>The bases. </td></tr>
-    <tr><td class="paramname">exponent</td><td>The exponent.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::pow()</code> for each component of <code>bases</code> and <code>exponent</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga38dae2b33a9ecde2e234b75fa9e4607e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vec&lt;decltype( tue::math::pow(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), N&gt; tue::math::pow </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::pow </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>bases</em>, </td>
@@ -6646,7 +6532,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga87f26c8ced75fd25cf9e74ca8a99f482"></a>
+<a class="anchor" id="ga553c1254b85d36638b2c9cc75fab5663"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6656,7 +6542,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::recip(std::declval&lt;T&gt;))), N&gt; tue::math::recip </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::recip </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6688,7 +6574,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga9e4b84cf142d29a55b330bab92ee47e5"></a>
+<a class="anchor" id="gaefe8005b87a43e3c6f2b9c48b0cece4c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6698,7 +6584,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::sqrt(std::declval&lt;T&gt;))), N&gt; tue::math::sqrt </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::sqrt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6730,7 +6616,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga27934897feb5e94aaeb5622bd60d0c0b"></a>
+<a class="anchor" id="gac8ca4f66973dcfbd12856da0aaa0345e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6740,7 +6626,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype(tue::math::rsqrt(std::declval&lt;T&gt;))), N&gt; tue::math::rsqrt </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::rsqrt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -6772,7 +6658,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga4538a1d41038521963f0320677baefbe"></a>
+<a class="anchor" id="ga3d070ad98ee444a70559323b373fae21"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6782,7 +6668,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype( tue::math::min(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), N&gt; tue::math::min </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::min </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -6825,7 +6711,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga7e3fbe4481c99a13a02cc438a12f4a70"></a>
+<a class="anchor" id="gab128136d8aa28f6bbf665355346fd696"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6835,7 +6721,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype( tue::math::max(std::declval&lt;T&gt;), std::declval&lt;T&gt;))), N&gt; tue::math::max </td>
+          <td class="memname">vec&lt;T, N&gt; tue::math::max </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
@@ -6878,7 +6764,7 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga2de9e308ed244412938394d01075d93b"></a>
+<a class="anchor" id="gab80665f95c30c8c95ca3fa7d88411e9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6888,7 +6774,7 @@ template&lt;typename T , typename U , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt;decltype( tue::math::mask(std::declval&lt;T&gt;), std::declval&lt;U&gt;))), N&gt; tue::math::mask </td>
+          <td class="memname">vec&lt;U, N&gt; tue::math::mask </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -6932,7 +6818,7 @@ template&lt;typename T , typename U , int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga16c91ce767aaed8000283bb7b1ea63fa"></a>
+<a class="anchor" id="gaecfc964fcc4c901702bf695928de484d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -6942,7 +6828,7 @@ template&lt;typename T , typename U , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vec&lt; decltype(tue::math::select( std::declval&lt;T&gt;), std::declval&lt;U&gt;), std::declval&lt;U&gt;))), N&gt; tue::math::select </td>
+          <td class="memname">vec&lt;U, N&gt; tue::math::select </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -7570,6 +7456,7 @@ template&lt;typename T , int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Computes a normalized copy of <code>v</code>. </p>
+<p>If the vector length of <code>v</code> equals <code>0</code>, behavior is undefined.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of <code>v</code>. </td></tr>
