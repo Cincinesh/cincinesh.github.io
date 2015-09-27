@@ -197,16 +197,17 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for generating and converting between different types of transformations. </p>
-<p>This library has a few different ways of representing 3-dimensional rotations specifically:</p><ul>
-<li><b>An axis-angle pair</b><br />
+<p>This library has a few different ways of representing 3-dimensional rotations specifically:</p>
+<ul>
+<li><b>An axis-angle pair</b> <br />
  An axis-angle pair is just as the name implies: it's a rotation around a given axis. It can be represented by three scalars (the axis) and a fourth scalar (the angle) or by a <code>vec3</code> (the axis) and a scalar (the angle). All functions which take an axis-angle pair as their arguments assume the axis is normalized and the angle is measured in radians counter-clockwise around the axis.</li>
-<li><b>An axis-angle vector</b><br />
+<li><b>An axis-angle vector</b> <br />
  An axis-angle vector is just an axis-angle pair grouped together into a single <code>vec4</code>. The first three components make up the axis and the fourth component represents the angle.</li>
-<li><b>A rotation vector</b><br />
- There are a couple ways to think about a rotation vector. It's represented by three separate scalars or a single <code>vec3</code>. You could imagine it as a more-compact verison of an axis-angle pair: its direction represents the axis of rotation and its magnitude the angle (again, radians counter-clockwise around the axis). You could also imagine it as the composite of three separate rotations with each component representing an angle of rotation around the corresponding principal axis. Rotation vectors are most useful when rotations need to be interpolated and/or multiplied, such as when representing angular velocity.</li>
-<li><b>A rotation quaternion</b><br />
+<li><b>A rotation vector</b> <br />
+ There are a couple ways to think about a rotation vector. It's represented by three separate scalars or a single <code>vec3</code>. You could imagine it as a more-compact version of an axis-angle pair; its direction represents the axis of rotation and its magnitude the angle (again, radians counter-clockwise around the axis). You could also imagine it as the composite of three separate rotations with each component representing an angle of rotation around the corresponding principal axis. Rotation vectors are most useful when rotations need to be interpolated and/or multiplied, such as when representing angular velocity.</li>
+<li><b>A rotation quaternion</b> <br />
  A rotation quaternion is a little more complicated. It's a four-component composite type (a <code>quat</code>). It's kind of like an axis-angle vector, but the entire vector is assumed to be normalized instead of just the axis. This is achieved by multiplying the normalized axis by <code>sin(angle/2)</code> and storing <code>cos(angle/2)</code> instead of the angle itself in the fourth component. Rotation quaternions are best used when representing an orientation in 3-dimensional space or when composing multiple rotations into one. Since they're defined by trigonometric functions, computationally expensive trigonometry isn't needed when using them to rotate vectors or when generating rotation matrices.</li>
-<li><b>A rotation matrix</b><br />
+<li><b>A rotation matrix</b> <br />
  A rotation matrix is just a specific type of transformation matrix that can rotate vectors using matrix multiplication. It's useful for composing with other types of transformation matrices. </li>
 </ul>
 <h2 class="groupheader">Function Documentation</h2>
@@ -298,13 +299,13 @@ template&lt;typename T &gt; </div>
 <p>If the rotation vector's length is <code>0</code>, returns <code>(0, 0, 1, 0)</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The rotation vector's component type. </td></tr>
+    <tr><td class="paramname">T</td><td>The rotation vector's component type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>The rotation vector. </td></tr>
+    <tr><td class="paramname">v</td><td>The rotation vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -457,15 +458,16 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Converts an axis-angle vector to a rotation vector. </p>
-<p>This function assumes the axis is normalized. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>This function assumes the axis is normalized.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The axis-angle component type. </td></tr>
+    <tr><td class="paramname">T</td><td>The axis-angle component type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>The axis-angle vector. </td></tr>
+    <tr><td class="paramname">v</td><td>The axis-angle vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -618,15 +620,16 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Converts an axis-angle vector to a rotation quaternion. </p>
-<p>This function assumes the axis is normalized. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>This function assumes the axis is normalized.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The axis-angle component type. </td></tr>
+    <tr><td class="paramname">T</td><td>The axis-angle component type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>The axis-angle vector. </td></tr>
+    <tr><td class="paramname">v</td><td>The axis-angle vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -722,13 +725,13 @@ template&lt;typename T &gt; </div>
 <p>If the rotation vector's length is <code>0</code>, returns <code>(0, 0, 0, 1)</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The rotation vector's component type. </td></tr>
+    <tr><td class="paramname">T</td><td>The rotation vector's component type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>The rotation vector. </td></tr>
+    <tr><td class="paramname">v</td><td>The rotation vector.</td></tr>
   </table>
   </dd>
 </dl>
