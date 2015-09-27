@@ -474,11 +474,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga9200e8cf402236e670581ac8a6b89051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga746a1212e21f887ef3d17fe575bfc5b4"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga746a1212e21f887ef3d17fe575bfc5b4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, simd&lt; T, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga746a1212e21f887ef3d17fe575bfc5b4">tue::math::min</a> (const simd&lt; T, N &gt; &amp;s1, const simd&lt; T, N &gt; &amp;s2) noexcept</td></tr>
-<tr class="memdesc:ga746a1212e21f887ef3d17fe575bfc5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::min()</code> for each corresponding pair of components of <code>s1</code> and <code>s2</code>.  <a href="group__simd__hpp.html#ga746a1212e21f887ef3d17fe575bfc5b4">More...</a><br /></td></tr>
+<tr class="memdesc:ga746a1212e21f887ef3d17fe575bfc5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::min()</code> for each corresponding pair of components from <code>s1</code> and <code>s2</code>.  <a href="group__simd__hpp.html#ga746a1212e21f887ef3d17fe575bfc5b4">More...</a><br /></td></tr>
 <tr class="separator:ga746a1212e21f887ef3d17fe575bfc5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac23aef2f3bdcc071607996c23d28acf2"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:gac23aef2f3bdcc071607996c23d28acf2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value, simd&lt; T, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gac23aef2f3bdcc071607996c23d28acf2">tue::math::max</a> (const simd&lt; T, N &gt; &amp;s1, const simd&lt; T, N &gt; &amp;s2) noexcept</td></tr>
-<tr class="memdesc:gac23aef2f3bdcc071607996c23d28acf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of components of <code>s1</code> and <code>s2</code>.  <a href="group__simd__hpp.html#gac23aef2f3bdcc071607996c23d28acf2">More...</a><br /></td></tr>
+<tr class="memdesc:gac23aef2f3bdcc071607996c23d28acf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::max()</code> for each corresponding pair of components from <code>s1</code> and <code>s2</code>.  <a href="group__simd__hpp.html#gac23aef2f3bdcc071607996c23d28acf2">More...</a><br /></td></tr>
 <tr class="separator:gac23aef2f3bdcc071607996c23d28acf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga29bfa1600fba22fe1e019f8fda9200c0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , int N&gt; </td></tr>
 <tr class="memitem:ga29bfa1600fba22fe1e019f8fda9200c0"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; is_sized_bool&lt; T &gt;::value &amp;&amp;sizeof(T)==sizeof(U), simd&lt; U, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga29bfa1600fba22fe1e019f8fda9200c0">tue::math::mask</a> (const simd&lt; T, N &gt; &amp;conditions, const simd&lt; U, N &gt; &amp;values) noexcept</td></tr>
@@ -490,27 +490,27 @@ Functions</h2></td></tr>
 <tr class="separator:ga064119fa35b6a4cf112e50274fce426b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab3374d9d96e333cf5f24be589fdba45e"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:gab3374d9d96e333cf5f24be589fdba45e"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gab3374d9d96e333cf5f24be589fdba45e">tue::math::less</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gab3374d9d96e333cf5f24be589fdba45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#gab3374d9d96e333cf5f24be589fdba45e">More...</a><br /></td></tr>
+<tr class="memdesc:gab3374d9d96e333cf5f24be589fdba45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#gab3374d9d96e333cf5f24be589fdba45e">More...</a><br /></td></tr>
 <tr class="separator:gab3374d9d96e333cf5f24be589fdba45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08beb86bca999451f51eb80581f8fd16"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga08beb86bca999451f51eb80581f8fd16"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga08beb86bca999451f51eb80581f8fd16">tue::math::less_equal</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga08beb86bca999451f51eb80581f8fd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga08beb86bca999451f51eb80581f8fd16">More...</a><br /></td></tr>
+<tr class="memdesc:ga08beb86bca999451f51eb80581f8fd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::less_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga08beb86bca999451f51eb80581f8fd16">More...</a><br /></td></tr>
 <tr class="separator:ga08beb86bca999451f51eb80581f8fd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab27218ffec97674b957f89ebb1ecd1ec"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:gab27218ffec97674b957f89ebb1ecd1ec"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gab27218ffec97674b957f89ebb1ecd1ec">tue::math::greater</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gab27218ffec97674b957f89ebb1ecd1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#gab27218ffec97674b957f89ebb1ecd1ec">More...</a><br /></td></tr>
+<tr class="memdesc:gab27218ffec97674b957f89ebb1ecd1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#gab27218ffec97674b957f89ebb1ecd1ec">More...</a><br /></td></tr>
 <tr class="separator:gab27218ffec97674b957f89ebb1ecd1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga317a5a5307a5f3790ff10c140ba26b16"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga317a5a5307a5f3790ff10c140ba26b16"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga317a5a5307a5f3790ff10c140ba26b16">tue::math::greater_equal</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga317a5a5307a5f3790ff10c140ba26b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga317a5a5307a5f3790ff10c140ba26b16">More...</a><br /></td></tr>
+<tr class="memdesc:ga317a5a5307a5f3790ff10c140ba26b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::greater_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga317a5a5307a5f3790ff10c140ba26b16">More...</a><br /></td></tr>
 <tr class="separator:ga317a5a5307a5f3790ff10c140ba26b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffb9774c688c45c96b4d3718e3f01e2d"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:gaffb9774c688c45c96b4d3718e3f01e2d"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gaffb9774c688c45c96b4d3718e3f01e2d">tue::math::equal</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:gaffb9774c688c45c96b4d3718e3f01e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#gaffb9774c688c45c96b4d3718e3f01e2d">More...</a><br /></td></tr>
+<tr class="memdesc:gaffb9774c688c45c96b4d3718e3f01e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#gaffb9774c688c45c96b4d3718e3f01e2d">More...</a><br /></td></tr>
 <tr class="separator:gaffb9774c688c45c96b4d3718e3f01e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; sized_bool_t&lt; sizeof(T)&gt;, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga5514ee5f814e24ab181b2c87d82ab8e3">tue::math::not_equal</a> (const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::not_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga5514ee5f814e24ab181b2c87d82ab8e3">More...</a><br /></td></tr>
+<tr class="memdesc:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes <code>tue::math::not_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>.  <a href="group__simd__hpp.html#ga5514ee5f814e24ab181b2c87d82ab8e3">More...</a><br /></td></tr>
 <tr class="separator:ga5514ee5f814e24ab181b2c87d82ab8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1006,7 +1006,7 @@ template&lt;typename T , int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Loads the given aligned component array into a new <code>simd</code>. </p>
-<p>The source array must have the same alignment as this <code>simd</code> type. If the source array null, unaligned, or doesn't contain at least <code>N</code> components, behavior is undefined.</p>
+<p>The source array must have the same alignment as this <code>simd</code> type. If the source array is null, unaligned, or doesn't contain at least <code>N</code> components, behavior is undefined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>The source component array. </td></tr>
@@ -3695,7 +3695,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if all the corresponding pairs of components compare not equal and <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if at least one of the corresponding pairs of components compares not equal and <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -4190,7 +4190,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::min()</code> for each corresponding pair of components of <code>s1</code> and <code>s2</code>. </p>
+<p>Computes <code>tue::math::min()</code> for each corresponding pair of components from <code>s1</code> and <code>s2</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>s1</code> and <code>s2</code>. </td></tr>
@@ -4205,7 +4205,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::min()</code> for each corresponding pair of components of <code>s1</code> and <code>s2</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::min()</code> for each corresponding pair of components from <code>s1</code> and <code>s2</code>. </dd></dl>
 
 </div>
 </div>
@@ -4243,7 +4243,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::max()</code> for each corresponding pair of components of <code>s1</code> and <code>s2</code>. </p>
+<p>Computes <code>tue::math::max()</code> for each corresponding pair of components from <code>s1</code> and <code>s2</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>s1</code> and <code>s2</code>. </td></tr>
@@ -4258,7 +4258,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::max()</code> for each corresponding pair of components of <code>s1</code> and <code>s2</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::max()</code> for each corresponding pair of components from <code>s1</code> and <code>s2</code>. </dd></dl>
 
 </div>
 </div>
@@ -4411,7 +4411,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::less()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </p>
+<p>Computes <code>tue::math::less()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
@@ -4426,7 +4426,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::less()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::less()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </dd></dl>
 
 </div>
 </div>
@@ -4464,7 +4464,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::less_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </p>
+<p>Computes <code>tue::math::less_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
@@ -4479,7 +4479,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::less_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::less_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </dd></dl>
 
 </div>
 </div>
@@ -4517,7 +4517,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::greater()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </p>
+<p>Computes <code>tue::math::greater()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
@@ -4532,7 +4532,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::greater()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::greater()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </dd></dl>
 
 </div>
 </div>
@@ -4570,7 +4570,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::greater_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </p>
+<p>Computes <code>tue::math::greater_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
@@ -4585,7 +4585,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::greater_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::greater_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </dd></dl>
 
 </div>
 </div>
@@ -4623,7 +4623,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </p>
+<p>Computes <code>tue::math::equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
@@ -4638,7 +4638,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </dd></dl>
 
 </div>
 </div>
@@ -4676,7 +4676,7 @@ template&lt;typename T , int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes <code>tue::math::not_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </p>
+<p>Computes <code>tue::math::not_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type of both <code>lhs</code> and <code>rhs</code>. </td></tr>
@@ -4691,7 +4691,7 @@ template&lt;typename T , int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>tue::math::not_equal()</code> for each corresponding pair of components of <code>lhs</code> and <code>rhs</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>tue::math::not_equal()</code> for each corresponding pair of components from <code>lhs</code> and <code>rhs</code>. </dd></dl>
 
 </div>
 </div>
