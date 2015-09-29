@@ -316,10 +316,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga4fdfd5caa7be2aead53f4a0c061b49ab">tue::operator+</a> (const simd&lt; T, N &gt; &amp;s) noexcept</td></tr>
-<tr class="memdesc:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the unary plus of each component of <code>s</code>.  <a href="group__simd__hpp.html#ga4fdfd5caa7be2aead53f4a0c061b49ab">More...</a><br /></td></tr>
-<tr class="separator:ga4fdfd5caa7be2aead53f4a0c061b49ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1be40aee7a3128f245b5d0e3efb15cab"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
+<tr class="memitem:ga1be40aee7a3128f245b5d0e3efb15cab"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_signed&lt; T &gt;::value, simd&lt; T, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga1be40aee7a3128f245b5d0e3efb15cab">tue::operator+</a> (const simd&lt; T, N &gt; &amp;s) noexcept</td></tr>
+<tr class="memdesc:ga1be40aee7a3128f245b5d0e3efb15cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the unary plus of each component of <code>s</code>.  <a href="group__simd__hpp.html#ga1be40aee7a3128f245b5d0e3efb15cab">More...</a><br /></td></tr>
+<tr class="separator:ga1be40aee7a3128f245b5d0e3efb15cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9deb42957111ea2d70f48ed2f09b0261"><td class="memTemplParams" colspan="2">template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:ga9deb42957111ea2d70f48ed2f09b0261"><td class="memTemplItemLeft" align="right" valign="top">simd&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga9deb42957111ea2d70f48ed2f09b0261">tue::operator++</a> (simd&lt; T, N &gt; &amp;s) noexcept</td></tr>
 <tr class="memdesc:ga9deb42957111ea2d70f48ed2f09b0261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-increments each component of <code>s</code>.  <a href="group__simd__hpp.html#ga9deb42957111ea2d70f48ed2f09b0261">More...</a><br /></td></tr>
@@ -2219,7 +2219,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga4fdfd5caa7be2aead53f4a0c061b49ab"></a>
+<a class="anchor" id="ga1be40aee7a3128f245b5d0e3efb15cab"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2229,7 +2229,7 @@ template&lt;typename T , int N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">simd&lt;T, N&gt; tue::operator+ </td>
+          <td class="memname">std::enable_if_t&lt;std::is_signed&lt;T&gt;::value, simd&lt;T, N&gt; &gt; tue::operator+ </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
