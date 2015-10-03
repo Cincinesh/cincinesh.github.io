@@ -687,6 +687,14 @@ class tue::simd&lt; T, N &gt;</h3>
 <tr class="memitem:ab9fdb83de5b506c62c311334bd90b6ba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ab9fdb83de5b506c62c311334bd90b6ba">simd</a> (T x, T y, T z, T w) noexcept</td></tr>
 <tr class="memdesc:ab9fdb83de5b506c62c311334bd90b6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#ab9fdb83de5b506c62c311334bd90b6ba">More...</a><br /></td></tr>
 <tr class="separator:ab9fdb83de5b506c62c311334bd90b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a87e8f7231c5bc59138e1997ddc0db"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 8&gt;&gt; </td></tr>
+<tr class="memitem:a40a87e8f7231c5bc59138e1997ddc0db"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a40a87e8f7231c5bc59138e1997ddc0db">simd</a> (T s0, T s1, T s2, T s3, T s4, T s5, T s6, T s7) noexcept</td></tr>
+<tr class="memdesc:a40a87e8f7231c5bc59138e1997ddc0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#a40a87e8f7231c5bc59138e1997ddc0db">More...</a><br /></td></tr>
+<tr class="separator:a40a87e8f7231c5bc59138e1997ddc0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af309dac6bbbcd3e77be08e7e89d67c6d"><td class="memTemplParams" colspan="2">template&lt;int M = N, typename  = std::enable_if_t&lt;M == 16&gt;&gt; </td></tr>
+<tr class="memitem:af309dac6bbbcd3e77be08e7e89d67c6d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#af309dac6bbbcd3e77be08e7e89d67c6d">simd</a> (T s0, T s1, T s2, T s3, T s4, T s5, T s6, T s7, T s8, T s9, T s10, T s11, T s12, T s13, T s14, T s15) noexcept</td></tr>
+<tr class="memdesc:af309dac6bbbcd3e77be08e7e89d67c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs each component with the value of the corresponding argument.  <a href="#af309dac6bbbcd3e77be08e7e89d67c6d">More...</a><br /></td></tr>
+<tr class="separator:af309dac6bbbcd3e77be08e7e89d67c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15808e3ddea6e6fba75d42c8838cfb29"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a15808e3ddea6e6fba75d42c8838cfb29"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a15808e3ddea6e6fba75d42c8838cfb29">simd</a> (const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; U, N &gt; &amp;s) noexcept</td></tr>
 <tr class="memdesc:a15808e3ddea6e6fba75d42c8838cfb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly casts another <code>simd</code> to a new component type.  <a href="#a15808e3ddea6e6fba75d42c8838cfb29">More...</a><br /></td></tr>
@@ -904,6 +912,242 @@ template&lt;int M = N, typename  = std::enable_if_t&lt;M == 4&gt;&gt; </div>
     <tr><td class="paramname">y</td><td>The value to construct the second component with. </td></tr>
     <tr><td class="paramname">z</td><td>The value to construct the third component with. </td></tr>
     <tr><td class="paramname">w</td><td>The value to construct the fourth component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a40a87e8f7231c5bc59138e1997ddc0db"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<div class="memtemplate">
+template&lt;int M = N, typename  = std::enable_if_t&lt;M == 8&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::<a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s7</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs each component with the value of the corresponding argument. </p>
+<p>This overload is only available when <code>N</code> equals <code>8</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s0</td><td>The value to construct the first component with. </td></tr>
+    <tr><td class="paramname">s1</td><td>The value to construct the second component with. </td></tr>
+    <tr><td class="paramname">s2</td><td>The value to construct the third component with. </td></tr>
+    <tr><td class="paramname">s3</td><td>The value to construct the fourth component with. </td></tr>
+    <tr><td class="paramname">s4</td><td>The value to construct the fifth component with. </td></tr>
+    <tr><td class="paramname">s5</td><td>The value to construct the sixth component with. </td></tr>
+    <tr><td class="paramname">s6</td><td>The value to construct the seventh component with. </td></tr>
+    <tr><td class="paramname">s7</td><td>The value to construct the eighth component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af309dac6bbbcd3e77be08e7e89d67c6d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<div class="memtemplate">
+template&lt;int M = N, typename  = std::enable_if_t&lt;M == 16&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::<a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s7</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s8</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s9</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s10</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s11</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s13</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s14</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s15</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs each component with the value of the corresponding argument. </p>
+<p>This overload is only available when <code>N</code> equals <code>16</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s0</td><td>The value to construct the first component with. </td></tr>
+    <tr><td class="paramname">s1</td><td>The value to construct the second component with. </td></tr>
+    <tr><td class="paramname">s2</td><td>The value to construct the third component with. </td></tr>
+    <tr><td class="paramname">s3</td><td>The value to construct the fourth component with. </td></tr>
+    <tr><td class="paramname">s4</td><td>The value to construct the fifth component with. </td></tr>
+    <tr><td class="paramname">s5</td><td>The value to construct the sixth component with. </td></tr>
+    <tr><td class="paramname">s6</td><td>The value to construct the seventh component with. </td></tr>
+    <tr><td class="paramname">s7</td><td>The value to construct the eighth component with. </td></tr>
+    <tr><td class="paramname">s8</td><td>The value to construct the ninth component with. </td></tr>
+    <tr><td class="paramname">s9</td><td>The value to construct the tenth component with. </td></tr>
+    <tr><td class="paramname">s10</td><td>The value to construct the eleventh component with. </td></tr>
+    <tr><td class="paramname">s11</td><td>The value to construct the twelfth component with. </td></tr>
+    <tr><td class="paramname">s12</td><td>The value to construct the thirteenth component with. </td></tr>
+    <tr><td class="paramname">s13</td><td>The value to construct the fourteenth component with. </td></tr>
+    <tr><td class="paramname">s14</td><td>The value to construct the fifteenth component with. </td></tr>
+    <tr><td class="paramname">s15</td><td>The value to construct the sixteenth component with. </td></tr>
   </table>
   </dd>
 </dl>
