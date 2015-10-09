@@ -659,7 +659,48 @@ struct tue::is_integral_simd_component&lt; T &gt;</h3>
 class tue::simd&lt; T, N &gt;</h3>
 
 <p>An <code>N</code>-component SIMD vector. </p>
-<p><code>simd</code> has the same size requirements as <code>T[N]</code> and its alignment equals its size. It's accelerated by compiler and architecture-specific SIMD intrinsics where possible, but standards-compliant fallbacks are always available otherwise.</p>
+<p><code>simd</code> has the same size requirements as <code>T[N]</code> and its alignment equals its size. It's accelerated by compiler and architecture-specific SIMD intrinsics where possible, but compatibility fallbacks are always available otherwise.</p>
+<p><code>simd</code> types may contain platform-specific constructors and conversion operators for converting to and from the underlying SIMD intrinsic type. The current mapping is as follows:</p>
+<p><b>SSE</b> </p><table class="doxtable">
+<tr>
+<th><code>simd</code> Type </th><th>SIMD Intrinsic  </th></tr>
+<tr>
+<td><code>bool32x4</code> </td><td><code>__m128</code> </td></tr>
+<tr>
+<td><code>float32x4</code> </td><td><code>__m128</code> </td></tr>
+</table>
+<p><b>SSE2</b> </p><table class="doxtable">
+<tr>
+<th><code>simd</code> Type </th><th>SIMD Intrinsic  </th></tr>
+<tr>
+<td><code>bool8x16</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>bool16x8</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>bool32x4</code> </td><td><code>__m128i</code> and <code>__m128</code> </td></tr>
+<tr>
+<td><code>bool64x2</code> </td><td><code>__m128i</code> and <code>__m128d</code> </td></tr>
+<tr>
+<td><code>int8x16</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>int16x8</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>int32x4</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>int64x2</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint8x16</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint16x8</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint32x4</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint64x2</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>float32x4</code> </td><td><code>__m128</code> </td></tr>
+<tr>
+<td><code>float64x2</code> </td><td><code>__m128d</code> </td></tr>
+</table>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The component type. <code>is_simd_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
