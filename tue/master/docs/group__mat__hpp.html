@@ -433,12 +433,35 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="memberdecls">
+<div class="textblock"><h3>template&lt;typename T, int C, int R&gt;<br />
+class tue::mat&lt; T, C, R &gt;</h3>
+
+<p>A column-major matrix. </p>
+<p><code>mat</code> have the same size and alignment requirements as <code>vec&lt;T, R&gt;[C]</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type. <code>is_vec_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
+    <tr><td class="paramname">C</td><td>The column count. Must be <code>2</code>, <code>3</code>, or <code>4</code>. </td></tr>
+    <tr><td class="paramname">R</td><td>The row count. Must be <code>2</code>, <code>3</code>, or <code>4</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
 <tr class="memitem:ac59de3ee035711a062d65524604ac589"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ac59de3ee035711a062d65524604ac589">component_type</a> = T</td></tr>
 <tr class="memdesc:ac59de3ee035711a062d65524604ac589"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's component type.  <a href="#ac59de3ee035711a062d65524604ac589">More...</a><br /></td></tr>
 <tr class="separator:ac59de3ee035711a062d65524604ac589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
+<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
+<tr class="memitem:a5eeed6f25114d126e0ba20b7c538382a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a5eeed6f25114d126e0ba20b7c538382a">column_count</a> = C</td></tr>
+<tr class="memdesc:a5eeed6f25114d126e0ba20b7c538382a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's column count.  <a href="#a5eeed6f25114d126e0ba20b7c538382a">More...</a><br /></td></tr>
+<tr class="separator:a5eeed6f25114d126e0ba20b7c538382a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72862d944b914eb5229c8c9f58017585"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a72862d944b914eb5229c8c9f58017585">row_count</a> = R</td></tr>
+<tr class="memdesc:a72862d944b914eb5229c8c9f58017585"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's row count.  <a href="#a72862d944b914eb5229c8c9f58017585">More...</a><br /></td></tr>
+<tr class="separator:a72862d944b914eb5229c8c9f58017585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5a09135f57c3e531001408bb6e1932"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aaf5a09135f57c3e531001408bb6e1932">component_count</a> = C * R</td></tr>
+<tr class="memdesc:aaf5a09135f57c3e531001408bb6e1932"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's component count.  <a href="#aaf5a09135f57c3e531001408bb6e1932">More...</a><br /></td></tr>
+<tr class="separator:aaf5a09135f57c3e531001408bb6e1932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Constructors, Conversions, and Factory Functions</h3></td></tr>
 <tr class="memitem:ab733634293348ba649a9a35914aff268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ab733634293348ba649a9a35914aff268">mat</a> () noexcept=default</td></tr>
 <tr class="memdesc:ab733634293348ba649a9a35914aff268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component.  <a href="#ab733634293348ba649a9a35914aff268">More...</a><br /></td></tr>
 <tr class="separator:ab733634293348ba649a9a35914aff268"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +492,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a6d4e36d7c3615ceedf46fbf7227f30d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a6d4e36d7c3615ceedf46fbf7227f30d7">operator mat&lt; U, C, R &gt;</a> () const  noexcept</td></tr>
 <tr class="memdesc:a6d4e36d7c3615ceedf46fbf7227f30d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly casts this <code>mat</code> to a new component type.  <a href="#a6d4e36d7c3615ceedf46fbf7227f30d7">More...</a><br /></td></tr>
 <tr class="separator:a6d4e36d7c3615ceedf46fbf7227f30d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e689c865320629a34d643001375eb05"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a4e689c865320629a34d643001375eb05">fill</a> (const T &amp;x) noexcept</td></tr>
+<tr class="memdesc:a4e689c865320629a34d643001375eb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with each component constructed with the same value.  <a href="#a4e689c865320629a34d643001375eb05">More...</a><br /></td></tr>
+<tr class="separator:a4e689c865320629a34d643001375eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aed86fdfdc9f5c6bdf1540e5610d363e6">identity</a> () noexcept</td></tr>
+<tr class="memdesc:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with the main diagonal set to <code>1</code> and all other components set to <code>0</code>.  <a href="#aed86fdfdc9f5c6bdf1540e5610d363e6">More...</a><br /></td></tr>
+<tr class="separator:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99fd2de72a8ca765e84b53f36088a65"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#af99fd2de72a8ca765e84b53f36088a65">zero</a> () noexcept</td></tr>
+<tr class="memdesc:af99fd2de72a8ca765e84b53f36088a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with each component set to <code>0</code>.  <a href="#af99fd2de72a8ca765e84b53f36088a65">More...</a><br /></td></tr>
+<tr class="separator:af99fd2de72a8ca765e84b53f36088a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
 <tr class="memitem:ac8af6669a032ac2b7b2e59bc93d086b9"><td class="memTemplParams" colspan="2">template&lt;typename I &gt; </td></tr>
 <tr class="memitem:ac8af6669a032ac2b7b2e59bc93d086b9"><td class="memTemplItemLeft" align="right" valign="top">constexpr const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#ac8af6669a032ac2b7b2e59bc93d086b9">operator[]</a> (const I &amp;i) const  noexcept</td></tr>
 <tr class="memdesc:ac8af6669a032ac2b7b2e59bc93d086b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the column at the given index.  <a href="#ac8af6669a032ac2b7b2e59bc93d086b9">More...</a><br /></td></tr>
@@ -597,26 +630,6 @@ Functions</h2></td></tr>
 <tr class="memitem:afbbe48ebdfaee578257993a6cd5b2b49"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#afbbe48ebdfaee578257993a6cd5b2b49">operator&gt;&gt;=</a> (const <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; U, C, R &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:afbbe48ebdfaee578257993a6cd5b2b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts right each component of this <code>mat</code> by the corresponding component from <code>m</code>.  <a href="#afbbe48ebdfaee578257993a6cd5b2b49">More...</a><br /></td></tr>
 <tr class="separator:afbbe48ebdfaee578257993a6cd5b2b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:a4e689c865320629a34d643001375eb05"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a4e689c865320629a34d643001375eb05">fill</a> (const T &amp;x) noexcept</td></tr>
-<tr class="memdesc:a4e689c865320629a34d643001375eb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with each component constructed with the same value.  <a href="#a4e689c865320629a34d643001375eb05">More...</a><br /></td></tr>
-<tr class="separator:a4e689c865320629a34d643001375eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aed86fdfdc9f5c6bdf1540e5610d363e6">identity</a> () noexcept</td></tr>
-<tr class="memdesc:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with the main diagonal set to <code>1</code> and all other components set to <code>0</code>.  <a href="#aed86fdfdc9f5c6bdf1540e5610d363e6">More...</a><br /></td></tr>
-<tr class="separator:aed86fdfdc9f5c6bdf1540e5610d363e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99fd2de72a8ca765e84b53f36088a65"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__mat__hpp.html#classtue_1_1mat">mat</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#af99fd2de72a8ca765e84b53f36088a65">zero</a> () noexcept</td></tr>
-<tr class="memdesc:af99fd2de72a8ca765e84b53f36088a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>mat</code> with each component set to <code>0</code>.  <a href="#af99fd2de72a8ca765e84b53f36088a65">More...</a><br /></td></tr>
-<tr class="separator:af99fd2de72a8ca765e84b53f36088a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
-<tr class="memitem:a5eeed6f25114d126e0ba20b7c538382a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a5eeed6f25114d126e0ba20b7c538382a">column_count</a> = C</td></tr>
-<tr class="memdesc:a5eeed6f25114d126e0ba20b7c538382a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's column count.  <a href="#a5eeed6f25114d126e0ba20b7c538382a">More...</a><br /></td></tr>
-<tr class="separator:a5eeed6f25114d126e0ba20b7c538382a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72862d944b914eb5229c8c9f58017585"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#a72862d944b914eb5229c8c9f58017585">row_count</a> = R</td></tr>
-<tr class="memdesc:a72862d944b914eb5229c8c9f58017585"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's row count.  <a href="#a72862d944b914eb5229c8c9f58017585">More...</a><br /></td></tr>
-<tr class="separator:a72862d944b914eb5229c8c9f58017585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf5a09135f57c3e531001408bb6e1932"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mat__hpp.html#aaf5a09135f57c3e531001408bb6e1932">component_count</a> = C * R</td></tr>
-<tr class="memdesc:aaf5a09135f57c3e531001408bb6e1932"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>mat</code> type's component count.  <a href="#aaf5a09135f57c3e531001408bb6e1932">More...</a><br /></td></tr>
-<tr class="separator:aaf5a09135f57c3e531001408bb6e1932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Member Typedef Documentation</h4>
 <a class="anchor" id="ac59de3ee035711a062d65524604ac589"></a>
@@ -632,6 +645,79 @@ template&lt;typename T, int C, int R&gt; </div>
 </div><div class="memdoc">
 
 <p>This <code>mat</code> type's component type. </p>
+
+</div>
+</div>
+<h4 class="groupheader">Member Data Documentation</h4>
+<a class="anchor" id="a5eeed6f25114d126e0ba20b7c538382a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int C, int R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::column_count = C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This <code>mat</code> type's column count. </p>
+
+</div>
+</div>
+<a class="anchor" id="a72862d944b914eb5229c8c9f58017585"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int C, int R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::row_count = R</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This <code>mat</code> type's row count. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf5a09135f57c3e531001408bb6e1932"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int C, int R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::component_count = C * R</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This <code>mat</code> type's component count. </p>
 
 </div>
 </div>
@@ -2471,79 +2557,6 @@ template&lt;typename U &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to this <code>mat</code>. </dd></dl>
-
-</div>
-</div>
-<h4 class="groupheader">Member Data Documentation</h4>
-<a class="anchor" id="a5eeed6f25114d126e0ba20b7c538382a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int C, int R&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::column_count = C</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This <code>mat</code> type's column count. </p>
-
-</div>
-</div>
-<a class="anchor" id="a72862d944b914eb5229c8c9f58017585"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int C, int R&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::row_count = R</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This <code>mat</code> type's row count. </p>
-
-</div>
-</div>
-<a class="anchor" id="aaf5a09135f57c3e531001408bb6e1932"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int C, int R&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="group__mat__hpp.html#classtue_1_1mat">tue::mat</a>&lt; T, C, R &gt;::component_count = C * R</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This <code>mat</code> type's component count. </p>
 
 </div>
 </div>

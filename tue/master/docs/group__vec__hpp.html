@@ -402,7 +402,34 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct tue::is_vec_component&lt; T &gt;</h3>
 
+<p>Checks if a type can be used as the component type of a <code>vec</code>. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>float</code></li>
+<li><code>double</code></li>
+<li><code>std::int8_t</code></li>
+<li><code>std::int16_t</code></li>
+<li><code>std::int32_t</code></li>
+<li><code>std::int64_t</code></li>
+<li><code>std::uint8_t</code></li>
+<li><code>std::uint16_t</code></li>
+<li><code>std::uint32_t</code></li>
+<li><code>std::uint64_t</code></li>
+<li><code>tue::bool8</code></li>
+<li><code>tue::bool16</code></li>
+<li><code>tue::bool32</code></li>
+<li><code>tue::bool64</code></li>
+<li><code>tue::simd</code></li>
+</ul>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div>
 </div>
 </div>
 <a name="classtue_1_1vec" id="classtue_1_1vec"></a>
@@ -414,12 +441,28 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="memberdecls">
+<div class="textblock"><h3>template&lt;typename T, int N&gt;<br />
+class tue::vec&lt; T, N &gt;</h3>
+
+<p>An <code>N</code>-dimensional vector. </p>
+<p><code>vec</code> has the same size and alignment requirements as <code>T[N]</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type. <code>is_vec_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
+    <tr><td class="paramname">N</td><td>The component count. Must be <code>2</code>, <code>3</code>, or <code>4</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
 <tr class="memitem:a2b2e15201aea9f9a87be9dafd10ed004"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a2b2e15201aea9f9a87be9dafd10ed004">component_type</a> = T</td></tr>
 <tr class="memdesc:a2b2e15201aea9f9a87be9dafd10ed004"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>vec</code> type's component type.  <a href="#a2b2e15201aea9f9a87be9dafd10ed004">More...</a><br /></td></tr>
 <tr class="separator:a2b2e15201aea9f9a87be9dafd10ed004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
+<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
+<tr class="memitem:aad5c4b9bded842129c4898cbfb4c620f"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#aad5c4b9bded842129c4898cbfb4c620f">component_count</a> = N</td></tr>
+<tr class="memdesc:aad5c4b9bded842129c4898cbfb4c620f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>vec</code> type's component count.  <a href="#aad5c4b9bded842129c4898cbfb4c620f">More...</a><br /></td></tr>
+<tr class="separator:aad5c4b9bded842129c4898cbfb4c620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Constructors, Conversions, and Factory Functions</h3></td></tr>
 <tr class="memitem:af6ff9898e96757604f7dc819b071821e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#af6ff9898e96757604f7dc819b071821e">vec</a> () noexcept=default</td></tr>
 <tr class="memdesc:af6ff9898e96757604f7dc819b071821e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component.  <a href="#af6ff9898e96757604f7dc819b071821e">More...</a><br /></td></tr>
 <tr class="separator:af6ff9898e96757604f7dc819b071821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,6 +499,22 @@ Functions</h2></td></tr>
 <tr class="memitem:abee497eac68044f718bc3f1824624fd3"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#abee497eac68044f718bc3f1824624fd3">operator vec&lt; U, N &gt;</a> () const  noexcept</td></tr>
 <tr class="memdesc:abee497eac68044f718bc3f1824624fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly casts this <code>vec</code> to a new component type.  <a href="#abee497eac68044f718bc3f1824624fd3">More...</a><br /></td></tr>
 <tr class="separator:abee497eac68044f718bc3f1824624fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199f04f6c736cdf0c2fe6be560acc6d3"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a199f04f6c736cdf0c2fe6be560acc6d3">zero</a> () noexcept</td></tr>
+<tr class="memdesc:a199f04f6c736cdf0c2fe6be560acc6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with each component set to <code>0</code>.  <a href="#a199f04f6c736cdf0c2fe6be560acc6d3">More...</a><br /></td></tr>
+<tr class="separator:a199f04f6c736cdf0c2fe6be560acc6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ca2939009bf7d57bbac60bffc5493f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a38ca2939009bf7d57bbac60bffc5493f">x_axis</a> () noexcept</td></tr>
+<tr class="memdesc:a38ca2939009bf7d57bbac60bffc5493f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the first component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a38ca2939009bf7d57bbac60bffc5493f">More...</a><br /></td></tr>
+<tr class="separator:a38ca2939009bf7d57bbac60bffc5493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7317436cc9ced0d7e009ca8d19e3baa4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a7317436cc9ced0d7e009ca8d19e3baa4">y_axis</a> () noexcept</td></tr>
+<tr class="memdesc:a7317436cc9ced0d7e009ca8d19e3baa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the second component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a7317436cc9ced0d7e009ca8d19e3baa4">More...</a><br /></td></tr>
+<tr class="separator:a7317436cc9ced0d7e009ca8d19e3baa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6bddb6084578d54ecd944a554e84ec"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a6f6bddb6084578d54ecd944a554e84ec">z_axis</a> () noexcept</td></tr>
+<tr class="memdesc:a6f6bddb6084578d54ecd944a554e84ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the third component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a6f6bddb6084578d54ecd944a554e84ec">More...</a><br /></td></tr>
+<tr class="separator:a6f6bddb6084578d54ecd944a554e84ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca4c39aee91dae94035f8b4f661e48b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a7ca4c39aee91dae94035f8b4f661e48b">w_axis</a> () noexcept</td></tr>
+<tr class="memdesc:a7ca4c39aee91dae94035f8b4f661e48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the fourth component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a7ca4c39aee91dae94035f8b4f661e48b">More...</a><br /></td></tr>
+<tr class="separator:a7ca4c39aee91dae94035f8b4f661e48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
 <tr class="memitem:a4f7781cab8e31a30b1b6e9ff60ee1793"><td class="memTemplParams" colspan="2">template&lt;typename I &gt; </td></tr>
 <tr class="memitem:a4f7781cab8e31a30b1b6e9ff60ee1793"><td class="memTemplItemLeft" align="right" valign="top">constexpr const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a4f7781cab8e31a30b1b6e9ff60ee1793">operator[]</a> (const I &amp;i) const  noexcept</td></tr>
 <tr class="memdesc:a4f7781cab8e31a30b1b6e9ff60ee1793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the component at the given index.  <a href="#a4f7781cab8e31a30b1b6e9ff60ee1793">More...</a><br /></td></tr>
@@ -690,26 +749,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ab17a0501ac50c3d0c79ea3da8f8782cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#ab17a0501ac50c3d0c79ea3da8f8782cc">operator&gt;&gt;=</a> (const <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; U, N &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:ab17a0501ac50c3d0c79ea3da8f8782cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise shifts right each component of this <code>vec</code> by the corresponding component from <code>v</code>.  <a href="#ab17a0501ac50c3d0c79ea3da8f8782cc">More...</a><br /></td></tr>
 <tr class="separator:ab17a0501ac50c3d0c79ea3da8f8782cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:a199f04f6c736cdf0c2fe6be560acc6d3"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a199f04f6c736cdf0c2fe6be560acc6d3">zero</a> () noexcept</td></tr>
-<tr class="memdesc:a199f04f6c736cdf0c2fe6be560acc6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with each component set to <code>0</code>.  <a href="#a199f04f6c736cdf0c2fe6be560acc6d3">More...</a><br /></td></tr>
-<tr class="separator:a199f04f6c736cdf0c2fe6be560acc6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ca2939009bf7d57bbac60bffc5493f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a38ca2939009bf7d57bbac60bffc5493f">x_axis</a> () noexcept</td></tr>
-<tr class="memdesc:a38ca2939009bf7d57bbac60bffc5493f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the first component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a38ca2939009bf7d57bbac60bffc5493f">More...</a><br /></td></tr>
-<tr class="separator:a38ca2939009bf7d57bbac60bffc5493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7317436cc9ced0d7e009ca8d19e3baa4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a7317436cc9ced0d7e009ca8d19e3baa4">y_axis</a> () noexcept</td></tr>
-<tr class="memdesc:a7317436cc9ced0d7e009ca8d19e3baa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the second component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a7317436cc9ced0d7e009ca8d19e3baa4">More...</a><br /></td></tr>
-<tr class="separator:a7317436cc9ced0d7e009ca8d19e3baa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6bddb6084578d54ecd944a554e84ec"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a6f6bddb6084578d54ecd944a554e84ec">z_axis</a> () noexcept</td></tr>
-<tr class="memdesc:a6f6bddb6084578d54ecd944a554e84ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the third component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a6f6bddb6084578d54ecd944a554e84ec">More...</a><br /></td></tr>
-<tr class="separator:a6f6bddb6084578d54ecd944a554e84ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca4c39aee91dae94035f8b4f661e48b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__vec__hpp.html#classtue_1_1vec">vec</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#a7ca4c39aee91dae94035f8b4f661e48b">w_axis</a> () noexcept</td></tr>
-<tr class="memdesc:a7ca4c39aee91dae94035f8b4f661e48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>vec</code> with the fourth component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a7ca4c39aee91dae94035f8b4f661e48b">More...</a><br /></td></tr>
-<tr class="separator:a7ca4c39aee91dae94035f8b4f661e48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
-<tr class="memitem:aad5c4b9bded842129c4898cbfb4c620f"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vec__hpp.html#aad5c4b9bded842129c4898cbfb4c620f">component_count</a> = N</td></tr>
-<tr class="memdesc:aad5c4b9bded842129c4898cbfb4c620f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>vec</code> type's component count.  <a href="#aad5c4b9bded842129c4898cbfb4c620f">More...</a><br /></td></tr>
-<tr class="separator:aad5c4b9bded842129c4898cbfb4c620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Member Typedef Documentation</h4>
 <a class="anchor" id="a2b2e15201aea9f9a87be9dafd10ed004"></a>
@@ -725,6 +764,31 @@ template&lt;typename T, int N&gt; </div>
 </div><div class="memdoc">
 
 <p>This <code>vec</code> type's component type. </p>
+
+</div>
+</div>
+<h4 class="groupheader">Member Data Documentation</h4>
+<a class="anchor" id="aad5c4b9bded842129c4898cbfb4c620f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="group__vec__hpp.html#classtue_1_1vec">tue::vec</a>&lt; T, N &gt;::component_count = N</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This <code>vec</code> type's component count. </p>
 
 </div>
 </div>
@@ -4050,31 +4114,6 @@ template&lt;typename U &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to this <code>vec</code>. </dd></dl>
-
-</div>
-</div>
-<h4 class="groupheader">Member Data Documentation</h4>
-<a class="anchor" id="aad5c4b9bded842129c4898cbfb4c620f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="group__vec__hpp.html#classtue_1_1vec">tue::vec</a>&lt; T, N &gt;::component_count = N</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This <code>vec</code> type's component count. </p>
 
 </div>
 </div>

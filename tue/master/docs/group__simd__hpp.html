@@ -532,7 +532,33 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct tue::is_simd_component&lt; T &gt;</h3>
 
+<p>Checks if a type can be used as the component type of an SIMD vector. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>float</code></li>
+<li><code>double</code></li>
+<li><code>std::int8_t</code></li>
+<li><code>std::int16_t</code></li>
+<li><code>std::int32_t</code></li>
+<li><code>std::int64_t</code></li>
+<li><code>std::uint8_t</code></li>
+<li><code>std::uint16_t</code></li>
+<li><code>std::uint32_t</code></li>
+<li><code>std::uint64_t</code></li>
+<li><code>tue::bool8</code></li>
+<li><code>tue::bool16</code></li>
+<li><code>tue::bool32</code></li>
+<li><code>tue::bool64</code></li>
+</ul>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div>
 </div>
 </div>
 <a name="structtue_1_1is__arithmetic__simd__component" id="structtue_1_1is__arithmetic__simd__component"></a>
@@ -544,7 +570,29 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct tue::is_arithmetic_simd_component&lt; T &gt;</h3>
 
+<p>Checks if a type is an arithmetic type that can be used as the component type of an SIMD vector. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>float</code></li>
+<li><code>double</code></li>
+<li><code>std::int8_t</code></li>
+<li><code>std::int16_t</code></li>
+<li><code>std::int32_t</code></li>
+<li><code>std::int64_t</code></li>
+<li><code>std::uint8_t</code></li>
+<li><code>std::uint16_t</code></li>
+<li><code>std::uint32_t</code></li>
+<li><code>std::uint64_t</code></li>
+</ul>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div>
 </div>
 </div>
 <a name="structtue_1_1is__floating__point__simd__component" id="structtue_1_1is__floating__point__simd__component"></a>
@@ -556,7 +604,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct tue::is_floating_point_simd_component&lt; T &gt;</h3>
 
+<p>Checks if a type is a floating-point type that can be used as the component type of an SIMD vector. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>float</code></li>
+<li><code>double</code></li>
+</ul>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div>
 </div>
 </div>
 <a name="structtue_1_1is__integral__simd__component" id="structtue_1_1is__integral__simd__component"></a>
@@ -568,7 +630,27 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct tue::is_integral_simd_component&lt; T &gt;</h3>
 
+<p>Checks if a type is an integral type that can be used as the component type of an SIMD vector. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>std::int8_t</code></li>
+<li><code>std::int16_t</code></li>
+<li><code>std::int32_t</code></li>
+<li><code>std::int64_t</code></li>
+<li><code>std::uint8_t</code></li>
+<li><code>std::uint16_t</code></li>
+<li><code>std::uint32_t</code></li>
+<li><code>std::uint64_t</code></li>
+</ul>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div>
 </div>
 </div>
 <a name="classtue_1_1simd" id="classtue_1_1simd"></a>
@@ -580,12 +662,72 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="memberdecls">
+<div class="textblock"><h3>template&lt;typename T, int N&gt;<br />
+class tue::simd&lt; T, N &gt;</h3>
+
+<p>An <code>N</code>-component SIMD vector. </p>
+<p><code>simd</code> has the same size requirements as <code>T[N]</code> and its alignment equals its size. It's accelerated by compiler and architecture-specific SIMD intrinsics where possible, but compatibility fallbacks are always available otherwise.</p>
+<p><code>simd</code> types may contain platform-specific implicit constructors and conversion operators for converting to and from the underlying SIMD intrinsic type. The current mapping is as follows:</p>
+<p><b>SSE</b> </p><table class="doxtable">
+<tr>
+<th><code>simd</code> Type </th><th>SIMD Intrinsic  </th></tr>
+<tr>
+<td><code>bool32x4</code> </td><td><code>__m128</code> </td></tr>
+<tr>
+<td><code>float32x4</code> </td><td><code>__m128</code> </td></tr>
+</table>
+<p><b>SSE2</b> </p><table class="doxtable">
+<tr>
+<th><code>simd</code> Type </th><th>SIMD Intrinsic  </th></tr>
+<tr>
+<td><code>bool8x16</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>bool16x8</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>bool32x4</code> </td><td><code>__m128i</code> and <code>__m128</code> </td></tr>
+<tr>
+<td><code>bool64x2</code> </td><td><code>__m128i</code> and <code>__m128d</code> </td></tr>
+<tr>
+<td><code>int8x16</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>int16x8</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>int32x4</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>int64x2</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint8x16</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint16x8</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint32x4</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>uint64x2</code> </td><td><code>__m128i</code> </td></tr>
+<tr>
+<td><code>float32x4</code> </td><td><code>__m128</code> </td></tr>
+<tr>
+<td><code>float64x2</code> </td><td><code>__m128d</code> </td></tr>
+</table>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type. <code>is_simd_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
+    <tr><td class="paramname">N</td><td>The component count. Must be <code>2</code>, <code>4</code>, <code>8</code>, <code>16</code>, <code>32</code>, or <code>64</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
 <tr class="memitem:a7c53b88a6df169c82e9d63a98de90a82"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a7c53b88a6df169c82e9d63a98de90a82">component_type</a> = T</td></tr>
 <tr class="memdesc:a7c53b88a6df169c82e9d63a98de90a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component type.  <a href="#a7c53b88a6df169c82e9d63a98de90a82">More...</a><br /></td></tr>
 <tr class="separator:a7c53b88a6df169c82e9d63a98de90a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
+<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
+<tr class="memitem:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a49f5df5b6540d0e4080ff2e10fbf8c6b">component_count</a> = N</td></tr>
+<tr class="memdesc:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component count.  <a href="#a49f5df5b6540d0e4080ff2e10fbf8c6b">More...</a><br /></td></tr>
+<tr class="separator:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#aa43c60f245c2dd5c6bf3a6fa3cdb5057">is_accelerated</a> = false</td></tr>
+<tr class="memdesc:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this type is accelerated by SIMD intrinsics.  <a href="#aa43c60f245c2dd5c6bf3a6fa3cdb5057">More...</a><br /></td></tr>
+<tr class="separator:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Constructors, Conversions, and Factory Functions</h3></td></tr>
 <tr class="memitem:a074028df497882a150d74b6ffc1a57e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a074028df497882a150d74b6ffc1a57e8">simd</a> () noexcept=default</td></tr>
 <tr class="memdesc:a074028df497882a150d74b6ffc1a57e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component.  <a href="#a074028df497882a150d74b6ffc1a57e8">More...</a><br /></td></tr>
 <tr class="separator:a074028df497882a150d74b6ffc1a57e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,6 +754,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a15808e3ddea6e6fba75d42c8838cfb29"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a15808e3ddea6e6fba75d42c8838cfb29">simd</a> (const <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; U, N &gt; &amp;s) noexcept</td></tr>
 <tr class="memdesc:a15808e3ddea6e6fba75d42c8838cfb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly casts another <code>simd</code> to a new component type.  <a href="#a15808e3ddea6e6fba75d42c8838cfb29">More...</a><br /></td></tr>
 <tr class="separator:a15808e3ddea6e6fba75d42c8838cfb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8862176d9e1afc87c561dd8d20b78b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a3c8862176d9e1afc87c561dd8d20b78b">zero</a> () noexcept</td></tr>
+<tr class="memdesc:a3c8862176d9e1afc87c561dd8d20b78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <code>simd</code> with each component set to <code>0</code>.  <a href="#a3c8862176d9e1afc87c561dd8d20b78b">More...</a><br /></td></tr>
+<tr class="separator:a3c8862176d9e1afc87c561dd8d20b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90583ff4738f0a70ef5f7abb13fc5526"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a90583ff4738f0a70ef5f7abb13fc5526">load</a> (const T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
+<tr class="memdesc:a90583ff4738f0a70ef5f7abb13fc5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given aligned component array into a new <code>simd</code>.  <a href="#a90583ff4738f0a70ef5f7abb13fc5526">More...</a><br /></td></tr>
+<tr class="separator:a90583ff4738f0a70ef5f7abb13fc5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ba351337690784ae27070029a62759"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a79ba351337690784ae27070029a62759">loadu</a> (const T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
+<tr class="memdesc:a79ba351337690784ae27070029a62759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given unaligned component array into a new <code>simd</code>.  <a href="#a79ba351337690784ae27070029a62759">More...</a><br /></td></tr>
+<tr class="separator:a79ba351337690784ae27070029a62759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
 <tr class="memitem:a0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a0eed6f0239c5681c4bdd572d0cc3e15b">store</a> (T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) const  noexcept</td></tr>
 <tr class="memdesc:a0eed6f0239c5681c4bdd572d0cc3e15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store's this <code>simd</code>'s underlying component array in the given aligned component array.  <a href="#a0eed6f0239c5681c4bdd572d0cc3e15b">More...</a><br /></td></tr>
 <tr class="separator:a0eed6f0239c5681c4bdd572d0cc3e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -624,23 +776,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f86ec2af366d90937cde8b9f4b4d323"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a9f86ec2af366d90937cde8b9f4b4d323">data</a> () noexcept</td></tr>
 <tr class="memdesc:a9f86ec2af366d90937cde8b9f4b4d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to this <code>simd</code>'s underlying component array.  <a href="#a9f86ec2af366d90937cde8b9f4b4d323">More...</a><br /></td></tr>
 <tr class="separator:a9f86ec2af366d90937cde8b9f4b4d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:a3c8862176d9e1afc87c561dd8d20b78b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a3c8862176d9e1afc87c561dd8d20b78b">zero</a> () noexcept</td></tr>
-<tr class="memdesc:a3c8862176d9e1afc87c561dd8d20b78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <code>simd</code> with each component set to <code>0</code>.  <a href="#a3c8862176d9e1afc87c561dd8d20b78b">More...</a><br /></td></tr>
-<tr class="separator:a3c8862176d9e1afc87c561dd8d20b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90583ff4738f0a70ef5f7abb13fc5526"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a90583ff4738f0a70ef5f7abb13fc5526">load</a> (const T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
-<tr class="memdesc:a90583ff4738f0a70ef5f7abb13fc5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given aligned component array into a new <code>simd</code>.  <a href="#a90583ff4738f0a70ef5f7abb13fc5526">More...</a><br /></td></tr>
-<tr class="separator:a90583ff4738f0a70ef5f7abb13fc5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ba351337690784ae27070029a62759"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__simd__hpp.html#classtue_1_1simd">simd</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a79ba351337690784ae27070029a62759">loadu</a> (const T *<a class="el" href="group__simd__hpp.html#a95f3b36d20aae79d94b44a34e1739c51">data</a>) noexcept</td></tr>
-<tr class="memdesc:a79ba351337690784ae27070029a62759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given unaligned component array into a new <code>simd</code>.  <a href="#a79ba351337690784ae27070029a62759">More...</a><br /></td></tr>
-<tr class="separator:a79ba351337690784ae27070029a62759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
-<tr class="memitem:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#a49f5df5b6540d0e4080ff2e10fbf8c6b">component_count</a> = N</td></tr>
-<tr class="memdesc:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>simd</code> type's component count.  <a href="#a49f5df5b6540d0e4080ff2e10fbf8c6b">More...</a><br /></td></tr>
-<tr class="separator:a49f5df5b6540d0e4080ff2e10fbf8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#aa43c60f245c2dd5c6bf3a6fa3cdb5057">is_accelerated</a> = false</td></tr>
-<tr class="memdesc:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this type is accelerated by SIMD intrinsics.  <a href="#aa43c60f245c2dd5c6bf3a6fa3cdb5057">More...</a><br /></td></tr>
-<tr class="separator:aa43c60f245c2dd5c6bf3a6fa3cdb5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Member Typedef Documentation</h4>
 <a class="anchor" id="a7c53b88a6df169c82e9d63a98de90a82"></a>
@@ -656,6 +791,55 @@ template&lt;typename T , int N&gt; </div>
 </div><div class="memdoc">
 
 <p>This <code>simd</code> type's component type. </p>
+
+</div>
+</div>
+<h4 class="groupheader">Member Data Documentation</h4>
+<a class="anchor" id="a49f5df5b6540d0e4080ff2e10fbf8c6b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::component_count = N</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This <code>simd</code> type's component count. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa43c60f245c2dd5c6bf3a6fa3cdb5057"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::is_accelerated = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether or not this type is accelerated by SIMD intrinsics. </p>
 
 </div>
 </div>
@@ -1333,55 +1517,6 @@ template&lt;typename T , int N&gt; </div>
 
 <p>Returns a pointer to this <code>simd</code>'s underlying component array. </p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to this <code>simd</code>'s underlying component array. </dd></dl>
-
-</div>
-</div>
-<h4 class="groupheader">Member Data Documentation</h4>
-<a class="anchor" id="a49f5df5b6540d0e4080ff2e10fbf8c6b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::component_count = N</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This <code>simd</code> type's component count. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa43c60f245c2dd5c6bf3a6fa3cdb5057"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool <a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd</a>&lt; T, N &gt;::is_accelerated = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Whether or not this type is accelerated by SIMD intrinsics. </p>
 
 </div>
 </div>

@@ -163,7 +163,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct tue::is_sized_bool&lt; T &gt;</h3>
 
+<p>Checks if a type is a sized boolean type. </p>
+<p>Extends <code>std::integral_constant&lt;bool, true&gt;</code> for the following types and <code>std::integral_constant&lt;bool, false&gt;</code> otherwise:</p><ul>
+<li><code>tue::bool8</code></li>
+<li><code>tue::bool16</code></li>
+<li><code>tue::bool32</code></li>
+<li><code>tue::bool64</code></li>
+</ul>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>

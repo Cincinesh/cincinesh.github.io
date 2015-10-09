@@ -137,12 +137,27 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="memberdecls">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class tue::quat&lt; T &gt;</h3>
+
+<p>A quaternion. </p>
+<p><code>quat</code> has the same size and alignment requirements as <code>T[4]</code>. The first three components represent the vector part of the quaternion. The fourth component represents the scalar part.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type. <code>is_vec_component&lt;T&gt;value</code> must be <code>true</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Types</h3></td></tr>
 <tr class="memitem:a55e8548cf420926840ec688933d39274"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#a55e8548cf420926840ec688933d39274">component_type</a> = T</td></tr>
 <tr class="memdesc:a55e8548cf420926840ec688933d39274"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>quat</code> type's component type.  <a href="#a55e8548cf420926840ec688933d39274">More...</a><br /></td></tr>
 <tr class="separator:a55e8548cf420926840ec688933d39274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
+<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
+<tr class="memitem:af3860318e09ad6d81e6146c2fb8c19c3"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#af3860318e09ad6d81e6146c2fb8c19c3">component_count</a> = 4</td></tr>
+<tr class="memdesc:af3860318e09ad6d81e6146c2fb8c19c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>quat</code> type's component count.  <a href="#af3860318e09ad6d81e6146c2fb8c19c3">More...</a><br /></td></tr>
+<tr class="separator:af3860318e09ad6d81e6146c2fb8c19c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Constructors, Conversions, and Factory Functions</h3></td></tr>
 <tr class="memitem:a32d49cfaf6036cde5fcb99cd33615d83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#a32d49cfaf6036cde5fcb99cd33615d83">quat</a> () noexcept=default</td></tr>
 <tr class="memdesc:a32d49cfaf6036cde5fcb99cd33615d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs each component.  <a href="#a32d49cfaf6036cde5fcb99cd33615d83">More...</a><br /></td></tr>
 <tr class="separator:a32d49cfaf6036cde5fcb99cd33615d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +178,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a0c20b438566a1d991340f745613300ee"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#a0c20b438566a1d991340f745613300ee">operator quat&lt; U &gt;</a> () const  noexcept</td></tr>
 <tr class="memdesc:a0c20b438566a1d991340f745613300ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly casts this <code>quat</code> to a new component type.  <a href="#a0c20b438566a1d991340f745613300ee">More...</a><br /></td></tr>
 <tr class="separator:a0c20b438566a1d991340f745613300ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da9bd76e267e7c11f3db1cbbe6bd910"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__quat__hpp.html#classtue_1_1quat">quat</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#a5da9bd76e267e7c11f3db1cbbe6bd910">identity</a> () noexcept</td></tr>
+<tr class="memdesc:a5da9bd76e267e7c11f3db1cbbe6bd910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>quat</code> with the fourth component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a5da9bd76e267e7c11f3db1cbbe6bd910">More...</a><br /></td></tr>
+<tr class="separator:a5da9bd76e267e7c11f3db1cbbe6bd910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
 <tr class="memitem:ace183224c0f00d729f951c7ac459380d"><td class="memTemplParams" colspan="2">template&lt;typename I &gt; </td></tr>
 <tr class="memitem:ace183224c0f00d729f951c7ac459380d"><td class="memTemplItemLeft" align="right" valign="top">constexpr const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#ace183224c0f00d729f951c7ac459380d">operator[]</a> (const I &amp;i) const  noexcept</td></tr>
 <tr class="memdesc:ace183224c0f00d729f951c7ac459380d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the component at the given index.  <a href="#ace183224c0f00d729f951c7ac459380d">More...</a><br /></td></tr>
@@ -241,14 +260,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a3f5a2bbbe733fc13e3fe299c6d36f48a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__quat__hpp.html#classtue_1_1quat">quat</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#a3f5a2bbbe733fc13e3fe299c6d36f48a">operator*=</a> (const <a class="el" href="group__quat__hpp.html#classtue_1_1quat">quat</a>&lt; U &gt; &amp;q) noexcept</td></tr>
 <tr class="memdesc:a3f5a2bbbe733fc13e3fe299c6d36f48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates this <code>quat</code> by <code>q</code>.  <a href="#a3f5a2bbbe733fc13e3fe299c6d36f48a">More...</a><br /></td></tr>
 <tr class="separator:a3f5a2bbbe733fc13e3fe299c6d36f48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:a5da9bd76e267e7c11f3db1cbbe6bd910"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__quat__hpp.html#classtue_1_1quat">quat</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#a5da9bd76e267e7c11f3db1cbbe6bd910">identity</a> () noexcept</td></tr>
-<tr class="memdesc:a5da9bd76e267e7c11f3db1cbbe6bd910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <code>quat</code> with the fourth component set to <code>1</code> and all other components set to <code>0</code>.  <a href="#a5da9bd76e267e7c11f3db1cbbe6bd910">More...</a><br /></td></tr>
-<tr class="separator:a5da9bd76e267e7c11f3db1cbbe6bd910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><h3>Static Public Attributes</h3></td></tr>
-<tr class="memitem:af3860318e09ad6d81e6146c2fb8c19c3"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quat__hpp.html#af3860318e09ad6d81e6146c2fb8c19c3">component_count</a> = 4</td></tr>
-<tr class="memdesc:af3860318e09ad6d81e6146c2fb8c19c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <code>quat</code> type's component count.  <a href="#af3860318e09ad6d81e6146c2fb8c19c3">More...</a><br /></td></tr>
-<tr class="separator:af3860318e09ad6d81e6146c2fb8c19c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Member Typedef Documentation</h4>
 <a class="anchor" id="a55e8548cf420926840ec688933d39274"></a>
@@ -264,6 +275,31 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>This <code>quat</code> type's component type. </p>
+
+</div>
+</div>
+<h4 class="groupheader">Member Data Documentation</h4>
+<a class="anchor" id="af3860318e09ad6d81e6146c2fb8c19c3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="group__quat__hpp.html#classtue_1_1quat">tue::quat</a>&lt; T &gt;::component_count = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This <code>quat</code> type's component count. </p>
 
 </div>
 </div>
@@ -1429,31 +1465,6 @@ template&lt;typename U &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to this <code>quat</code>. </dd></dl>
-
-</div>
-</div>
-<h4 class="groupheader">Member Data Documentation</h4>
-<a class="anchor" id="af3860318e09ad6d81e6146c2fb8c19c3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="group__quat__hpp.html#classtue_1_1quat">tue::quat</a>&lt; T &gt;::component_count = 4</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This <code>quat</code> type's component count. </p>
 
 </div>
 </div>
