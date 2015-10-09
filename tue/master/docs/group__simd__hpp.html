@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -103,6 +104,15 @@ Classes</h2></td></tr>
 <tr class="memitem:classtue_1_1simd"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#classtue_1_1simd">tue::simd&lt; T, N &gt;</a></td></tr>
 <tr class="memdesc:classtue_1_1simd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <code>N</code>-component SIMD vector.  <a href="group__simd__hpp.html#classtue_1_1simd">More...</a><br /></td></tr>
 <tr class="separator:classtue_1_1simd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga0a41befd3055260e1b4b0ad39b70636f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#ga0a41befd3055260e1b4b0ad39b70636f">TUE_SSE</a></td></tr>
+<tr class="memdesc:ga0a41befd3055260e1b4b0ad39b70636f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defined if the current compiler configuration supports SSE intrinsics.  <a href="#ga0a41befd3055260e1b4b0ad39b70636f">More...</a><br /></td></tr>
+<tr class="separator:ga0a41befd3055260e1b4b0ad39b70636f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2e4598829ecb7fd61f8df40a2bc646f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__simd__hpp.html#gad2e4598829ecb7fd61f8df40a2bc646f">TUE_SSE2</a></td></tr>
+<tr class="memdesc:gad2e4598829ecb7fd61f8df40a2bc646f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defined if the current compiler configuration supports SSE2 intrinsics.  <a href="#gad2e4598829ecb7fd61f8df40a2bc646f">More...</a><br /></td></tr>
+<tr class="separator:gad2e4598829ecb7fd61f8df40a2bc646f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -660,7 +670,7 @@ class tue::simd&lt; T, N &gt;</h3>
 
 <p>An <code>N</code>-component SIMD vector. </p>
 <p><code>simd</code> has the same size requirements as <code>T[N]</code> and its alignment equals its size. It's accelerated by compiler and architecture-specific SIMD intrinsics where possible, but compatibility fallbacks are always available otherwise.</p>
-<p><code>simd</code> types may contain platform-specific constructors and conversion operators for converting to and from the underlying SIMD intrinsic type. The current mapping is as follows:</p>
+<p><code>simd</code> types may contain platform-specific implicit constructors and conversion operators for converting to and from the underlying SIMD intrinsic type. The current mapping is as follows:</p>
 <p><b>SSE</b> </p><table class="doxtable">
 <tr>
 <th><code>simd</code> Type </th><th>SIMD Intrinsic  </th></tr>
@@ -1513,6 +1523,35 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga0a41befd3055260e1b4b0ad39b70636f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TUE_SSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defined if the current compiler configuration supports SSE intrinsics. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad2e4598829ecb7fd61f8df40a2bc646f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TUE_SSE2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defined if the current compiler configuration supports SSE2 intrinsics. </p>
 
 </div>
 </div>
