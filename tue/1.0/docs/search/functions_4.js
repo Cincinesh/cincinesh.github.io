@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['equal',['equal',['../group__mat__hpp.html#gac2ccd095a98be3dc896ee7acf609cc97',1,'tue::math::equal(const mat&lt; T, C, R &gt; &amp;lhs, const mat&lt; T, C, R &gt; &amp;rhs) noexcept'],['../group__math__hpp.html#gaf643751ef70feef05c65e507f42e4695',1,'tue::math::equal(T lhs, T rhs) noexcept'],['../group__simd__hpp.html#gaffb9774c688c45c96b4d3718e3f01e2d',1,'tue::math::equal(const simd&lt; T, N &gt; &amp;lhs, const simd&lt; T, N &gt; &amp;rhs) noexcept'],['../group__vec__hpp.html#ga3f0a114c0dab245fbd2f80214e473a7e',1,'tue::math::equal(const vec&lt; T, N &gt; &amp;lhs, const vec&lt; T, N &gt; &amp;rhs) noexcept']]],
+  ['exp',['exp',['../group__mat__hpp.html#gacc38cd877f3644db338bd51fa16b3966',1,'tue::math::exp(const mat&lt; T, C, R &gt; &amp;m) noexcept'],['../group__math__hpp.html#ga921b1bd4aab8e28cf4a0d7bf74d71d46',1,'tue::math::exp(T x) noexcept'],['../group__simd__hpp.html#ga499b61944cde50d090c1c853e6df0502',1,'tue::math::exp(const simd&lt; T, N &gt; &amp;s) noexcept'],['../group__vec__hpp.html#gae7e14c4e604c67b4e36350bb42cf7aa4',1,'tue::math::exp(const vec&lt; T, N &gt; &amp;v) noexcept']]]
+];
